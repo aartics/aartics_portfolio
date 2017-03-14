@@ -13,6 +13,19 @@ body
   /*background: url('../images/bg.jpg') repeat top left;*/
 }
 
+.cls-1 {
+  fill: #f2f2f2;
+}
+
+.cls-1, .cls-2 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.cls-2 {
+  fill: #fff;
+}
+
 h1
 {
   font-size: 20px;
