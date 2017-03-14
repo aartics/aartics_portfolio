@@ -33,8 +33,8 @@ svgFiles.sort()
 
 var polygons = []
 var polygonsById = {}
-var polygonsChill = []
-var polygonsChillById = {}
+// var polygonsChill = []
+// var polygonsChillById = {}
 
 for (var i = 0; i < svgFiles.length; i++) {
 	var text = fs.readFileSync(svgFiles[i]).toString()
@@ -53,21 +53,21 @@ for (var i = 0; i < svgFiles.length; i++) {
 		pdata.states.push($poly.attr('points').split(' '))
 	})
 	// experimental, not functioning!
-	if (isFirst) {
-		for (var id in polygonsById)
-			polygonsChillById[id] = {id: id, states: [].concat(polygonsById[id].states)}			
-		for (var j = 0; j < polygons.length; j++)
-			polygonsChill.push(polygonsChillById[polygons[j].id])
-	} else {
-		for (var id in polygonsChillById) {
-			var $poly = $('#' + id)
-			if (!$poly.length) {
-				//console.log("Missing " + id + ' from ' + svgFiles[i])
-				polygonsChillById[id].states.push(polygonsChillById[id].states[i - 1])
-			}
+	// if (isFirst) {
+	// 	for (var id in polygonsById)
+	// 		polygonsChillById[id] = {id: id, states: [].concat(polygonsById[id].states)}			
+	// 	for (var j = 0; j < polygons.length; j++)
+	// 		polygonsChill.push(polygonsChillById[polygons[j].id])
+	// } else {
+	// 	for (var id in polygonsChillById) {
+	// 		var $poly = $('#' + id)
+	// 		if (!$poly.length) {
+	// 			//console.log("Missing " + id + ' from ' + svgFiles[i])
+	// 			polygonsChillById[id].states.push(polygonsChillById[id].states[i - 1])
+	// 		}
 				
-		}
-	}
+	// 	}
+	// }
 }
 
 var statesCount = svgFiles.length
@@ -82,11 +82,11 @@ var data = {
 	states : svgFiles.length,
 	polygons : polygons
 }
-var dataChill =  {
-	generatedOn : new Date().toLocaleString(),
-	states : svgFiles.length,
-	polygons : polygonsChill
-}
+// var dataChill =  {
+// 	generatedOn : new Date().toLocaleString(),
+// 	states : svgFiles.length,
+// 	polygons : polygonsChill
+// }
 
 
 

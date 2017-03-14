@@ -5,13 +5,29 @@
         fill: #f2f2f2;
       }
 
-      .cls-1, .cls-2 {
+      .cls-1, .cls-2, .cls-3 {
         stroke: #000;
         stroke-miterlimit: 10;
       }
 
-      .cls-2 {
+      .cls-2, .cls-3 {
         fill: #fff;
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        font-size: 25px;
+      }
+
+      .cls-4, .cls-5 {
+        font-family: ArialMT, Arial;
+      }
+
+      .cls-5 {
+        font-size: 60px;
       }
     </style>
   </defs>
@@ -175,6 +191,12 @@
     <polygon id="_20" data-name="20" class="cls-2" points="1320.5 380.51 1198.5 380.51 1137.5 486.17 1198.5 591.82 1320.5 591.82 1381.5 486.17 1320.5 380.51"/>
     <polygon id="_30" data-name="30" class="cls-2" points="1783.72 381.5 1642.28 381.5 1571.55 504 1642.28 626.5 1783.72 626.5 1854.45 504 1783.72 381.5"/>
     <polygon id="s98" class="cls-1" points="268.5 488.5 541.5 452.5 618.5 452.5 393.5 488.5 268.5 488.5"/>
-    <polygon id="_1" data-name="1" class="cls-2" points="321.5 380.72 147.01 682.95 0.5 682.95 0.5 78.5 0.5 78.5 147.01 78.5 321.5 380.72"/>
+    <polygon id="_1" data-name="1" class="cls-3" points="319.5 380.72 145.01 682.95 -204.5 682.5 -379.5 380.5 -204.5 78.5 145.01 78.5 319.5 380.72"/>
+    <text class="cls-4" transform="translate(670 171.9)">resonate</text>
+    <text class="cls-5" transform="translate(102 388.96)">aartics</text>
+    <text class="cls-4" transform="translate(105 421.9)">@gmail.com</text>
+    <text class="cls-4" transform="translate(616 613.9)">wolf and lion</text>
+    <text class="cls-4" transform="translate(994 370.9)">san francisco</text>
+    <text class="cls-4" transform="translate(994 400.11)">arts commission</text>
   </g>
 </svg>

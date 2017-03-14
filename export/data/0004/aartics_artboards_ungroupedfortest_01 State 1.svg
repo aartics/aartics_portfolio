@@ -22,39 +22,16 @@
         font-size: 25px;
       }
 
-      .cls-4, .cls-8 {
-        font-family: MyriadPro-Regular, Myriad Pro;
+      .cls-4, .cls-5 {
+        font-family: ArialMT, Arial;
       }
 
       .cls-5 {
-        letter-spacing: -0.01em;
-      }
-
-      .cls-6 {
-        letter-spacing: 0em;
-      }
-
-      .cls-7 {
-        letter-spacing: -0.01em;
-      }
-
-      .cls-8 {
         font-size: 60px;
-      }
-
-      .cls-9 {
-        letter-spacing: 0.02em;
-      }
-
-      .cls-10 {
-        letter-spacing: 0em;
       }
     </style>
   </defs>
   <title>aartics_artboards_ungroupedfortest</title>
-  <g id="_00landingstage" data-name="00landingstage">
-    <polygon id="s98" class="cls-1" points="458.5 488.5 583.5 452.5 660.5 452.5 583.5 488.5 458.5 488.5"/>
-  </g>
   <g id="_01stage" data-name="01stage">
     <polygon id="s32" class="cls-1" points="147.5 682.5 659.5 452.5 702.5 380.72 321.5 380.5 147.5 682.5"/>
     <polygon id="s63" class="cls-1" points="1742.5 192.5 1776.5 132.5 1810.5 104.5 1770.5 172.5 1742.5 192.5"/>
@@ -94,6 +71,7 @@
     <polygon id="s68" class="cls-1" points="2199.5 302.5 2202.5 300.5 2290.5 300.5 2288.5 302.5 2199.5 302.5"/>
     <polygon id="s66" class="cls-1" points="2670.5 463.5 2706.5 468.5 2654.5 557.5 2622.5 546.5 2670.5 463.5"/>
     <polygon id="s67" class="cls-1" points="2716.5 455.5 2809.5 468.5 2718.5 468.5 2628.5 455.5 2716.5 455.5"/>
+    <polygon id="s98" class="cls-1" points="458.5 488.5 583.5 452.5 660.5 452.5 583.5 488.5 458.5 488.5"/>
     <polygon id="s97" class="cls-1" points="2341.5 524.5 2377.5 537.5 2422.5 459.5 2381.5 452.5 2341.5 524.5"/>
     <polygon id="s95" class="cls-1" points="2459.5 459.5 2478.5 463.5 2526.5 546.5 2504.5 538.5 2459.5 459.5"/>
     <polygon id="s93" class="cls-1" points="2558.5 538.5 2572.5 541.5 2526.5 622.5 2513.32 616.5 2558.5 538.5"/>
@@ -208,19 +186,18 @@
     <polygon id="s101" class="cls-1" points="1500.5 591.5 1398 541 1437.5 462.5 1561.5 486.5 1500.5 591.5"/>
     <polygon id="_20" data-name="20" class="cls-2" points="1500.5 380.51 1378.5 380.51 1317.5 486.17 1378.5 591.82 1500.5 591.82 1561.5 486.17 1500.5 380.51"/>
     <polygon id="s99" class="cls-1" points="682.5 549.5 645.5 595.5 583.5 703.5 633.5 634.5 682.5 549.5"/>
-    <polygon id="_18" data-name="18" class="cls-2" points="957.3 490.5 830.86 490.5 767.64 600 830.86 709.5 957.3 709.5 1020.52 600 957.3 490.5"/>
     <polygon id="s104" class="cls-1" points="1856.5 503.5 1726.5 458.5 1681.5 380.5 1785.5 381.5 1856.5 503.5"/>
     <polygon id="_30" data-name="30" class="cls-2" points="1784.72 381.5 1643.28 381.5 1572.55 504 1643.28 626.5 1784.72 626.5 1855.45 504 1784.72 381.5"/>
     <polygon id="s24" class="cls-1" points="1241.5 469.5 1292.5 558.5 1378.5 591.5 1317.5 486.5 1241.5 469.5"/>
     <polygon id="s42-2" data-name="s42" class="cls-1" points="1048.5 228.5 1019.06 248 1058.5 180.5 1092.5 152.5 1048.5 228.5"/>
-    <g id="p7">
-      <polygon id="_7" data-name="7" class="cls-3" points="951.04 64.5 830.11 64.5 769.65 169.22 830.11 273.95 951.04 273.95 1011.5 169.22 951.04 64.5"/>
-      <text class="cls-4" transform="translate(847 171.75)"><tspan class="cls-5">r</tspan><tspan x="7.92" y="0">eson</tspan><tspan class="cls-6" x="57.95" y="0">a</tspan><tspan class="cls-7" x="69.9" y="0">t</tspan><tspan x="78.02" y="0">e</tspan></text>
-    </g>
-    <g id="p1">
-      <polygon id="_1" data-name="1" class="cls-3" points="321.5 380.72 147.01 682.95 -202.5 682.5 -377.5 380.5 -202.5 78.5 147.01 78.5 321.5 380.72"/>
-      <text class="cls-8" transform="translate(91 388.6)">aa<tspan class="cls-9" x="57.84" y="0">r</tspan><tspan class="cls-10" x="78.9" y="0">tics</tspan></text>
-      <text class="cls-4" transform="translate(94 421.75)">@<tspan class="cls-7" x="18.42" y="0">g</tspan><tspan x="32.25" y="0">mai</tspan><tspan class="cls-5" x="71" y="0">l</tspan><tspan x="76.65" y="0">.</tspan><tspan class="cls-7" x="81.82" y="0">c</tspan><tspan x="92.87" y="0">om</tspan></text>
-    </g>
+    <polygon id="_7" data-name="7" class="cls-3" points="951.04 64.5 830.11 64.5 769.65 169.22 830.11 273.95 951.04 273.95 1011.5 169.22 951.04 64.5"/>
+    <polygon id="_1" data-name="1" class="cls-3" points="319.5 380.72 145.01 682.95 -204.5 682.5 -379.5 380.5 -204.5 78.5 145.01 78.5 319.5 380.72"/>
+    <polygon id="_18" data-name="18" class="cls-3" points="957.3 490.5 830.86 490.5 767.64 600 830.86 709.5 957.3 709.5 1020.52 600 957.3 490.5"/>
+    <text class="cls-4" transform="translate(850 171.9)">resonate</text>
+    <text class="cls-5" transform="translate(112 388.96)">aartics</text>
+    <text class="cls-4" transform="translate(115 421.9)">@gmail.com</text>
+    <text class="cls-4" transform="translate(826 613.9)">wolf and lion</text>
+    <text class="cls-4" transform="translate(1146 370.9)">san francisco</text>
+    <text class="cls-4" transform="translate(1146 400.11)">arts commission</text>
   </g>
 </svg>

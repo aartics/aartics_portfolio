@@ -1,65 +1,40 @@
 <svg id="_00landingstage" data-name="00landingstage" xmlns="http://www.w3.org/2000/svg" width="3000" height="760" viewBox="0 0 3000 760">
   <defs>
+    <pattern id="image" x="0" y="0" patternUnits="userSpaceOnUse" height="1" width="1">
+      <image x="0" y="0" xlink:href="https://media.giphy.com/media/l3q2GDh3wQqVWSiGY/source.gif"></image>
+    </pattern>
     <style>
       .cls-1 {
         fill: #f2f2f2;
       }
 
-      .cls-1, .cls-2, .cls-3 {
+      .cls-1, .cls-2, .cls-3, .cls-4 {
         stroke: #000;
         stroke-miterlimit: 10;
       }
 
-      .cls-2, .cls-3 {
+<!--       .cls-2, .cls-3, .cls-4 {
         fill: #fff;
-      }
+      } -->
 
-      .cls-3 {
+      .cls-3, .cls-4 {
         stroke-width: 2px;
       }
 
-      .cls-4 {
-        font-size: 25px;
-      }
-
-      .cls-4, .cls-8 {
-        font-family: MyriadPro-Regular, Myriad Pro;
+      .cls-3 {
+        fill-rule: evenodd;
       }
 
       .cls-5 {
-        letter-spacing: -0.01em;
+        font-size: 25px;
+      }
+
+      .cls-5, .cls-6 {
+        font-family: ArialMT, Arial;
       }
 
       .cls-6 {
-        letter-spacing: 0em;
-      }
-
-      .cls-7 {
-        letter-spacing: -0.01em;
-      }
-
-      .cls-8 {
         font-size: 60px;
-      }
-
-      .cls-9 {
-        letter-spacing: 0.02em;
-      }
-
-      .cls-10 {
-        letter-spacing: 0em;
-      }
-
-      .cls-11 {
-        letter-spacing: 0em;
-      }
-
-      .cls-12 {
-        letter-spacing: 0em;
-      }
-
-      .cls-13 {
-        letter-spacing: 0.02em;
       }
     </style>
   </defs>
@@ -219,21 +194,26 @@
   <polygon id="_3" data-name="3" class="cls-2" points="658.07 488.5 533.93 488.5 471.87 596 533.93 703.5 658.07 703.5 720.13 596 658.07 488.5"/>
   <polygon id="s2" class="cls-1" points="680.5 178.5 667.5 104.5 719.5 196.5 719.5 245.5 680.5 178.5"/>
   <polygon id="_6" data-name="6" class="cls-2" points="815.57 214.29 720.19 214.29 672.5 296.9 720.19 379.5 815.57 379.5 863.26 296.9 815.57 214.29"/>
-  <g id="p7">
-    <polygon id="_7" data-name="7" class="cls-3" points="1024.04 64.5 903.11 64.5 842.65 169.22 903.11 273.95 1024.04 273.95 1084.5 169.22 1024.04 64.5"/>
-    <text class="cls-4" transform="translate(920 171.75)"><tspan class="cls-5">r</tspan><tspan x="7.92" y="0">eson</tspan><tspan class="cls-6" x="57.95" y="0">a</tspan><tspan class="cls-7" x="69.9" y="0">t</tspan><tspan x="78.02" y="0">e</tspan></text>
+  <polygon id="_7" data-name="7" class="cls-3" points="1024.04 64.5 903.11 64.5 842.65 169.22 903.11 273.95 1024.04 273.95 1084.5 169.22 1024.04 64.5" fill="url(#image)"/>
+  <polygon id="_1" data-name="1" class="cls-4" points="722.5 380.72 548.01 682.95 198.5 682.5 23.5 380.5 198.5 78.5 548.01 78.5 722.5 380.72"/>
+  <polygon id="_18" data-name="18" class="cls-4" points="1036.3 490.5 909.86 490.5 846.64 600 909.86 709.5 1036.3 709.5 1099.52 600 1036.3 490.5"/>
+  <polygon id="_16" data-name="16" class="cls-4" points="1352.45 280.5 1237.55 280.5 1180.11 380 1237.55 479.5 1352.45 479.5 1409.89 380 1352.45 280.5"/>
+  <g id="t04">
+    <text class="cls-5" transform="translate(920 171.9)">resonate</text>
   </g>
-  <g id="p1">
-    <polygon id="_1" data-name="1" class="cls-3" points="722.5 380.72 548.01 682.95 198.5 682.5 23.5 380.5 198.5 78.5 548.01 78.5 722.5 380.72"/>
-    <text class="cls-8" transform="translate(492 388.6)">aa<tspan class="cls-9" x="57.84" y="0">r</tspan><tspan class="cls-10" x="78.9" y="0">tics</tspan></text>
-    <text class="cls-4" transform="translate(495 421.75)">@<tspan class="cls-7" x="18.42" y="0">g</tspan><tspan x="32.25" y="0">mai</tspan><tspan class="cls-5" x="71" y="0">l</tspan><tspan x="76.65" y="0">.</tspan><tspan class="cls-7" x="81.82" y="0">c</tspan><tspan x="92.87" y="0">om</tspan></text>
+  <g id="t01">
+    <text class="cls-6" transform="translate(492 388.96)">aartics</text>
   </g>
-  <g id="p18">
-    <polygon id="_18" data-name="18" class="cls-3" points="1036.3 490.5 909.86 490.5 846.64 600 909.86 709.5 1036.3 709.5 1099.52 600 1036.3 490.5"/>
-    <text class="cls-4" transform="translate(906 613.75)"><tspan class="cls-5">w</tspan><tspan x="18.15" y="0">olf and lion</tspan></text>
+  <g id="t02">
+    <text class="cls-5" transform="translate(495 421.9)">@gmail.com</text>
   </g>
-  <g id="p16">
-    <polygon id="_16" data-name="16" class="cls-3" points="1352.45 280.5 1237.55 280.5 1180.11 380 1237.55 479.5 1352.45 479.5 1409.89 380 1352.45 280.5"/>
-    <text class="cls-4" transform="translate(1212 378.75)">san f<tspan class="cls-11" x="48.42" y="0">r</tspan><tspan x="56.47" y="0">ancis</tspan><tspan class="cls-7" x="109.35" y="0">c</tspan><tspan class="cls-12" x="120.4" y="0">o a</tspan><tspan class="cls-13" x="151.47" y="0">r</tspan><tspan x="160.25" y="0">ts </tspan><tspan class="cls-7" x="0" y="30">c</tspan><tspan x="11.05" y="30">ommission</tspan></text>
+  <g id="t05">
+    <text class="cls-5" transform="translate(906 613.9)">wolf and lion</text>
+  </g>
+  <g id="t06">
+    <text class="cls-5" transform="translate(1206 370.9)">san francisco</text>
+  </g>
+  <g id="t07">
+    <text class="cls-5" transform="translate(1206 400.11)">arts commission</text>
   </g>
 </svg>
