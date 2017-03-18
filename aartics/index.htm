@@ -189,15 +189,16 @@
   <g id="t02">
     <text transform="translate(495 421.9)" style="font-size: 25px;font-family: ArialMT, Arial">@gmail.com</text>
   </g>
-  <g id="t05">
+  <!--g id="t05">
     <text transform="translate(906 613.9)" style="font-size: 25px;font-family: ArialMT, Arial">wolf and lion</text>
-  </g>
+  </g-->
   <g id="t06">
     <text transform="translate(1206 370.9)" style="font-size: 25px;font-family: ArialMT, Arial">san francisco</text>
   </g>
   <g id="t07">
     <text transform="translate(1206 400.11)" style="font-size: 25px;font-family: ArialMT, Arial">arts commission</text>
   </g>
+  <text id="t_18" y="600.5" class="attached" data-attach="#_18" data-x-rel="65" style="font-size: 25px;font-family: ArialMT, Arial">wolf and lion</text>
 </svg>
         <!--<img src="images/screenshots/A01.jpg" alt="" />-->
     </div>
@@ -226,9 +227,27 @@
 						if ($poly.length > 0)
 							$poly.attr('points', pointsData[id])
 					}
+          updateAttached()
 				}
 			})
 
+      function updateAttached() {
+        $('.attached').each(function() {
+          var $me = $(this)
+          var $poly = $($me.attr('data-attach'))
+          var ppoints = $poly.attr('points').split(',')
+          if (ppoints.length == 1)
+            ppoints = $poly.attr('points').split(' ')
+          var xMin = +ppoints[0]
+          var xRel = +$me.attr('data-x-rel')
+          for (var i=0; i<ppoints.length; i+=2) {
+            var ppoint = +ppoints[i]
+            if (ppoint < xMin)
+              xMin = ppoint
+          }
+          $me.attr('x', xMin + xRel)
+        })
+      }
 
 			
 			var step = 100 / (polyData.states - 1)
