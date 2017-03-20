@@ -1,19 +1,15 @@
 $(document).ready(function() {
 
-	var polyData = window.PolyData
+    var polyData = window.PolyData
 
-    $.jInvertScroll(['.scroll'], {
-    	height: 3000,                   
-	    onScroll: function(percent) {
-		    var pointsData = updatePoints(percent * 100)
-		    for (var id in pointsData) {
-			    var $poly = $('#' + id)
-			    if ($poly.length > 0)
-				    $poly.attr('points', pointsData[id])
-		    }
-            updateAttached()
-		}
-	})
+    var step = 100 / (polyData.states - 1)
+    var loopNum = polyData.states - 1
+    var fixedStates = []
+    for (var i = 0; i < loopNum; i++) {
+        fixedStates.push(step * i)
+    }
+    fixedStates.push(100)
+    console.log(fixedStates)
 
     function updateAttached() {
         $('g.attached').each(function() {
@@ -37,58 +33,66 @@ $(document).ready(function() {
             if (clipPath) {
                 $('polygon', clipPath).attr('points', ppoints)
             }
-            //if ($me.hasClass('clip'))
-            //    $me.css('clip-path', ppoints)
         })
     }
 
-	var step = 100 / (polyData.states - 1)
-	var loopNum = polyData.states - 1
-	var fixedStates = []
-	for (var i = 0; i < loopNum; i++) {
-		fixedStates.push(step * i)
-	}
-	fixedStates.push(100)
-	console.log(fixedStates)
+    function updatePolygons(percent) {
+        var pointsData = getPolygonPoints(percent * 100)
+        for (var id in pointsData) {
+            var $poly = $('#' + id)
+            if ($poly.length > 0)
+                $poly.attr('points', pointsData[id])
+        }
+    }
 
-	function updatePoints(state) {
+    function getPolygonPoints(state) {
 
-		var polygons = polyData.polygons
-	
-		var lowerState = 0, upperState = 0
-		for (var i = fixedStates.length - 1; i > 0; i--) {
-			if (state == fixedStates[i]) {
-				upperState = i
-			    lowerState = i
-			} else if (state < fixedStates[i]) {
-				upperState = i
-				lowerState = i - 1
-			}
-		}
-		var lowerBound = fixedStates[lowerState]
-		var upperBound = fixedStates[upperState]
-		//console.log({lowerState: lowerState, upperState: upperState})
-		var polygonPoints = {}
-		for (var p = 0; p < polygons.length; p++) {
+        var polygons = polyData.polygons
+    
+        var lowerState = 0, upperState = 0
+        for (var i = fixedStates.length - 1; i > 0; i--) {
+            if (state == fixedStates[i]) {
+                upperState = i
+                lowerState = i
+            } else if (state < fixedStates[i]) {
+                upperState = i
+                lowerState = i - 1
+            }
+        }
+        var lowerBound = fixedStates[lowerState]
+        var upperBound = fixedStates[upperState]
+        //console.log({lowerState: lowerState, upperState: upperState})
+        var polygonPoints = {}
+        for (var p = 0; p < polygons.length; p++) {
             var points = []
             var polygon = polygons[p]
             if (polygon.states.length < lowerState + 1 || polygon.states.length < upperState + 1) {
-          	    console.log("Error with id " + polygon.id + ', missing states.')
-          	    continue
+                  console.log("Error with id " + polygon.id + ', missing states.')
+                  continue
             }
-		    var lowerPoints = polygon.states[lowerState]
-		    var upperPoints = polygon.states[upperState]
-		    var pointsLength = polygon.states[0].length
-		    for (var i = 0; i < pointsLength; i++) {
-		        var lowerPoint = +lowerPoints[i]
-			    var upperPoint = +upperPoints[i]
-			    var diff = upperPoint - lowerPoint
-			    var progress = (state - lowerBound) / ((upperBound - lowerBound) || 1)
-			    var point = (diff * progress) + lowerPoint
-			    points.push(point)
-		    }
-		    polygonPoints[polygon.id] = points
-		}
-		return polygonPoints
-	}
+            var lowerPoints = polygon.states[lowerState]
+            var upperPoints = polygon.states[upperState]
+            var pointsLength = polygon.states[0].length
+            for (var i = 0; i < pointsLength; i++) {
+                var lowerPoint = +lowerPoints[i]
+                var upperPoint = +upperPoints[i]
+                var diff = upperPoint - lowerPoint
+                var progress = (state - lowerBound) / ((upperBound - lowerBound) || 1)
+                var point = (diff * progress) + lowerPoint
+                points.push(point)
+            }
+            polygonPoints[polygon.id] = points
+        }
+        return polygonPoints
+    }
+
+    // load handlers
+    $.jInvertScroll(['.scroll'], {
+        height: 3000,                   
+        onScroll: function(percent) {
+            updatePolygons(percent)
+            updateAttached()
+        }
+    })
+
 })
