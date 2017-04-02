@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="760" viewBox="0 0 3000 760">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3000" height="760" viewBox="0 0 3000 760">
   <defs>
     <style>
       .cls-1 {
@@ -20,6 +20,9 @@
     </style>
   </defs>
   <title>aartics_groups</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <image width="3000" height="742" transform="translate(0 9)" xlink:href="../../../stuff/images/screenshots/A03.jpg"/>
+  </g>
   <g id="_01stage" data-name="01stage">
     <polygon id="s32" class="cls-1" points="147.5 682.5 659.5 452.5 702.5 380.72 321.5 380.5 147.5 682.5"/>
     <polygon id="s63" class="cls-1" points="1742.5 192.5 1776.5 132.5 1810.5 104.5 1770.5 172.5 1742.5 192.5"/>

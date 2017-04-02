@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="760" viewBox="0 0 3000 760">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3000" height="760" viewBox="0 0 3000 760">
   <defs>
     <style>
       .cls-1 {
@@ -20,6 +20,9 @@
     </style>
   </defs>
   <title>aartics_groups</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <image width="3000" height="742" transform="translate(0 9)" xlink:href="../../../stuff/images/screenshots/A19.jpg"/>
+  </g>
   <g id="_07stage" data-name="07stage">
     <polygon id="s41" class="cls-1" points="1367.5 240.5 1408.5 307.5 1349.5 303.5 1304.5 224.5 1367.5 240.5"/>
     <polygon id="s88" class="cls-1" points="2406.5 255.5 2334.5 255.5 2357.5 213.5 2452.5 213.5 2406.5 255.5"/>
@@ -186,11 +189,11 @@
     <polygon id="xx04" class="cls-1" points="2056.5 302.5 2029.5 296.5 2077.5 378.5 2100.5 379.5 2056.5 302.5"/>
     <polygon id="xxx07" class="cls-1" points="1919.5 230.5 1909.5 212.5 1954.5 289.5 1960.5 300.5 1919.5 230.5"/>
     <polygon id="xxx06" class="cls-1" points="1918.5 380.5 1907.5 380.5 1951.5 303.5 1959.5 312.5 1918.5 380.5"/>
-    <polygon id="yy2" class="cls-1" points="1913.5 540.5 1838.5 483.5 1872.5 418.5 1973.5 461.5 1913.5 540.5"/>
-    <polygon id="yy3" class="cls-1" points="1959.5 621.5 1872.5 544.5 1838.5 483.5 1913.5 540.5 1959.5 621.5"/>
-    <polygon id="yy4" class="cls-1" points="2048.5 456.5 2104.5 473.5 2155.5 562.5 2098.5 540.5 2048.5 456.5"/>
-    <polygon id="yy5" class="cls-1" points="2053.5 483.5 2088.5 544.5 2273.5 636.5 2224.5 551.5 2053.5 483.5"/>
-    <polygon id="yy1" class="cls-1" points="1753.5 442.5 1789.5 501.5 1890.5 544.5 1845 465.67 1753.5 442.5"/>
     <polygon id="s51" class="cls-1" points="1223.5 381.5 1152.5 504.5 1172.5 468.5 1223.5 380.5 1223.5 381.5"/>
+    <polygon id="yy1" class="cls-1" points="1743.5 442.5 1779.5 501.5 1802.5 544.5 1755 462.67 1743.5 442.5"/>
+    <polygon id="yy2" class="cls-1" points="1751.5 623.5 1745.5 566.5 1779.5 501.5 1798.5 541.5 1751.5 623.5"/>
+    <polygon id="yy3" class="cls-1" points="1798.5 704.5 1779.5 627.5 1745.5 566.5 1752.5 623.5 1798.5 704.5"/>
+    <polygon id="yy4" class="cls-1" points="1892.5 544.5 1911.5 556.5 1962.5 645.5 1937.5 623.5 1892.5 544.5"/>
+    <polygon id="yy5" class="cls-1" points="1960.5 566.5 1995.5 627.5 2096.5 718.5 2047.5 633.5 1960.5 566.5"/>
   </g>
 </svg>
