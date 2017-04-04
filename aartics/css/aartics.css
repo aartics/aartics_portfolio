@@ -4,7 +4,7 @@ body
   padding: 0;
   margin: 0;
   font-family: 'ABeeZee', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
@@ -36,6 +36,10 @@ body
 
 .redText {
     fill: red;
+}
+
+#credits {
+  font-size: 12px;
 }
 
 /**
