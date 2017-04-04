@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    // prevents going back from the site
+    history.pushState(null, null, location.href)
+    window.onpopstate = function(event) {
+        history.go(1)
+    }
+
     var polyData = window.PolyData
 
     var step = 100 / (polyData.states - 1)
@@ -94,5 +100,7 @@ $(document).ready(function() {
             updateAttached()
         }
     })
+
+
 
 })
