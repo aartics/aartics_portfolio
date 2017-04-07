@@ -1,7 +1,6 @@
 html,
 body
 {
-  background: #ffffff;
   padding: 0;
   margin: 0;
   font-family: 'ABeeZee', sans-serif;
@@ -15,24 +14,56 @@ body
   /*background: url('../images/bg.jpg') repeat top left;*/
 }
 
-.cls-1 {
-  fill: #7e7e7e;
+text {
+  fill: white
 }
 
-.cls-1, .cls-2 {
-  stroke: #000;
-/*   stroke-miterlimit: 1; */
+.cls-1 {
+  fill: #374959;
+  fill-opacity: .8;
+  stroke: #29626d;
 }
 
 .cls-2 {
-  fill: #ffffff;
+  fill: rgba(34, 49, 63, 0.89);
+  stroke-width: 2px;
+/*   stroke: url('#exampleGradient') */
+  stroke: #b5b5b5;
+
 }
 
+.header {
+  background:linear-gradient(to right, black 19%, #22313f 20%);
+  position: fixed;
+  bottom: 700px;
+  width: 3000px;
+  z-index: 10;
+
+}
+
+h1 {
+  color:white;
+  font-size: 24px;
+  padding-left: 80px;
+  padding-top: 5px;
+}
+
+.backgroundgrad {
+/*   background: radial-gradient(black 15%, white 60%); */
+  background: #22313f;
+  width: 3000px;
+  height: 760px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index:1;
+}
 .scroll
 {
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 1000;
 }
 
 .redText {
@@ -49,24 +80,65 @@ body
   fill: black;
 }
 
-/**
-  * z-index ordering of the different layers, do this for your layers,
-  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
-  */
-/*.horizon
-{
-  z-index: 1;
-  width: 3000px;
+.project_box {
+  fill: none;
+  stroke: red;
+  stroke-width: 7px;
 }
 
-.middle
-{
-  z-index: 500;
-  width: 4000px;
+#_7 {
+  fill: red;
+  fill-opacity: 0.1;
 }
 
-.front
-{
-  z-index: 1000;
-  width: 6000px;
-}*/
+#_7:hover{
+  fill-opacity:0.5;
+}
+
+#_16 {
+  fill: red;
+  fill-opacity: 0.1;
+}
+
+#_16:hover{
+  fill-opacity:0.5;
+}
+
+#_18 {
+  fill: red;
+  fill-opacity: 0.1;
+}
+
+#_18:hover{
+  fill-opacity:0.5;
+}
+
+#_3 {
+  fill: red;
+  fill-opacity: 0.1;
+}
+
+#_3:hover{
+  fill-opacity:0.5;
+}
+
+.contact_class {
+  fill: white;
+  fill-opacity: 0.7;
+  stroke: black;
+  stroke-width: 4px;
+}
+
+#gmail1:hover {
+  fill: red;
+}
+
+#linkedin1:hover {
+  fill: red;
+  stroke: red;
+}
+
+#resume1:hover {
+  fill: red;
+  stroke: red;
+}

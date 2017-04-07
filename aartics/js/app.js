@@ -93,14 +93,12 @@ $(document).ready(function() {
     }
 
     // load handlers
-    $.jInvertScroll(['.scroll'], {
+    $.jInvertScroll(['.header','.backgroundgrad','.scroll'], {
         height: 3000,                   
         onScroll: function(percent) {
             updatePolygons(percent)
             updateAttached()
         }
     })
-
-
 
 })

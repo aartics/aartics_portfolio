@@ -1,0 +1,86 @@
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 12px;
+  overflow-x: hidden;
+  width: 3000px;
+  height: 760px;
+}
+
+.header {
+  background-color:black;
+  position: fixed;
+  bottom: 700px;
+  width: 3000px;
+  z-index: 1000;
+
+}
+
+h1 {
+  color:white;
+  padding-left: 80px;
+  padding-top: 5px;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 0;
+/*   float: right; */
+  width: 3000px;
+  z-index: 500;
+}
+
+.aartics_sfac_votingapp {
+  position: fixed;
+  width: 3000px;
+  z-index: 800;
+  bottom: 61px;
+  padding-left: 550px;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+img {
+  max-height: 760px;
+}
+/*
+
+h1 {
+
+}
+
+p{
+
+}
+
+.inline_divs {
+  float: bottom;
+}
+ */
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+/*.horizon
+{
+  z-index: 1;
+  width: 3000px;
+}
+
+.middle
+{
+  z-index: 500;
+  width: 4000px;
+}
+
+.front
+{
+  z-index: 1000;
+  width: 6000px;
+}*/

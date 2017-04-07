@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>aartics_resonate_ai</title>
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.jInvertScroll.js"></script>
+    <link rel="stylesheet" href="css/aartics_resonateai.css" />
+</head>
+<body>
+    <div class="header">
+			<h1><a href="www.aartics.com" id="aartics_go">aartics.com</a>/projects/resonateai</h1>
+    </div>
+    <div class="scroll">
+			<img src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_intro_words.png">
+    </div>
+    <div class="aartics_resonate_concept">
+        <video width="740" height="600" controls> <!-- add autoplay and loop -->
+          <source src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_strategy.mp4" type="video/mp4">
+        </video>
+    </div> 
+    <div class="aartics_resonate_personas">
+		<img src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_personas.png" height="600px">
+    </div>
+    <div class="aartics_resonate_comp_analysis">
+		<img src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_comp_analysis.png" height="620px">
+    </div>
+    <div class="aartics_resonate_systemflow">
+		<img src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonatesystemflow.png" height="610px">
+    </div>
+    <div class="aartics_resonate_prototype">
+        <video width="740" height="600" controls> <!-- add autoplay and loop -->
+          <source src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_editor_final.mp4" type="video/mp4">
+        </video>		
+    </div>
+    <div class="aartics_resonate_chromemockup">
+		<img src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_chrome_mockup.png" height="620px">
+    </div>
+    <div class="aartics_resonate_roadmap">
+		<img src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_roadmap.png" height="600px">
+    </div>
+    <div class="aartics_resonate_interview">
+		<img src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_interview.png" height="620px">
+    </div>
+    <div class="title_text_bar" id="t1">
+		<h1>case-study: resonate.ai</h1>
+		<h2>NLP based app assists with emotional intelligence and tone<br> analysis for financial marketers.<br>Team: Derek Guillemette, Laura Hofen and me:</h2>
+    </div>
+        <div class="title_text_bar" id="t2">
+		<h1>strategy: the story about story-telling:</h1>
+		<h2>Presenting how resonate.ai can become more relevant to producing engaging content for any domain:<br><br><br></h2>
+    </div>
+     </div>
+        <div class="title_text_bar" id="t3">
+		<h1>research: personas</h1>
+		<h2>We developed personas based on results from surveys and interviews, and identified four potential users working in a FinTech startup:</h2>
+    </div>
+     </div>
+        <div class="title_text_bar" id="t4">
+		<h1>research: competitive + comparitive analysis</h1>
+		<h2>We studied market leading tone analysis applications and text editors for understanding the mental models and design details:<br><br></h2>
+    </div>
+     </div>
+        <div class="title_text_bar" id="t5">
+		<h1>scope: structural flows</h1>
+		<h2>We mapped the features and states of the system that we propose for the first edition of the paid service to the user and system flows:<br><br><br></h2>
+    </div>
+     </div>
+        <div class="title_text_bar" id="t6">
+		<h1>surface: clickable prototype</h1>
+		<h2>This video shows the clickable prototype of the wireframes for the MVP product:<br><br><br><br></h2>
+    </div>
+     </div>
+        <div class="title_text_bar" id="t7">
+		<h1>surface: mockup for chrome plugin</h1>
+		<h2>We presented a mockup for how resonate.ai can fit in as a browser plugin for mail content<br><br><br></h2>
+    </div>
+     </div>
+        <div class="title_text_bar" id="t8">
+		<h1>strategy: product roadmap</h1>
+		<h2>We phased out the features, success metrics, users and outlined it onto a feasible roadmap:<br><br><br></h2>
+    </div>
+     </div>
+        <div class="title_text_bar" id="t9">
+		<h1>summary: excerpts from the client's visions</h1>
+		<h2>Our deliverables were very connected to the visions that the CEO of resonate.ai has... these are excerpts captured from the first interview with our team:<br><br><br></h2>
+    </div>
+</body>
+<script>
+$(document).ready(function() {
+
+    // prevents going back from the site
+    history.pushState(null, null, location.href)
+    window.onpopstate = function(event) {
+        history.go(1)
+    }
+
+    $.jInvertScroll(['.header','.scroll','.aartics_resonate_concept','.aartics_resonate_personas','.aartics_resonate_comp_analysis','.aartics_resonate_systemflow','.aartics_resonate_prototype','.aartics_resonate_chromemockup','.aartics_resonate_roadmap','.aartics_resonate_interview','.title_text_bar'],{
+        height: 11000,                   
+        onScroll: function(percent) {
+//             console.log(percent)
+        }
+    })
+
+
+})
+</script>
+</html>
