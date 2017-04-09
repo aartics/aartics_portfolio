@@ -7,11 +7,10 @@ body
   font-size: 20px;
 }
 
-/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+/* jinvertscroll: hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
 body
 {
   overflow-x: hidden;
-  /*background: url('../images/bg.jpg') repeat top left;*/
 }
 
 text {
@@ -83,44 +82,44 @@ h1 {
 }
 
 #_7 {
-  fill: white;
+  fill: #75fffa;
   fill-opacity: 0.0;
 }
 
 #_7:hover{
-/*   fill-opacity:0.5; */
+  fill-opacity:0.5;
 /*   stroke:#75FFFA; */
   stroke: url('#exampleGradient');
 
 }
 
 #_16 {
-  fill: white;
+  fill: #75fffa;
   fill-opacity: 0.0;
 }
 
 #_16:hover{
-/*   fill-opacity:0.5; */
+  fill-opacity:0.5;
   stroke:url('#exampleGradient');
 }
 
 #_18 {
-  fill: white;
+  fill: #75fffa;
   fill-opacity: 0.0;
 }
 
 #_18:hover{
-/*   fill-opacity:0.5; */
+  fill-opacity:0.5;
   stroke:url('#exampleGradient');
 }
 
 #_3 {
-  fill: white;
+  fill: #75fffa;
   fill-opacity: 0.0;
 }
 
 #_3:hover{
-/*   fill-opacity:0.5; */
+  fill-opacity:0.5;
   stroke:url('#exampleGradient');
 }
 
@@ -131,37 +130,16 @@ h1 {
   stroke-width: 4px;
 }
 
-#gmail1 a:hover {
-  fill: red;
+.contact_text a{
+  font-size: 18px;
+  fill: white;
 }
-
-#linkedin1 a:hover {
+.contact_text a:hover {
   fill: red;
-  stroke: red;
-}
-
-#resume1:hover {
-  fill: red;
-  stroke: red;
 }
 
 .ux {
   fill:#548687;
-}
-
-.casestudy a{
-  font-family: Raleway;
-  font-style: Extra-Light;
-  font-size: 11px;
-/*   text-decoration: underline; */
-  fill:white;
-}
-
-.projectdescription a{
-  font-family: Raleway;
-  font-style: thin;
-  font-size: 11px;
-  fill: white;
 }
 
 .traleway {
@@ -169,4 +147,46 @@ h1 {
   font-style: italic;
   font-size: 15px;
   fill: #ffffff;
+}
+
+#aarti {
+  font-family: Raleway;
+  font-size: 35px;
+  fill:#ffffff;
+}
+
+#c {
+  font-size: 35px;
+}
+#sharma {
+  font-size: 35px;
+}
+
+
+#pipe {
+  font-size: 70px;
+  font-weight: lighter;
+  fill: #548687;
+}
+
+
+.casestudy a{
+  font-family: Raleway;
+  font-size: 12px;
+  fill:white;
+}
+
+.projectdescription a{
+  font-family: Raleway;
+  font-weight:lighter;
+  font-style: thin;
+  font-size: 15px;
+  fill: white;
+}
+
+.projectname a{
+  font-family: Raleway;
+  font-style: thin;
+  font-size: 20px;
+  fill: white;  
 }
