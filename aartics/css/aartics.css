@@ -5,6 +5,7 @@ body
   margin: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
+  background-color: #374959;
 }
 
 /* jinvertscroll: hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
@@ -88,7 +89,7 @@ h1 {
 
 .project_box_arch:hover, .project_box_arch.hovered{
   fill: orange;
-  fill-opacity: 0.5;
+  fill-opacity: 0.8;
   stroke: orange;
   stroke-width: 7px;
 }
@@ -100,7 +101,7 @@ h1 {
 
 .project_box_product:hover, .project_box_product.hovered{
   fill: #EF2D56;
-  fill-opacity: 0.5;
+  fill-opacity: 0.8;
   stroke: #EF2D56;
   stroke-width: 7px;
 }

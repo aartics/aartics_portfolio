@@ -15,7 +15,7 @@ $(document).ready(function() {
         fixedStates.push(step * i)
     }
     fixedStates.push(100)
-    console.log(fixedStates)
+//     console.log(fixedStates)
 
     function updateAttached() {
         $('g.attached').each(function() {
