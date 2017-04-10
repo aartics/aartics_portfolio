@@ -23,7 +23,6 @@ body
 .bigmsg a{
   font-size: 45px;
   fill: #00BCD4;
-  text-decoration:underline;
 }
 
 .bigmsg a:hover{
