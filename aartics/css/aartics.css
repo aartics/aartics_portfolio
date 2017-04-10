@@ -86,14 +86,7 @@ h1 {
   stroke-width: 1px;
 }
 
-.project_box_arch:hover{
-  fill: orange;
-  fill-opacity: 0.5;
-  stroke: orange;
-  stroke-width: 7px;
-}
-
-.project_box_arch:hovered{
+.project_box_arch:hover, .project_box_arch.hovered{
   fill: orange;
   fill-opacity: 0.5;
   stroke: orange;
@@ -105,14 +98,7 @@ h1 {
   stroke-width: 1px;
 }
 
-.project_box_product:hover{
-  fill: #EF2D56;
-  fill-opacity: 0.5;
-  stroke: #EF2D56;
-  stroke-width: 7px;
-}
-
-.project_box_product:hovered{
+.project_box_product:hover, .project_box_product.hovered{
   fill: #EF2D56;
   fill-opacity: 0.5;
   stroke: #EF2D56;
@@ -124,14 +110,7 @@ h1 {
   fill-opacity: 0.0;
 }
 
-#_7:hover{
-  fill-opacity: 0.8;
-/*   stroke:#75FFFA; */
-  stroke: url('#exampleGradient');
-
-}
-
-#_7:hovered{
+#_7:hover, #_7.hovered{
   fill-opacity: 0.8;
 /*   stroke:#75FFFA; */
   stroke: url('#exampleGradient');
@@ -143,27 +122,18 @@ h1 {
   fill-opacity: 0.0;
 }
 
-#_16:hover{
+#_16:hover, #_16.hovered{
   fill-opacity: 0.8;
   stroke:url('#exampleGradient');
 }
 
-#_16:hovered{
-  fill-opacity: 0.8;
-  stroke:url('#exampleGradient');
-}
 
 #_18 {
   fill: #75fffa;
   fill-opacity: 0.0;
 }
 
-#_18:hover{
-  fill-opacity: 0.8;
-  stroke:url('#exampleGradient');
-}
-
-#_18:hovered{
+#_18:hover, #_18.hovered{
   fill-opacity: 0.8;
   stroke:url('#exampleGradient');
 }
@@ -173,12 +143,7 @@ h1 {
   fill-opacity: 0.0;
 }
 
-#_3:hover{
-  fill-opacity: 0.8;
-  stroke:url('#exampleGradient');
-}
-
-#_3:hovered{
+#_3:hover, #_3.hovered{
   fill-opacity: 0.8;
   stroke:url('#exampleGradient');
 }
@@ -260,7 +225,7 @@ h1 {
   fill: #b76d00;
 }
 
-.titlearch:hovered{
+.titlearch a:hover, .titlearch a.hovered{
   fill: red;
 }
 
