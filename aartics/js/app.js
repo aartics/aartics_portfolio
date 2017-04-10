@@ -92,6 +92,21 @@ $(document).ready(function() {
         return polygonPoints
     }
 
+    $('svg').on('click', function(e) {
+        var $target = $(e.target)
+        if (!$target.is('a')) {
+            var id = $target.attr('id')
+            if (id) {
+                var $a = $('[data-attach="#' + id + '"]').find('a').first()
+                if ($a.length) {
+                    var href = $a.attr('href')
+                    var tgt = $.attr('target') || '_blank'
+                    window.open(href, tgt)
+                }
+            }
+        }
+    })
+
     // load handlers
     $.jInvertScroll(['.header','.backgroundgrad','.scroll'], {
         height: 3000,                   
