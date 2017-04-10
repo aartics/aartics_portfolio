@@ -125,14 +125,14 @@ h1 {
 }
 
 #_7:hover{
-  fill-opacity:0.5;
+  fill-opacity: 0.8;
 /*   stroke:#75FFFA; */
   stroke: url('#exampleGradient');
 
 }
 
 #_7:hovered{
-  fill-opacity:0.5;
+  fill-opacity: 0.8;
 /*   stroke:#75FFFA; */
   stroke: url('#exampleGradient');
 
@@ -144,12 +144,12 @@ h1 {
 }
 
 #_16:hover{
-  fill-opacity:0.5;
+  fill-opacity: 0.8;
   stroke:url('#exampleGradient');
 }
 
 #_16:hovered{
-  fill-opacity:0.5;
+  fill-opacity: 0.8;
   stroke:url('#exampleGradient');
 }
 
@@ -159,12 +159,12 @@ h1 {
 }
 
 #_18:hover{
-  fill-opacity:0.5;
+  fill-opacity: 0.8;
   stroke:url('#exampleGradient');
 }
 
 #_18:hovered{
-  fill-opacity:0.5;
+  fill-opacity: 0.8;
   stroke:url('#exampleGradient');
 }
 
@@ -174,12 +174,12 @@ h1 {
 }
 
 #_3:hover{
-  fill-opacity:0.5;
+  fill-opacity: 0.8;
   stroke:url('#exampleGradient');
 }
 
 #_3:hovered{
-  fill-opacity:0.5;
+  fill-opacity: 0.8;
   stroke:url('#exampleGradient');
 }
 
@@ -260,11 +260,7 @@ h1 {
   fill: #b76d00;
 }
 
-.titlearch a:hover{
-  fill: red;
-}
-
-.titlearch a:hovered{
+.titlearch:hovered{
   fill: red;
 }
 
