@@ -93,12 +93,26 @@ h1 {
   stroke-width: 7px;
 }
 
+.project_box_arch:hovered{
+  fill: orange;
+  fill-opacity: 0.5;
+  stroke: orange;
+  stroke-width: 7px;
+}
+
 .project_box_product {
   stroke:#ffffff;
   stroke-width: 1px;
 }
 
 .project_box_product:hover{
+  fill: #EF2D56;
+  fill-opacity: 0.5;
+  stroke: #EF2D56;
+  stroke-width: 7px;
+}
+
+.project_box_product:hovered{
   fill: #EF2D56;
   fill-opacity: 0.5;
   stroke: #EF2D56;
@@ -117,12 +131,24 @@ h1 {
 
 }
 
+#_7:hovered{
+  fill-opacity:0.5;
+/*   stroke:#75FFFA; */
+  stroke: url('#exampleGradient');
+
+}
+
 #_16 {
   fill: #75fffa;
   fill-opacity: 0.0;
 }
 
 #_16:hover{
+  fill-opacity:0.5;
+  stroke:url('#exampleGradient');
+}
+
+#_16:hovered{
   fill-opacity:0.5;
   stroke:url('#exampleGradient');
 }
@@ -137,12 +163,22 @@ h1 {
   stroke:url('#exampleGradient');
 }
 
+#_18:hovered{
+  fill-opacity:0.5;
+  stroke:url('#exampleGradient');
+}
+
 #_3 {
   fill: #75fffa;
   fill-opacity: 0.0;
 }
 
 #_3:hover{
+  fill-opacity:0.5;
+  stroke:url('#exampleGradient');
+}
+
+#_3:hovered{
   fill-opacity:0.5;
   stroke:url('#exampleGradient');
 }
@@ -228,6 +264,10 @@ h1 {
   fill: red;
 }
 
+.titlearch a:hovered{
+  fill: red;
+}
+
 .titleprod {
   fill:#a24559;
 }
@@ -235,6 +275,10 @@ h1 {
 .titleengg {
   font-size: 20px;
   fill:#8B8C89;
+}
+
+.has_link { 
+  cursor: pointer; 
 }
 
 #arrow {
