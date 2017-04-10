@@ -92,15 +92,44 @@ $(document).ready(function() {
         return polygonPoints
     }
 
+    // Propagate polygon.has_link hovering to the descendant links of the group
+    // that is attached to that polygon (with data-attach), by adding/removing
+    // the .hovered class to all the links inside the group.
     $('svg').on('mouseenter mouseout', 'polygon', function(e) {
         var $target = $(e.target)
-        if (!$target.is('a')) {
+        if ($target.hasClass('has_link')) {
             var id = $target.attr('id')
             if (id)
                 $('[data-attach="#' + id + '"]').find('a').toggleClass('hovered', e.type == 'mouseenter')
         }
     })
-    
+
+    // Propagate link hovering "upward" to the polygon to which the link's
+    // ancestral group element is attached (with data-attach), as well as
+    // the other links inside the group, by adding/removing the .hovered class.
+    $('svg').on('mouseenter mouseout', 'a', function(e) {
+        var $target = $(e.target)
+        var $g = $target.closest('g')
+        var polygonSel = $target.closest('[data-attach]').attr('data-attach')
+        if (polygonSel)
+            $(polygonSel).add('a', $g).toggleClass('hovered', e.type == 'mouseenter')
+    })
+
+    // Clicking on a polygon with the .has_link class will open the href of the
+    // first link inside a group that is attached to the polygon (with data-attach).
+    $('svg').on('click', 'polygon.has_link', function(e) {
+        var $target = $(e.target)
+        var id = $target.attr('id')
+        if (id) {
+            var $a = $('[data-attach="#' + id + '"]').find('a').first()
+            if ($a.length) {
+                var href = $a.attr('href')
+                var tgt = $.attr('target') || '_blank'
+                window.open(href, tgt)
+            }
+        }
+    })
+
 
     // load handlers
     $.jInvertScroll(['.header','.backgroundgrad','.scroll'], {
