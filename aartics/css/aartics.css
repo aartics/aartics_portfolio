@@ -193,7 +193,6 @@ h1 {
   fill: #548687;
 }
 
-
 .casestudy a{
   font-family: Raleway;
   font-size: 10.5px;
@@ -237,3 +236,17 @@ h1 {
   font-size: 20px;
   fill:#8B8C89;
 }
+
+#arrow {
+  font-size: 90px;
+  font-weight: lighter;
+  fill: #71f300;
+  animation: hideshow 2.5s ease infinite;
+}
+
+@keyframes hideshow {
+  0% { opacity: 0.1; }
+  20% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { opacity: 0.1; }
+} 
