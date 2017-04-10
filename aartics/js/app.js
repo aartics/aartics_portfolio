@@ -93,35 +93,14 @@ $(document).ready(function() {
     }
 
     $('svg').on('mouseenter mouseout', 'polygon', function(e) {
-    var $target = $(e.target)
-        if (!$target.is('a')) {
-            var id = $target.attr('id')
-            if (id) {
-                var $a = $('[data-attach="#' + id + '"]').find('a').first()
-                if ($a.length) {
-                    $a.toggleClass('hovered', e.type == 'mouseenter')
-                }
-            }
-        }
-    })
-
-    
-    $('svg').on('click', function(e) {
         var $target = $(e.target)
         if (!$target.is('a')) {
             var id = $target.attr('id')
-            if (id) {
-                var $a = $('[data-attach="#' + id + '"]').find('a').first()
-                if ($a.length) {
-                    var href = $a.attr('href')
-                    var tgt = $.attr('target') || '_blank'
-                    window.open(href, tgt)
-                }
-            }
+            if (id)
+                $('[data-attach="#' + id + '"]').find('a').toggleClass('hovered', e.type == 'mouseenter')
         }
     })
-
-
+    
 
     // load handlers
     $.jInvertScroll(['.header','.backgroundgrad','.scroll'], {

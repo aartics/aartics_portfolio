@@ -281,7 +281,7 @@ h1 {
   cursor: pointer; 
 }
 
-#arrow {
+#a:hoverrrow {
   font-size: 90px;
   font-weight: lighter;
   fill: #71f300;
