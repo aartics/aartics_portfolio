@@ -81,6 +81,30 @@ h1 {
   stroke-width: 7px;
 }
 
+.project_box_arch {
+  stroke:#ffffff;
+  stroke-width: 1px;
+}
+
+.project_box_arch:hover{
+  fill: orange;
+  fill-opacity: 0.5;
+  stroke: orange;
+  stroke-width: 7px;
+}
+
+.project_box_product {
+  stroke:#ffffff;
+  stroke-width: 1px;
+}
+
+.project_box_product:hover{
+  fill: #EF2D56;
+  fill-opacity: 0.5;
+  stroke: #EF2D56;
+  stroke-width: 7px;
+}
+
 #_7 {
   fill: #75fffa;
   fill-opacity: 0.0;
@@ -172,8 +196,8 @@ h1 {
 
 .casestudy a{
   font-family: Raleway;
-  font-size: 12px;
-  fill:white;
+  font-size: 10.5px;
+  fill:#548687;
 }
 
 .projectdescription a{
@@ -189,4 +213,27 @@ h1 {
   font-style: thin;
   font-size: 20px;
   fill: white;  
+}
+
+.titleux {
+  font-size: 22px;
+  fill:#548687;
+}
+
+.titlearch a{
+  font-size: 22px;
+  fill: #b76d00;
+}
+
+.titlearch a:hover{
+  fill: red;
+}
+
+.titleprod {
+  fill:#a24559;
+}
+
+.titleengg {
+  font-size: 20px;
+  fill:#8B8C89;
 }
