@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="css/aartics_sfac.css" />
 </head>
 <body>
+    <div class="bigheader">
+		<svg id="message" xmlns="http://www.w3.org/2000/svg" width="1300" height="1200">
+		    <text class="bigmsg" x="40" y="180" id="bighi">hi!</text>
+		    <text class="bigmsg" x="40" y="260">i’m aartics.com and i’m</text> 
+		    <text class="bigmsg" x="40" y="340">aarti's 3D website portfolio. </text> 
+		    <text class="bigmsg" x="40" y="460">currently i render well only on laptop</text> 
+		    <text class="bigmsg" x="40" y="540">resolution browser windows (1024 X 768), </text>
+		    <text class="bigmsg" x="40" y="620">so please experience me there!</text>
+		    <text class="bigmsg" x="40" y="740">Until the mobile magic gets ready,</text>
+		    <text class="bigmsg" x="40" y="820">click these links to see </text>
+		    <text class="bigmsg" x="40" y="900"><a href="aartics_resume.pdf" target="_blank">aarti’s resume</a></text>
+		    <text class="bigmsg" x="40" y="980"><a href="https://www.linkedin.com/in/aartics" target="_blank">or her linkedin profile.</a></text>
+		</svg>
+    </div>
     <div class="header">
 			<h1>aartics.com/projects/sfac</h1>
     </div>
@@ -31,7 +45,7 @@ $(document).ready(function() {
         history.go(1)
     }
 
-    $.jInvertScroll(['.header','.scroll','.aartics_sfac_votingapp'], {
+    $.jInvertScroll(['.bigheader','.header','.scroll','.aartics_sfac_votingapp'], {
         height: 3000,                   
         onScroll: function(percent) {
 //             console.log(percent)

@@ -11,6 +11,32 @@ body
   background-color: black;
 }
 
+.bigmsg {
+  font-size: 65px;
+  fill: white;
+}
+
+.bigmsg a{
+  font-size: 65px;
+  fill: #00BCD4;
+  text-decoration:underline;
+}
+
+.bigmsg a:hover{
+  font-size: 65px;
+  fill: #F44336;
+}
+
+.bigheader {
+  position: fixed;
+  bottom: 800px;
+  z-indec: 0;
+}
+
+#bighi {
+  font-size: 100px;
+}
+
 .header {
   background-color:black;
   position: fixed;
