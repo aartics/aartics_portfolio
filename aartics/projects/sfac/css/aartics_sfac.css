@@ -30,7 +30,7 @@ body
 .bigheader {
   position: fixed;
   bottom: 800px;
-  z-indec: 0;
+  z-index: 0;
 }
 
 #bighi {
