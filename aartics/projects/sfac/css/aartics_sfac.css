@@ -12,18 +12,18 @@ body
 }
 
 .bigmsg {
-  font-size: 65px;
+  font-size: 45px;
   fill: white;
 }
 
 .bigmsg a{
-  font-size: 65px;
+  font-size: 45px;
   fill: #00BCD4;
   text-decoration:underline;
 }
 
 .bigmsg a:hover{
-  font-size: 65px;
+  font-size: 45px;
   fill: #F44336;
 }
 
@@ -34,7 +34,7 @@ body
 }
 
 #bighi {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 .header {
