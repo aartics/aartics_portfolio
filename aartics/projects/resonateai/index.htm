@@ -10,17 +10,29 @@
     <link rel="stylesheet" href="css/aartics_resonateai.css" />
 </head>
 <body>
+    <div class="bigheader">
+        <svg id="message" xmlns="http://www.w3.org/2000/svg" width="1300" height="1200">
+            <text class="bigmsg" x="60" y="600" id="bighi">hi!</text>
+            <text class="bigmsg" x="60" y="660">i'm aarti's 3D portfolio website. </text> 
+            <text class="bigmsg" x="60" y="720">i render better on laptop</text> 
+            <text class="bigmsg" x="60" y="780">resolution browser windows (1024 X 768), </text>
+            <text class="bigmsg" x="60" y="840">so please experience me there!</text>
+            <text class="bigmsg" x="60" y="920">but until the mobile magic gets ready,</text>
+            <text class="bigmsg" x="60" y="980">click these links to see </text>
+            <text class="bigmsg" x="60" y="1040"><a href="aartics_resume.pdf" target="_blank">aarti’s resume &nbsp; |</a><a href="https://www.linkedin.com/in/aartics" target="_blank">&nbsp; linkedin profile.</a></text>
+        </svg>
+    </div>
+    <div class="divbackground"></div>
     <div class="header">
 			<h1><a href="www.aartics.com" id="aartics_go">aartics.com</a>/projects/resonateai</h1>
     </div>
     <div class="scroll">
-			<img src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_intro_words.png">
+        <img src="local_img/resonate1.gif" id="#splash">
     </div>
-    <div class="aartics_resonate_concept">
-        <video width="740" height="600" controls> <!-- add autoplay and loop -->
-          <source src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_strategy.mp4" type="video/mp4">
-        </video>
-    </div> 
+    <div class="intro">
+            <img src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_intro_words.png">
+    </div>
+    <div class="aartics_resonate_concept"></div>
     <div class="aartics_resonate_personas">
 		<img src="https://s3-us-west-2.amazonaws.com/aartics-portfolio/projects/resonateai/img/resonate_personas.png" height="600px">
     </div>
@@ -97,8 +109,8 @@ $(document).ready(function() {
         history.go(1)
     }
 
-    $.jInvertScroll(['.header','.scroll','.aartics_resonate_concept','.aartics_resonate_personas','.aartics_resonate_comp_analysis','.aartics_resonate_systemflow','.aartics_resonate_prototype','.aartics_resonate_chromemockup','.aartics_resonate_roadmap','.aartics_resonate_interview','.title_text_bar'],{
-        height: 11000,                   
+    $.jInvertScroll(['.bigheader','.divbackground','.header','.intro','.scroll','.aartics_resonate_concept','.aartics_resonate_personas','.aartics_resonate_comp_analysis','.aartics_resonate_systemflow','.aartics_resonate_prototype','.aartics_resonate_chromemockup','.aartics_resonate_roadmap','.aartics_resonate_interview','.title_text_bar'],{
+        height: 16000,                   
         onScroll: function(percent) {
 //             console.log(percent)
         }

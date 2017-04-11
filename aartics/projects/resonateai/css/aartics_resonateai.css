@@ -3,11 +3,12 @@ body
 {
   padding: 0;
   margin: 0;
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 12px;
   overflow-x: hidden;
   width: 11000px;
   height: 760px;
+  background-color: black;
 }
 
 #aartics_go {
@@ -20,11 +21,47 @@ body
   text-decoration: none;
 }
 
+.bigmsg {
+  font-size: 45px;
+  fill: white;
+}
+
+.bigmsg a{
+  font-size: 45px;
+  fill: #00BCD4;
+}
+
+.bigmsg a:hover{
+  font-size: 45px;
+  fill: #F44336;
+}
+
+.bigheader {
+  position: fixed;
+  bottom: 800px;
+  z-index: 0;
+}
+
+#bighi {
+  font-size: 80px;
+}
+
+
+.divbackground {
+  background: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 16000px;
+  height: 760px;
+  z-index: 1;
+}
+
 .header {
   background-color:black;
   position: fixed;
   bottom: 700px;
-  width: 11000px;
+  width: 16000px;
   z-index: 20000;
 
 }
@@ -39,16 +76,25 @@ body
   position: fixed;
   bottom: 0;
 /*   float: right; */
-  width: 11000px;
+  width: 16000px;
   z-index: 500;
+}
+
+.intro {
+  position: fixed;
+  bottom: 0;
+/*   float: right; */
+  width: 16000px;
+  z-index: 500;
+  padding-left: 1500px;
 }
 
 .aartics_resonate_concept {
   position: fixed;
-  width: 11000px;
+  width: 16000px;
   z-index: 800;
   bottom: 61px;
-  padding-left: 550px;
+  padding-left: 2050px;
 }
 
 .raleway {
@@ -62,63 +108,63 @@ img {
 
 .aartics_resonate_personas {
   position: fixed;
-  width: 11000px;
+  width: 16000px;
   z-index: 900;
   bottom: 0;
-  padding-left: 1400px;
+  padding-left: 2900px;
 }
 
 .aartics_resonate_comp_analysis {
   position: fixed;
-  width: 11000px;
+  width: 16000px;
   z-index: 1000;
   bottom: 0;
-  padding-left: 2700px;
+  padding-left: 4200px;
 }
 
 .aartics_resonate_systemflow {
   position: fixed;
-  width: 11000px;
+  width: 16000px;
   z-index: 1000;
   bottom: 0;
-  padding-left:4300px;
+  padding-left: 5800px;
 }
 
 .aartics_resonate_prototype {
   position: fixed;
-  width: 11000px;
+  width: 16000px;
   z-index: 1200;
   bottom: 61px;
-  padding-left:6400px;
+  padding-left: 7900px;
 }
 
 .aartics_resonate_chromemockup {
   position: fixed;
-  width:11000px;
+  width: 16000px;
   z-index: 1300;
-  bottom: 0;
-  padding-left: 7200px;
-}
-
-.aartics_resonate_roadmap {
-  position: fixed;
-  width: 11000px;
-  z-index: 1400;
   bottom: 0;
   padding-left: 8700px;
 }
 
+.aartics_resonate_roadmap {
+  position: fixed;
+  width: 16000px;
+  z-index: 1400;
+  bottom: 0;
+  padding-left: 10200px;
+}
+
 .aartics_resonate_interview {
   position: fixed;
-  width: 11000px;
+  width: 16000px;
   z-index: 1500;
   bottom: 0;
-  padding-left: 9500px;
+  padding-left: 11000px;
 }
 
 .title_text_bar {
   position: fixed;
-  width: 11000px;
+  width: 16000px;
   z-index: 1600;
   bottom: 0;
 }
@@ -137,37 +183,37 @@ img {
 }
 
 #t1 {
-  padding-left: 80px;
+  padding-left: 1580px;
 }
 
 #t2 {
-  padding-left: 570px;
+  padding-left: 2070px;
 }
 
 #t3 {
-  padding-left: 1400px;
+  padding-left: 2900px;
 }
 
 #t4 {
-  padding-left: 2700px;
+  padding-left: 4200px;
 }
 
 #t5 {
-  padding-left: 4300px;
+  padding-left: 5800px;
 }
 
 #t6 {
-  padding-left: 6400px;
+  padding-left: 7900px;
 }
 
 #t7 {
-  padding-left: 7260px;
+  padding-left: 8760px;
 }
 
 #t8 {
-  padding-left: 8700px;
+  padding-left: 10200px;
 }
 
 #t9 {
-  padding-left: 9540px;
+  padding-left: 11040px;
 }

@@ -57,13 +57,13 @@ h1 {
   position: fixed;
   bottom: 0;
 /*   float: right; */
-  width: 3000px;
+  width: 11000px;
   z-index: 500;
 }
 
 .aartics_sfac_votingapp {
   position: fixed;
-  width: 3000px;
+  width: 11000px;
   z-index: 800;
   bottom: 61px;
   padding-left: 550px;
