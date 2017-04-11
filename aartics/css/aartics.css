@@ -132,6 +132,18 @@ h1 {
   stroke-width: 7px;
 }
 
+.project_box_soft {
+  stroke:#ffffff;
+  stroke-width: 1px;  
+}
+
+.project_box_soft:hover, .project_box_soft.hovered{
+  fill: #F8C537;
+  fill-opacity: 0.8;
+  stroke: #F8C537;
+  stroke-width: 7px;
+}
+
 #_7 {
   fill: #75fffa;
   fill-opacity: 0.0;
@@ -232,14 +244,14 @@ h1 {
   font-weight:lighter;
   font-style: thin;
   font-size: 15px;
-  fill: #ffffff;
+  fill: #E5FFDE;
 }
 
 .projectname a{
   font-family: Raleway;
   font-style: thin;
   font-size: 20px;
-  fill: white;  
+  fill: #ffffff;  
 }
 
 .titleux {
@@ -262,7 +274,7 @@ h1 {
 
 .titleengg {
   font-size: 20px;
-  fill:#8B8C89;
+  fill:#F8C537;
 }
 
 .has_link { 
