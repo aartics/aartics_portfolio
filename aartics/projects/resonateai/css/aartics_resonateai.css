@@ -61,8 +61,8 @@ body
   background-color:black;
   position: fixed;
   bottom: 700px;
-  width: 16000px;
-  z-index: 20000;
+  width: 16500px;
+  z-index: 19000;
 
 }
 
@@ -92,7 +92,7 @@ body
 .aartics_resonate_concept {
   position: fixed;
   width: 16000px;
-  z-index: 800;
+  z-index: 17000;
   bottom: 61px;
   padding-left: 2050px;
 }
@@ -133,7 +133,7 @@ img {
 .aartics_resonate_prototype {
   position: fixed;
   width: 16000px;
-  z-index: 1200;
+  z-index: 18000;
   bottom: 61px;
   padding-left: 7900px;
 }
