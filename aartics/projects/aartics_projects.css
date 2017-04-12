@@ -1,0 +1,42 @@
+#header-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+#header-banner {
+  padding: 10px;
+}
+
+#back-button {
+  float: left;
+}
+
+.project-name {
+  float: right;
+  padding-right: 10px;
+}
+
+#project-content {
+  text-align: center;
+  padding: 20px 0;
+  margin: 15px 0;
+}
+
+#project-content img {
+  max-width: 100%;
+}
+
+.image-title {
+  padding: 10px;
+  margin-top: 10px;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-color: #ccc;
+}
+
+body {
+  background-color: white;
+}
