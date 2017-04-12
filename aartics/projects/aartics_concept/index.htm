@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>aartics_concept</title>
+    <link rel="stylesheet" href="css/example.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>    
+    <div class="horizon scroll">
+        <img src="images/A01.jpg" alt="" />
+    </div>
+    <script type="text/javascript" src="src/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        var elem = $.jInvertScroll(['.scroll'],        
+            {
+            height: 3000,                   
+            onScroll: function(percent) {   
+                console.log(percent);
+                if((percent > 0.00) && (percent <= 0.05)) {
+                    $('img').attr("src","images/A01.jpg")
+                }
+                if((percent > 0.05) && (percent <= 0.1)) {
+                    $('img').attr("src","images/A02.jpg")
+                }
+                if((percent > 0.1) && (percent <= 0.15)) {
+                    $('img').attr("src","images/A03.jpg")
+                }
+                if((percent > 0.15) && (percent <= 0.2)) {
+                    $('img').attr("src","images/A04.jpg")
+                }
+                if((percent > 0.2) && (percent <= 0.25)) {
+                    $('img').attr("src","images/A05.jpg")
+                }
+                if((percent > 0.25) && (percent <= 0.3)) {
+                    $('img').attr("src","images/A06.jpg")
+                }
+                if((percent > 0.3) && (percent <= 0.35)) {
+                    $('img').attr("src","images/A07.jpg")
+                }
+                if((percent > 0.35) && (percent <= 0.4)) {
+                    $('img').attr("src","images/A08.jpg")
+                }
+                if((percent > 0.4) && (percent <= 0.45)) {
+                    $('img').attr("src","images/A09.jpg")
+                }
+                if((percent > 0.45) && (percent <= 0.5)) {
+                    $('img').attr("src","images/A10.jpg")
+                }
+                if((percent > 0.5) && (percent <= 0.55)) {
+                    $('img').attr("src","images/A11.jpg")
+                }
+                if((percent > 0.55) && (percent <= 0.6)) {
+                    $('img').attr("src","images/A12.jpg")
+                }
+                if((percent > 0.6) && (percent <= 0.65)) {
+                    $('img').attr("src","images/A13.jpg")
+                }
+                if((percent > 0.65) && (percent <= 0.7)) {
+                    $('img').attr("src","images/A14.jpg")
+                }
+                if((percent > 0.7) && (percent <= 0.75)) {
+                    $('img').attr("src","images/A15.jpg")
+                }
+                if((percent > 0.75) && (percent <= 0.8)) {
+                    $('img').attr("src","images/A16.jpg")
+                }
+                if((percent > 0.8) && (percent <= 0.85)) {
+                    $('img').attr("src","images/A17.jpg")
+                }
+                if((percent > 0.85) && (percent <= 0.9)) {
+                    $('img').attr("src","images/A18.jpg")
+                }
+                if((percent > 0.9) && (percent <= 0.95)) {
+                    $('img').attr("src","images/A19.jpg")
+                }
+                if((percent > 0.95) && (percent <= 1)) {
+                    $('img').attr("src","images/A20.jpg")
+                }
+
+            }
+        });
+    }(jQuery));
+    </script>
+</body>
+</html>
