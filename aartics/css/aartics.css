@@ -103,6 +103,16 @@ h1 {
   fill: black;
 }
 
+#credits7 a{
+  font-size: 12px;
+  fill: #FFC107;
+}
+
+#credits7 a:hover {
+  font-size: 12px;
+  fill: #00BCD4;
+}
+
 .project_box {
   stroke:#8ac1c0;
   stroke-width: 7px;
@@ -259,14 +269,14 @@ h1 {
   fill:#548687;
 }
 
-.titlearch a{
+.titlearch{
   font-size: 22px;
   fill: #b76d00;
 }
 
-.titlearch a:hover, .titlearch a.hovered{
+/* .titlearch a:hover, .titlearch a.hovered{
   fill: red;
-}
+} */
 
 .titleprod {
   fill:#a24559;
