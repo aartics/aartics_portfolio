@@ -98,9 +98,9 @@ h1 {
   font-size: 18px;
 }
 
-#credits {
+.credits {
   font-size: 12px;
-  fill: black;
+  fill: white;
 }
 
 #credits7 a{
