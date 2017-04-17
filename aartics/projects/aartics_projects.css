@@ -86,18 +86,24 @@
 
 body {
   background-color: white;
-}
-
-.container {
-  max-height: 100%;
-}
-
-.container img {
-  height: 100%;
+  margin:0;
 }
 
 .quotes {
   font-style:italic;
   font-weight:lighter;
   font-size: 10px;
+}
+
+#cover {
+  width: 120vh;
+  padding: 0;
+}
+
+#bcgcover {
+  text-align: center;
+  left:0;
+  right:0;
+  background-color: #22313f;
+  width: 100%;
 }
