@@ -1,20 +1,36 @@
 #header-wrapper {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  background-color: black;
+  height: 45px;
+  background-color: #22313f;
   color: white;
   font-family: 'Raleway', sans-serif;
 }
 
 #header-banner {
-  padding: 10px;
+  padding: 15px;
 }
 
 #back-button {
   float: left;
 }
 
+#back-button a{
+  text-decoration: none;
+  padding-left: 12px;
+  color: #607D8B;
+}
+
+#back-button a:hover{
+  color: #00BCD4;
+}
+
+#icon {
+  float: left;
+  height: 20px;
+}
 #splash {
   width: 100%;
 }
