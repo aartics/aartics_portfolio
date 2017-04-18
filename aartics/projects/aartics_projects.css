@@ -96,6 +96,14 @@
 
 }
 
+.image-title h4 {
+  font-family: 'ABeeZee', sans-serif;
+  font-weight:400;
+  color: #000000;
+  font-size: 28px;
+
+}
+
 .image-title h2 {
   font-family:'Raleway', sans-serif;
   font-size: 22px;
