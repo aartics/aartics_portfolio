@@ -133,8 +133,24 @@ h1 {
   fill: #FFC107;
 }
 
+#credits11 a{
+  fill: #FFC107;
+}
+
+#credits12 a{
+  fill: #FFC107;
+}
+
 #credits7 a:hover {
   font-size: 12px;
+  fill: #00BCD4;
+}
+
+#credits11 a:hover{
+  fill: #00BCD4;
+}
+
+#credits12 a:hover{
   fill: #00BCD4;
 }
 
