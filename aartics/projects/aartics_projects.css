@@ -83,7 +83,7 @@
 }
 
 .image-title {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight:400;
   padding: 40px;
   margin-top: 10px;
@@ -92,15 +92,15 @@
   border-color: #efefef;
   background-color: #f8f8f8;
   color: #000000;
-  font-size: 28px;
+  font-size: 31px;
 
 }
 
 .image-title h4 {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight:400;
   color: #000000;
-  font-size: 28px;
+  font-size: 31px;
 
 }
 
@@ -146,7 +146,7 @@ body {
 }
 
 #contents {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: none;
   padding: 22px;
   text-align: center;
