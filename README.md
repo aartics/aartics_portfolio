@@ -30,9 +30,9 @@ Information of various types and hierarchies (ordinal and quantitative data) can
 
 I visualized the panoramic bird’s eye view interaction with such a 3D interface for my website. 
 
-[Experience the working interaction here: aartics.com](http://www.aartics.com "aarti's 3D portfolio")
-
 ![alt-text](aartics/img/readme_perspective.jpg "perspective view")
+
+[Experience the working interaction here: aartics.com](http://www.aartics.com "aarti's 3D portfolio")
 
 # 2. Recipe for making a 3D perspective interaction experience in a desktop browser:
 
