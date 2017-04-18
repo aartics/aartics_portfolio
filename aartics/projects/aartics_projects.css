@@ -96,14 +96,6 @@ body {
 }
 
 #cover {
-  width: 120vh;
-  padding: 0;
-}
-
-#bcgcover {
-  text-align: center;
-  left:0;
-  right:0;
-  background-color: #22313f;
   width: 100%;
+  padding: 0;
 }
