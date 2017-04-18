@@ -5,10 +5,10 @@ For this design portfolio, I undertook making a 3D representation of a gallery o
 ![alt text](aartics/img/readme_screenshot.png "screenshot of aartics")
 
 This article consists of two sections:
-1. The concept behind the website and the thought process
-2. The "how-to"
+1. Visualizing three dimensional panoramas - the concept behind the website and the thought process
+2. Recipe for making a 3D perspective interaction experience in a desktop browser - the "how-to"
 
-# 1. Viewing three dimensional panoramas:
+# 1. Visualizing three dimensional panoramas:
 
 I started with a hexagonal grid to be able to extend the exploration in 6 directions instead of 4.
 
