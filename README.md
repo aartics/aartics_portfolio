@@ -48,11 +48,13 @@ I exported screenshots of the “bird’s eye view” camera perspective of the 
 
 ![alt-text](aartics/img/readme_glass.jpg "bird's eye perspective")
 
-I stitched the screenshots in PhotoShop for a continuous panoramic effect.
+I stitched the screenshots in PhotoShop for a continuous panoramic effect. I used 20 states of full length images to understand the effect. These images served as the wireframes for the site.
 
-I used the images in html with the jInvertScroll library to change the image based on the position of the cursor on the page.
+![alt-text](aartics/img/readme_photoshop.jpg "stitching the states in photoshop")
 
-[Click here to see the work-in-progress wireframe prototype.](http://www.aartics.com/projects/aartics_concept/ "Wireframes")
+I used the 20 state images in html with the jInvertScroll library to change the image based on the position of the cursor on the page.
+
+###[Click here to see the work-in-progress wireframe prototype, with the images](http://www.aartics.com/projects/aartics_concept/ "Wireframes")
 
 #### 2. Converting the shapes and shadows from the panoramic shots to vector graphics:
 
