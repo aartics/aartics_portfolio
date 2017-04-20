@@ -21,7 +21,7 @@ Conceptually, using a hexagonal grid could also allow ‘folding’ the design p
 
 ![alt text](aartics/img/readme_geodesic.jpg "image of hexagons folding into a dome")
 
-This enabled me to imagine viewers experiencing equally sized hexagonal tiles in a panoramic dome, and not restricted to traditional rectangular view-boxes (like this web browser we are reading this article on). Viewing from inside the dome (panorama) seemed to limit a user’s view, so I chhose to explore viewing from the outside like a bird (inverse panorama).
+This enabled me to imagine viewers experiencing equally sized hexagonal tiles in a panoramic dome, and not restricted to traditional rectangular view-boxes (like this web browser we are reading this article on). Viewing from inside the dome (panorama) seemed to limit a user’s view, so I chose to explore viewing from the outside like a bird flying over tall buildings in a dense city (inverse panorama).
 
 ![alt text](aartics/img/readme_panoramicdome.jpg "image of viewer inside and outside panoramic dome")
 
