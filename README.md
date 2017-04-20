@@ -1,7 +1,7 @@
 # aartics_portfolio
 
 
-For my design portfolio, I undertook making a 3D representation of a gallery of my projects, viewed as if in a VR world.
+For my design portfolio [aartics.com](http://www.aartics.com "aartics portfolio"), I undertook making a 3D representation of a gallery of my projects, viewed as if in a VR world.
 
 ![alt text](aartics/img/readme_screenshot.png "screenshot of aartics")
 
