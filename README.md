@@ -24,7 +24,7 @@ This enabled me to imagine viewers experiencing equally sized heaxagonal tiles i
 
 ![alt text](aartics/img/readme_panoramicdome.jpg "image of viewer inside and outside panoramic dome")
 
-Information of various types and hierarchies (ordinal and quantitative data) can be visualized as heights of the polygons. 
+Information of various types and hierarchies (qualitative or quantitative data) can be visualized as heights of the polygons. 
 
 ![alt-text](aartics/img/readme_data_heights.jpg "image of viewer seeing heights of data in perspective")
 
