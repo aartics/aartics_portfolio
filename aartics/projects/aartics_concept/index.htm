@@ -3,21 +3,35 @@
 <head>
 	<meta charset="utf-8" />
 	<title>aartics_concept</title>
-    <link rel="stylesheet" href="css/example.css" />
+    <meta name="aartics portfolio" content="aartics portfolio">
+    <meta name="aarti c sharma" content="aartics_portfolio">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/aartics_concept.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
-<body>    
-    <div class="horizon scroll">
+<body>
+    <div class="header">
+        <div id="top">
+            <p><a href="http://www.aartics.com">back to aartics.com</a></p>
+        </div>
+    </div>
+    <div class="message">
+        <h1>CONCEPT WIREFRAMES FOR <br>MY 3D PORTFOLIO WEBSITE</h1>
+        <h2>Scroll down for the interaction</h2>
+        <h1><a href="http://www.aartics.com" target="_blank">See aartics.com</a> <br><a href="https://github.com/aartics/aartics_portfolio" target="_blank"> Get the story and code at GitHub</a></h1>
+    </div>
+    <div class="scroll">
         <img src="images/A01.jpg" alt="" />
     </div>
     <script type="text/javascript" src="src/jquery.jInvertScroll.js"></script>
     <script type="text/javascript">
     (function($) {
-        var elem = $.jInvertScroll(['.scroll'],        
+        var elem = $.jInvertScroll(['.header','.message','.scroll'],        
             {
             height: 3000,                   
             onScroll: function(percent) {   
-                console.log(percent);
+//                 console.log(percent);
                 if((percent > 0.00) && (percent <= 0.05)) {
                     $('img').attr("src","images/A01.jpg")
                 }
