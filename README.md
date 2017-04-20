@@ -10,17 +10,17 @@ This article consists of two sections:
 
 # 1. Visualizing three dimensional panoramas:
 
-I started with a hexagonal grid to be able to extend the exploration in 6 directions instead of 4.
+I started with a grid of hexagons. Each hexagon could represent a project or other information. Using a hexagon til grid, I will be able to allow the viewer to extend explorations in 6 directions, instead of just the traditional 4.
 
 ![alt-text](aartics/img/readme_hexagon.jpg "viewing hexagonal grids")
 
-The homepage banner of d3js.org has an inspiring taste of how beautifully expansive that could feel.
+*The homepage banner of d3js.org has an inspiring taste of how beautifully expansive that could feel.*
 
-A hexagonal grid could also allow ‘folding’ the design exploration pattern into spherical geodesic dome worlds of information.
+Conceptually, using a hexagonal grid could also allow ‘folding’ the design exploration pattern into spherical geodesic dome "worlds of information". That could be fun.
 
 ![alt text](aartics/img/readme_geodesic.jpg "image of hexagons folding into a dome")
 
-This enabled me to imagine viewers experiencing equally sized tiles in a panoramic dome, and not restricted to traditional rectangular view-boxes (like this web browser we are reading this article on). Viewing from inside the dome (panorama) limits a user’s view, so I decided to explore viewing from the outside like a bir (inverse panorama).
+This enabled me to imagine viewers experiencing equally sized heaxagonal tiles in a panoramic dome, and not restricted to traditional rectangular view-boxes (like this web browser we are reading this article on). Viewing from inside the dome (panorama) seemed to limit a user’s view, so I decided to explore viewing from the outside like a bird (inverse panorama).
 
 ![alt text](aartics/img/readme_panoramicdome.jpg "image of viewer inside and outside panoramic dome")
 
