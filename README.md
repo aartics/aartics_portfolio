@@ -94,5 +94,5 @@ The code used for aartics.com is open source, and available here on GitHub.
 
 #### Reference on Hexagonal Grids
 I continue to study the applications of using hexagonal grids. This is one of the best references I have found:
-http://www.redblobgames.com/grids/hexagons/#map-storage
+http://www.redblobgames.com/grids/hexagons/
 
