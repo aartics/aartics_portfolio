@@ -1,7 +1,7 @@
 # aartics_portfolio
 
 
-For my design portfolio [aartics.com](http://www.aartics.com "aartics portfolio"), I undertook making a 3D representation of a gallery of my projects, viewed as if in a VR world.
+For my design portfolio (<a href="http://www.aartics.com" target="_blank">aartics.com</a>), I undertook making a 3D representation of a gallery of my projects, viewed as if in a VR world.
 
 ![alt text](aartics/img/readme_screenshot.png "screenshot of aartics")
 
@@ -29,7 +29,7 @@ Another layer of the design concept is to imagine that information of various ty
 
 ![alt-text](aartics/img/readme_data_heights.jpg "image of viewer seeing heights of data in perspective")
 
-I visualized the panoramic bird’s eye view interaction with such a 3D interface for my website. 
+So I proceeded to visualize the panoramic bird’s eye view interaction with such a 3D interface for my website, by working on achieving the right perspective for viewing on a desktop browser.
 
 ![alt-text](aartics/img/readme_perspective.jpg "perspective view")
 
