@@ -15,9 +15,9 @@ I started with a grid of hexagons where each hexagon could represent a project o
 
 ![alt-text](aartics/img/readme_hexagon.jpg "viewing hexagonal grids")
 
-###### *Eg. The homepage banner of d3js.org has an inspiring taste of how beautifully expansive that could feel.*
+###### *Eg. The homepage banner of [d3js.org](https://d3js.org/ "link to d3.js") has an inspiring taste of how beautifully expansive that could feel.*
 
-Conceptually, using a hexagonal grid could also allow ‘folding’ the design exploration pattern into spherical geodesic dome "worlds of information". That could be fun.
+Conceptually, using a hexagonal grid could also allow ‘folding’ the design pattern into spherical geodesic dome "worlds of information" that viewers could choose to explore. That could be fun.
 
 ![alt text](aartics/img/readme_geodesic.jpg "image of hexagons folding into a dome")
 
