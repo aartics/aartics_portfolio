@@ -47,7 +47,7 @@ I made the 3D object representation in SketchUP Make. For my design, this is a h
 
 I exported screenshots of the “bird’s eye view” camera perspective of the model: 
 
-![alt-text](aartics/img/readme_glass.jpg "bird's eye perspective")
+![alt-text](aartics/img/0_dotted_xray.jpg "bird's eye perspective")
 
 I stitched the screenshots in PhotoShop for a continuous panoramic effect. I used 20 states of full length images to understand the effect. These images served as the wireframes for the site.
 
