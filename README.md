@@ -21,11 +21,11 @@ Conceptually, using a hexagonal grid could also allow ‘folding’ the design e
 
 ![alt text](aartics/img/readme_geodesic.jpg "image of hexagons folding into a dome")
 
-This enabled me to imagine viewers experiencing equally sized heaxagonal tiles in a panoramic dome, and not restricted to traditional rectangular view-boxes (like this web browser we are reading this article on). Viewing from inside the dome (panorama) seemed to limit a user’s view, so I decided to explore viewing from the outside like a bird (inverse panorama).
+This enabled me to imagine viewers experiencing equally sized hexagonal tiles in a panoramic dome, and not restricted to traditional rectangular view-boxes (like this web browser we are reading this article on). Viewing from inside the dome (panorama) seemed to limit a user’s view, so I chhose to explore viewing from the outside like a bird (inverse panorama).
 
 ![alt text](aartics/img/readme_panoramicdome.jpg "image of viewer inside and outside panoramic dome")
 
-Information of various types and hierarchies (qualitative or quantitative data) can be visualized as heights of the polygons. 
+Another layer of the design concept is to imagine that information of various types and hierarchies (qualitative or quantitative data) can be visualized as heights of the polygons. 
 
 ![alt-text](aartics/img/readme_data_heights.jpg "image of viewer seeing heights of data in perspective")
 
