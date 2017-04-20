@@ -1,16 +1,17 @@
 # aartics_portfolio
 
 
-For this design portfolio, I undertook making a 3D representation of a gallery of my projects, viewed as if in a VR world.
+For my design portfolio, I undertook making a 3D representation of a gallery of my projects, viewed as if in a VR world.
+
 ![alt text](aartics/img/readme_screenshot.png "screenshot of aartics")
 
 This article consists of two sections:
-1. Visualizing three dimensional panoramas - the concept behind the website and the thought process
+1. Visualizing a three dimensional panoramic gallery - the concept behind the website and the thought process
 2. Recipe for making a 3D perspective interaction experience in a desktop browser - the "how-to"
 
-# 1. Visualizing three dimensional panoramas:
+# 1. Visualizing a three dimensional panoramic gallery:
 
-I started with a grid of hexagons. Each hexagon could represent a project or other information. Using a hexagon til grid, I will be able to allow the viewer to extend explorations in 6 directions, instead of just the traditional 4.
+I started with a grid of hexagons where each hexagon could represent a project or other information. By using a hexagonal grid, I will be able to allow the viewer to extend explorations in 6 directions, instead of just the traditional 4.
 
 ![alt-text](aartics/img/readme_hexagon.jpg "viewing hexagonal grids")
 
@@ -54,7 +55,8 @@ I stitched the screenshots in PhotoShop for a continuous panoramic effect. I use
 
 I used the 20 state images in html with the jInvertScroll library to change the image based on the position of the cursor on the page.
 
-###[Click here to see the work-in-progress wireframe prototype, with the images](http://www.aartics.com/projects/aartics_concept/ "Wireframes")
+### Concept wireframes:
+[Click here to see the work-in-progress wireframe prototype, with the images](http://www.aartics.com/projects/aartics_concept/ "Wireframes")
 
 #### 2. Converting the shapes and shadows from the panoramic shots to vector graphics:
 
