@@ -141,7 +141,7 @@ body {
 }
 
 #cover {
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding: 20px 0 0 0;
   margin: none;
