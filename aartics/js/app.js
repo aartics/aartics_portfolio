@@ -130,11 +130,27 @@ $(document).ready(function() {
         }
     })
 
+    var last_known_scroll_position = 0;
+    var docwidth = $(document).width();
+    var winwidth = $(window).width()
+    var divider = (docwidth - winwidth);
+    var ticking = false;
+
     window.addEventListener("scroll", function(event) {
-      var scrollPercent = ($(window).scrollLeft() / ($(document).width() - $(window).width())).toFixed(4)
-      console.log(scrollPercent)
-      updatePolygons(scrollPercent)
-      updateAttached()    
-    }, false);
+      last_known_scroll_position = $(window).scrollLeft();
+      var scrollPercent = (last_known_scroll_position / divider).toFixed(4)
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          updatePolygons(scrollPercent)
+          updateAttached()
+          ticking = false;
+        });
+      }
+      ticking = false;
+      // console.log(scrollPercent)
+      // updatePolygons(scrollPercent)
+      // updateAttached()    
+    });
+
 
 })
