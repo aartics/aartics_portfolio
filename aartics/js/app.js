@@ -130,31 +130,11 @@ $(document).ready(function() {
         }
     })
 
-
-    // load handlers
-//     $.jInvertScroll(['.header','.backgroundgrad','.scroll'], {
-//         height: 3000,                   
-//         onScroll: function(percent) {
-//             console.log(percent)
-//             console.log(window.scrollY)
-//             updatePolygons(percent)
-//             updateAttached()
-//         }
-//     })
-
-//   window.addEventListener("scroll", function(event) {
-//     console.log(window.scrollY)
-//   }, false);
-
     window.addEventListener("scroll", function(event) {
-      console.log(window.scrollX)
-      console.log(document.body.clientWidth)
-      var percent_val = (window.scrollX/document.body.clientWidth)
-      console.log((percent_val).toFixed(4))
-
-      updatePolygons(percent_val)
-      updateAttached()
-      
-    });
+      var scrollPercent = ($(window).scrollLeft() / ($(document).width() - $(window).width())).toFixed(4)
+      console.log(scrollPercent)
+      updatePolygons(scrollPercent)
+      updateAttached()    
+    }, false);
 
 })
