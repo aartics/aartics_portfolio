@@ -1,0 +1,15 @@
+{
+  "name": "aartics-export",
+  "private": true,
+  "version": "1.0.0",
+  "description": "exports svg files to data structure",
+  "main": "export.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aarti Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  }
+}

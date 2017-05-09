@@ -130,14 +130,14 @@ $(document).ready(function() {
         }
     })
 
+    window.addEventListener("scroll", function(event) {
 
-    // load handlers
-    $.jInvertScroll(['.header','.backgroundgrad','.scroll'], {
-        height: 3000,                   
-        onScroll: function(percent) {
-            updatePolygons(percent)
-            updateAttached()
-        }
-    })
+      var scrollPercent = ($(window).scrollLeft() / ($(document).width() - $(window).width())).toFixed(4)
+      console.log(scrollPercent)
+
+      updatePolygons(scrollPercent)
+      updateAttached()
+      
+    }, false);
 
 })
