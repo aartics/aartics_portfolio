@@ -1,21 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<title>aartics</title>
-	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!--     <script src="js/jquery.jInvertScroll.js"></script> -->
-    <link rel="stylesheet" href="css/aartics.css" />
-    <link rel="icon" 
-      type="image/png" 
-      href="favico.png">
-</head>
-<body>
-    <div class="backgroundgrad"></div>
-    <div class="horizon scroll">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="4740px" id="bigsvg">
+<svg id="_00landingstage" data-name="00landingstage" xmlns="http://www.w3.org/2000/svg" width="1200" height="4736.84" viewBox="0 0 1200 4736.84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2f2f2;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>aartics_polygons_vertical</title>
   <polygon id="xx03" class="cls-1" points="721.1 3539.38 712.1 3510.88 830.6 3579.88 844.1 3611.38 721.1 3539.38"/>
   <polygon id="xx04" class="cls-1" points="712.1 3509.38 721.1 3539.38 596.6 3611.38 596.6 3575.38 712.1 3509.38"/>
   <polygon id="s8" class="cls-1" points="896.6 1761.88 796.1 1818.88 802.1 1841.38 905.6 1781.38 896.6 1761.88"/>
@@ -189,15 +193,4 @@
   <polygon id="c1" class="cls-3" points="597.38 4983.88 210.42 4760.47 211 4312.96 597.67 4088.9 984.35 4312.96 984.35 4760.47 597.38 4983.88"/>
   <polygon id="k01" class="cls-1" points="598.1 3881.38 598.1 4088.38 985.1 4313.38 832.1 3888.88 713.6 3813.88 598.1 3881.38"/>
   <polygon id="k02" class="cls-1" points="482.6 3813.88 328.1 4031.38 211.09 4313.38 598.1 4088.38 598.1 3881.38 482.6 3813.88"/>
-            <defs>
-                <radialGradient id="exampleGradient">
-                  <stop offset="88%" stop-color="cyan"/>
-                  <stop offset="100%" stop-color="#75FFFA"/>
-                </radialGradient>
-            </defs>                  
-        </svg>
-    </div>
-	<script src="js/data.js"></script>
-    <script src="js/app.js"></script>
-</body>
-</html>
+</svg>
