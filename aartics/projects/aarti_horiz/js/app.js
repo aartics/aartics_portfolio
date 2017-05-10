@@ -6,7 +6,11 @@ $(document).ready(function() {
         history.go(1)
     }
 
-    $('.horizon').fadeTo( "fast" , 0.05, function() {
+    $('.child1').fadeTo( "fast" , 0.05, function() {
+       // Animation complete.
+    });
+
+    $('header').fadeTo( "fast" , 0.00, function() {
        // Animation complete.
     });
 
@@ -136,9 +140,12 @@ $(document).ready(function() {
 
     // Animate polygons based on horizontal scroll position
     window.addEventListener("scroll", function(event) {
-      $('.horizon').fadeTo( "slow" , 1, function() {
+      $('.child1').fadeTo( "slow" , 1, function() {
             // Animation complete.
       });
+      $('header').fadeTo( "slow" , 1, function() {
+            // Animation complete.
+      });      
       var scrollPercent = ($(window).scrollLeft() / ($(document).width() - $(window).width())).toFixed(4)
       console.log(scrollPercent)
       updatePolygons(scrollPercent)
