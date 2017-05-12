@@ -142,6 +142,9 @@ $(document).ready(function() {
     window.addEventListener("scroll", function(event) {
       $('header').css({'opacity':getopacity()})
       $('.child1').css({'opacity':getopacity()})
+      $('.child3').css({'left':getleftText()})
+      $('.child4').css({'left':getleft()})
+      $('.child4').css({'opacity':getopacityButtons()})
 
       function getopacity() {
             var opacitystring = '0.0'
@@ -151,6 +154,38 @@ $(document).ready(function() {
                 opacitystring = '1.0'
             }
             return opacitystring         
+      }
+
+      function getopacityButtons() {
+            var opacitystring = '1.0'
+            if (($(window).scrollLeft() > 10) && ($(window).scrollLeft() < 100)) {
+                opacitystring = 1 - ($(window).scrollLeft()/100)
+            } else if (($(window).scrollLeft() <= 10)) {
+                opacitystring = '1.0'
+            } else {
+                opacitystring = '0.0'
+            }
+            return opacitystring         
+      }
+
+      function getleftText() {
+          var leftstring = '0'
+          if ($(window).scrollLeft() < 600) {
+              leftstring = '-' + ($(window).scrollLeft()).toString() + "px"
+          } else {
+              leftstring = '-600px'
+          }
+          return leftstring
+      }
+
+      function getleft() {
+          var leftstring = '0'
+          if ($(window).scrollLeft() < 600) {
+              leftstring = '-' + ($(window).scrollLeft()).toString() + "px"
+          } else {
+              leftstring = '-700px'
+          }
+          return leftstring
       }
      
       var scrollPercent = ($(window).scrollLeft() / ($(document).width() - $(window).width())).toFixed(4)
@@ -164,23 +199,92 @@ $(document).ready(function() {
     }, false);
 
     // Breadcrumb
-    $('#area1').on('click', function(e) {
-        window.scrollTo(0,0)
+
+    $('#area1').on('click', function() {
+        scrollToX(0, 1, 'easeInOutSine');
     })
     
-    $('#area2').on('click', function(e) {
-        window.scrollTo(400,0)
+    $('#area2').on('click', function() {
+        scrollToX(400, 100, 'easeInOutSine');
     })
 
-    $('#area3').on('click', function(e) {
-        window.scrollTo(900,0)
+    $('#area3').on('click', function() {
+        scrollToX(900, 1, 'easeInOutSine');
     })
 
-    $('#area4').on('click', function(e) {
-        window.scrollTo(1300,0)
+    $('#area4').on('click', function() {
+        scrollToX(1300, 1, 'easeInOutSine');
     })
 
-    $('#area5').on('click', function(e) {
-        window.scrollTo(2000,0)
-    })    
+    $('#area5').on('click', function() {
+        scrollToX(2000, 1, 'easeInOutSine');
+    })
+
+    // http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+    window.requestAnimFrame = (function(){
+      return  window.requestAnimationFrame       ||
+              window.webkitRequestAnimationFrame ||
+              window.mozRequestAnimationFrame    ||
+              function( callback ){
+                window.setTimeout(callback, 1000 / 60);
+              };
+    })();
+
+    //Function to animate the breadcrumbs. Copied from stackoverflow here:
+    //http://stackoverflow.com/questions/12199363/scrollto-with-animation
+
+    // main function
+    function scrollToX(scrollTargetX, speed, easing) {
+        // scrollTargetY: the target scrollY property of the window
+        // speed: time in pixels per second
+        // easing: easing equation to use
+
+        var scrollX = window.scrollX,
+            scrollTargetX = scrollTargetX || 0,
+            speed = speed || 2000,
+            easing = easing || 'easeOutSine',
+            currentTime = 0;
+
+        // min time .1, max time .8 seconds
+        var time = Math.max(.1, Math.min(Math.abs(scrollX - scrollTargetX) / speed, .8));
+
+        // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
+        var PI_D2 = Math.PI / 2,
+            easingEquations = {
+                easeOutSine: function (pos) {
+                    return Math.sin(pos * (Math.PI / 2));
+                },
+                easeInOutSine: function (pos) {
+                    return (-0.5 * (Math.cos(Math.PI * pos) - 1));
+                },
+                easeInOutQuint: function (pos) {
+                    if ((pos /= 0.5) < 1) {
+                        return 0.5 * Math.pow(pos, 5);
+                    }
+                    return 0.5 * (Math.pow((pos - 2), 5) + 2);
+                }
+            };
+
+        // add animation loop
+        function tick() {
+            currentTime += 1 / 60;
+
+            var p = currentTime / time;
+            var t = easingEquations[easing](p);
+
+            if (p < 1) {
+                requestAnimFrame(tick);
+                window.scrollTo(scrollX + ((scrollTargetX - scrollX) * t), 0);
+            } else {
+                window.scrollTo(scrollTargetX, 0);
+            }
+        }
+
+        // call it once to get started
+        tick();
+    }
+
+
 })
+
+

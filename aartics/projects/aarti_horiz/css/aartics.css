@@ -65,13 +65,22 @@ header {
 }
 
 .child3 {
-  width: 42%;
+  width: 70%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 4;
 }
+
+.child4 {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  margin-top: 220px;
+}
+
 
 .child3 h1 {
   font-family: "ABeeZee";
@@ -81,7 +90,7 @@ header {
 
 .child3 p{
   color: #e0e0e0;
-  margin: 60px 0 0 50px;
+  margin: 60px 400px 0 50px;
 }
 
 .cls-1 {
@@ -97,10 +106,18 @@ header {
 
 }
 
+#ul_home_hypers {
+  list-style: none;
+  text-align: right;
+}
+
+#ul_home_hypers li{
+  padding: 30px 0 0 0;
+}
+
 #ul_top_hypers li {
-    display: inline;
-    padding: 0 20px 0 20px;
-    font-size: 12px;
+  display: inline;
+  padding: 0 20px 0 20px;
 }
 
 #ul_top_hypers {
@@ -196,36 +213,35 @@ raleway {
 }
 
 #_7 {
-  fill: #75fffa;
-  fill-opacity: 0.0;
+  fill: #374959;
+  fill-opacity: 1;
 }
 
 #_7:hover, #_7.hovered{
   fill-opacity: 0.8;
-/*   stroke:#75FFFA; */
-  stroke: url('#exampleGradient');
+  stroke: white;
 
 }
 
 #_16 {
-  fill: #75fffa;
-  fill-opacity: 0.0;
+  fill: #374959;
+  fill-opacity: 1;
 }
 
 #_16:hover, #_16.hovered{
   fill-opacity: 0.8;
-  stroke:url('#exampleGradient');
+  stroke: white;
 }
 
 
 #_18 {
-  fill: #75fffa;
-  fill-opacity: 0.0;
+  fill:#374959;
+  fill-opacity: 1;
 }
 
 #_18:hover, #_18.hovered{
   fill-opacity: 0.8;
-  stroke:url('#exampleGradient');
+  stroke: white;
 }
 
 .contact_class {
