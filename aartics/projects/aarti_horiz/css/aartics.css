@@ -34,10 +34,16 @@ body {
 }
 
 header {
-/*     border: 2px solid red; */
     position: fixed;
     right: 0;
     z-index: 20;
+}
+
+.aarticslogo {
+    position: fixed;
+    left: 50px;
+    top: 10px;
+    z-index: 25;
 }
 
 .parent {
@@ -74,11 +80,11 @@ header {
 }
 
 .child4 {
-  width: 65%;
+  width: 57%;
   height: 100%;
   position: absolute;
   z-index: 5;
-  margin-top: 220px;
+  margin-top: 160px;
 }
 
 
@@ -351,3 +357,11 @@ raleway {
   60% { opacity: 1; }
   100% { opacity: 0.1; }
 } 
+
+
+button {
+  border: none;
+  background-color: #22313f;
+  font-size: 12px;
+  color: white;
+}

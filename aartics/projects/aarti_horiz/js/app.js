@@ -141,21 +141,33 @@ $(document).ready(function() {
     // Animate polygons based on horizontal scroll position
     window.addEventListener("scroll", function(event) {
       $('header').css({'opacity':getopacity()})
-      $('.child1').css({'opacity':getopacity()})
+      $('.child1').css({'opacity':getopacityChild1()})
       $('.child3').css({'left':getleftText()})
       $('.child4').css({'left':getleft()})
       $('.child4').css({'opacity':getopacityButtons()})
 
       function getopacity() {
             var opacitystring = '0.0'
-            if ($(window).scrollLeft() < 300) {
+            if (($(window).scrollLeft() > 95) && ($(window).scrollLeft() < 300)) {
                 opacitystring = $(window).scrollLeft()/300
+            } else if ($(window).scrollLeft() <= 95) {
+                opacitystring = '0.0'
             } else {
                 opacitystring = '1.0'
             }
             return opacitystring         
       }
 
+      function getopacityChild1() {
+            var opacitystring = '0.0'
+            if ($(window).scrollLeft() < 300) {
+                opacitystring = $(window).scrollLeft()/300
+            } else {
+                opacitystring = '1.0'
+            }
+            return opacitystring          
+      }
+      
       function getopacityButtons() {
             var opacitystring = '1.0'
             if (($(window).scrollLeft() > 10) && ($(window).scrollLeft() < 100)) {
@@ -200,23 +212,23 @@ $(document).ready(function() {
 
     // Breadcrumb
 
-    $('#area1').on('click', function() {
+    $('#area1 , #bz0, #logo').on('click', function() {
         scrollToX(0, 1, 'easeInOutSine');
     })
     
-    $('#area2').on('click', function() {
+    $('#area2 , #bz1 , #aarti').on('click', function() {
         scrollToX(400, 100, 'easeInOutSine');
     })
 
-    $('#area3').on('click', function() {
+    $('#area3 , #bz2').on('click', function() {
         scrollToX(900, 1, 'easeInOutSine');
     })
 
-    $('#area4').on('click', function() {
+    $('#area4 , #bz3').on('click', function() {
         scrollToX(1300, 1, 'easeInOutSine');
     })
 
-    $('#area5').on('click', function() {
+    $('#area5 , #bz4').on('click', function() {
         scrollToX(2000, 1, 'easeInOutSine');
     })
 
