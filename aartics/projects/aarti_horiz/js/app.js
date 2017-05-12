@@ -6,7 +6,7 @@ $(document).ready(function() {
         history.go(1)
     }
 
-    $('.child1').fadeTo( "fast" , 0.05, function() {
+    $('.child1').fadeTo( "fast" , 0.00, function() {
        // Animation complete.
     });
 
@@ -140,16 +140,27 @@ $(document).ready(function() {
 
     // Animate polygons based on horizontal scroll position
     window.addEventListener("scroll", function(event) {
-      $('.child1').fadeTo( "slow" , 1, function() {
-            // Animation complete.
-      });
-      $('header').fadeTo( "slow" , 1, function() {
-            // Animation complete.
-      });      
+      $('header').css({'opacity':getopacity()})
+      $('.child1').css({'opacity':getopacity()})
+
+      function getopacity() {
+            var opacitystring = '0.0'
+            if ($(window).scrollLeft() < 300) {
+                opacitystring = $(window).scrollLeft()/300
+            } else {
+                opacitystring = '1.0'
+            }
+            return opacitystring         
+      }
+     
       var scrollPercent = ($(window).scrollLeft() / ($(document).width() - $(window).width())).toFixed(4)
-      console.log(scrollPercent)
+//       console.log(scrollPercent)
       updatePolygons(scrollPercent)
-      updateAttached()      
+      updateAttached()
+
+//       if(scrollPercent < 0.18) {
+//           $('.child1').css({'opacity':'0.2'})
+//       }  
     }, false);
 
     // Breadcrumb
