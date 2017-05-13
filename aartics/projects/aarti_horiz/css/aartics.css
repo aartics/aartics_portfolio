@@ -58,20 +58,20 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
-}
-
-.child2 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: 0;
 }
 
+.child2 {
+  width: 1200px;
+  height: 760px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: 2;
+}
+
 .child3 {
-  width: 70%;
+  width: 1000px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -80,7 +80,7 @@ header {
 }
 
 .child4 {
-  width: 57%;
+  width: 900px;
   height: 100%;
   position: absolute;
   z-index: 5;
@@ -96,7 +96,7 @@ header {
 
 .child3 p{
   color: #e0e0e0;
-  margin: 60px 400px 0 50px;
+  margin: 60px 200px 0 50px;
 }
 
 .cls-1 {

@@ -10,7 +10,7 @@ $(document).ready(function() {
        // Animation complete.
     });
 
-    $('header').fadeTo( "fast" , 0.00, function() {
+    $('header').fadeTo( "fast" , 0.3, function() {
        // Animation complete.
     });
 
@@ -151,7 +151,7 @@ $(document).ready(function() {
             if (($(window).scrollLeft() > 95) && ($(window).scrollLeft() < 300)) {
                 opacitystring = $(window).scrollLeft()/300
             } else if ($(window).scrollLeft() <= 95) {
-                opacitystring = '0.0'
+                opacitystring = '0.3'
             } else {
                 opacitystring = '1.0'
             }
