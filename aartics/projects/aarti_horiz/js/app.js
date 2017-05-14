@@ -216,7 +216,7 @@ $(document).ready(function() {
         scrollToX(0, 1, 'easeInOutSine');
     })
     
-    $('#area2 , #bz1 , #aarti').on('click', function() {
+    $('#area2 , #bz1 , #aarti , #_1').on('click', function() {
         scrollToX(400, 100, 'easeInOutSine');
     })
 

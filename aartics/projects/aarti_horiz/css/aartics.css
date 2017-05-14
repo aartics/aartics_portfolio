@@ -48,7 +48,7 @@ header {
 
 .parent {
   position: relative;
-  width: 3500px;
+  width: 3700px;
   height: 760px;
 }
 
@@ -62,9 +62,10 @@ header {
 }
 
 .child2 {
-  width: 1200px;
+  width: 1050px;
   height: 760px;
   position: absolute;
+  animation: hideshow 2s ease infinite;
   top: 15px;
   left: 0;
   z-index: 2;
@@ -177,11 +178,6 @@ raleway {
   fill: #00BCD4;
 }
 
-.project_box {
-  stroke:#8ac1c0;
-  stroke-width: 7px;
-}
-
 .project_box_arch {
   stroke:#ffffff;
   stroke-width: 1px;
@@ -224,6 +220,7 @@ raleway {
 }
 
 #_7:hover, #_7.hovered{
+  fill: #1EFC1E;
   fill-opacity: 0.8;
   stroke: white;
 
@@ -235,6 +232,7 @@ raleway {
 }
 
 #_16:hover, #_16.hovered{
+  fill: #1EFC1E;
   fill-opacity: 0.8;
   stroke: white;
 }
@@ -246,6 +244,7 @@ raleway {
 }
 
 #_18:hover, #_18.hovered{
+  fill: #1EFC1E;
   fill-opacity: 0.8;
   stroke: white;
 }
@@ -255,18 +254,11 @@ raleway {
   fill-opacity: 1;
   stroke: url(#linear);
   stroke-width: 7px;
+  cursor: pointer;
 }
 
-.contact_text a{
-  font-size: 18px;
-  fill: white;
-}
-.contact_text a:hover {
-  fill: red;
-}
-
-.ux {
-  fill:#548687;
+#_1:hover{
+  stroke: url(#linear2);
 }
 
 .traleway {
@@ -364,4 +356,31 @@ button {
   background-color: #22313f;
   font-size: 12px;
   color: white;
+  cursor: pointer;
+}
+
+.logoc img{
+  width: 32px;
+  margin-top: 0;
+  padding: 40px 0 0 18px;
+}
+
+.logowrapper {
+  margin: 0 0 0 29px;
+}
+
+.nibbler {
+  fill: #242b31;
+}
+
+.ilike {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  fill: #007d7d;
+}
+
+.interest {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  fill:#007d7d;
 }
