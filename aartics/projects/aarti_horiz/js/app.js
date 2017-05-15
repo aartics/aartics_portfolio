@@ -6,10 +6,6 @@ $(document).ready(function() {
         history.go(1)
     }
 
-    $('.child1').fadeTo( "fast" , 0.00, function() {
-       // Animation complete.
-    });
-
     $('header').fadeTo( "fast" , 0.3, function() {
        // Animation complete.
     });
@@ -145,6 +141,63 @@ $(document).ready(function() {
       $('.child3').css({'left':getleftText()})
       $('.child4').css({'left':getleft()})
       $('.child4').css({'opacity':getopacityButtons()})
+      $('.contact_class').css({'animation':'none'})
+
+    if (($(window).scrollLeft() > 200) && ($(window).scrollLeft() < 800)) {
+        $('#area2').css({'color':'cyan'})
+        $('#area2').css({'border-bottom':'2px solid aqua'})
+    } else if (($(window).scrollLeft() <= 200)) {
+        $('#area2').css({'color':'white'})
+        $('#area2').css({'border-bottom':'none'})
+    } else {
+        $('#area2').css({'color':'white'})
+        $('#area2').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollLeft() > 700) && ($(window).scrollLeft() < 1500)) {
+        $('#area3').css({'color':'orange'})
+        $('#area3').css({'border-bottom':'2px solid orange'})
+    } else if (($(window).scrollLeft() <= 700)) {
+        $('#area3').css({'color':'white'})
+        $('#area3').css({'border-bottom':'none'})
+    } else {
+        $('#area3').css({'color':'white'})
+        $('#area3').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollLeft() > 1400) && ($(window).scrollLeft() < 1900)) {
+        $('#area4').css({'color':'#EF2D56'})
+        $('#area4').css({'border-bottom':'2px solid #EF2D56'})
+    } else if (($(window).scrollLeft() <= 1400)) {
+        $('#area4').css({'color':'white'})
+        $('#area4').css({'border-bottom':'none'})
+    } else {
+        $('#area4').css({'color':'white'})
+        $('#area4').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollLeft() > 1800) && ($(window).scrollLeft() < 2200)) {
+        $('#area5').css({'color':'#FFC107'})
+        $('#area5').css({'border-bottom':'2px solid #FFC107'})
+    } else if (($(window).scrollLeft() <= 1800)) {
+        $('#area5').css({'color':'white'})
+        $('#area5').css({'border-bottom':'none'})
+    } else {
+        $('#area5').css({'color':'white'})
+        $('#area5').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollLeft() > 2100) && ($(window).scrollLeft() < 3501)) {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'2px solid white'})
+    } else if (($(window).scrollLeft() <= 2100)) {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'none'})
+    } else {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'none'})
+    }
+
 
       function getopacity() {
             var opacitystring = '0.0'
@@ -201,13 +254,9 @@ $(document).ready(function() {
       }
      
       var scrollPercent = ($(window).scrollLeft() / ($(document).width() - $(window).width())).toFixed(4)
-//       console.log(scrollPercent)
       updatePolygons(scrollPercent)
       updateAttached()
-
-//       if(scrollPercent < 0.18) {
-//           $('.child1').css({'opacity':'0.2'})
-//       }  
+ 
     }, false);
 
     // Breadcrumb
@@ -221,15 +270,19 @@ $(document).ready(function() {
     })
 
     $('#area3 , #bz2').on('click', function() {
-        scrollToX(900, 1, 'easeInOutSine');
+        scrollToX(1100, 1, 'easeInOutSine');
     })
 
     $('#area4 , #bz3').on('click', function() {
-        scrollToX(1300, 1, 'easeInOutSine');
+        scrollToX(1600, 1, 'easeInOutSine');
     })
 
     $('#area5 , #bz4').on('click', function() {
         scrollToX(2000, 1, 'easeInOutSine');
+    })
+
+    $('#area6').on('click', function() {
+        scrollToX(3500, 1, 'easeInOutSine');
     })
 
     // http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/

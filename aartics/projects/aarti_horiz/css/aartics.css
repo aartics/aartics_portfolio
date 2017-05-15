@@ -34,16 +34,24 @@ body {
 }
 
 header {
-    position: fixed;
-    right: 0;
-    z-index: 20;
+  position: fixed;
+  right: 0;
+  z-index: 30;
+}
+
+.child1 text {
+  cursor:default;
+}
+
+.child1 text a{
+  cursor:pointer;
 }
 
 .aarticslogo {
-    position: fixed;
-    left: 50px;
-    top: 10px;
-    z-index: 25;
+  position: fixed;
+  left: 50px;
+  top: 10px;
+  z-index: 25;
 }
 
 .parent {
@@ -59,16 +67,17 @@ header {
   top: 0;
   left: 0;
   z-index: 0;
+  opacity: 0.0;
 }
 
 .child2 {
   width: 1050px;
   height: 760px;
   position: absolute;
-  animation: hideshow 2s ease infinite;
   top: 15px;
   left: 0;
   z-index: 2;
+  pointer-events: none;
 }
 
 .child3 {
@@ -122,14 +131,51 @@ header {
   padding: 30px 0 0 0;
 }
 
+header button {
+  border: none;
+  background-color: #22313f;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+  width: 95px;
+/*   border-bottom: 2px solid green; */
+}
+
+button:focus {outline:0;}
+
 #ul_top_hypers li {
   display: inline;
-  padding: 0 20px 0 20px;
+  padding: 0 9px 0 9px;
 }
 
 #ul_top_hypers {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
+}
+
+#area2:hover {
+  color: aqua;
+  border-bottom: 2px solid aqua;
+}
+
+#area3:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+#area4:hover {
+  color: #EF2D56;
+  border-bottom: 2px solid #EF2D56;
+}
+
+#area5:hover {
+  color: #FFC107;
+  border-bottom: 2px solid #FFC107;
+}
+
+#area6:hover {
+  color: white;
+  border-bottom: 2px solid white;
 }
 
 raleway {
@@ -214,39 +260,51 @@ raleway {
   stroke-width: 7px;
 }
 
+.project_box {
+  stroke:#99e7e8;
+  stroke-width: 7px;
+}
+
 #_7 {
-  fill: #374959;
-  fill-opacity: 1;
+/*   fill: #374959; */
+  fill-opacity: 0.0;
+/*   animation: hideshow 2s ease infinite; */
+
 }
 
 #_7:hover, #_7.hovered{
   fill: #1EFC1E;
   fill-opacity: 0.8;
   stroke: white;
+  animation: none;
 
 }
 
 #_16 {
-  fill: #374959;
-  fill-opacity: 1;
+/*   fill: #374959; */
+  fill-opacity: 0.0;
+/*   animation: hideshow 2s ease infinite; */
 }
 
 #_16:hover, #_16.hovered{
   fill: #1EFC1E;
   fill-opacity: 0.8;
   stroke: white;
+  animation: none;
 }
 
 
 #_18 {
-  fill:#374959;
-  fill-opacity: 1;
+/*   fill:#374959; */
+  fill-opacity: 0.0;
+/*   animation: hideshow 2s ease infinite; */
 }
 
 #_18:hover, #_18.hovered{
   fill: #1EFC1E;
   fill-opacity: 0.8;
   stroke: white;
+  animation: none;
 }
 
 .contact_class {
@@ -255,6 +313,9 @@ raleway {
   stroke: url(#linear);
   stroke-width: 7px;
   cursor: pointer;
+  animation: hideshow 2s ease infinite;
+  visibility: visible;
+  pointer-events: visiblePainted;
 }
 
 #_1:hover{
@@ -291,7 +352,8 @@ raleway {
 .casestudy a{
   font-family: Raleway;
   font-size: 10.5px;
-  fill:#548687;
+/*   fill:#548687; */
+  fill:aqua;
 }
 
 .projectdescription a{
@@ -348,39 +410,63 @@ raleway {
   20% { opacity: 1; }
   60% { opacity: 1; }
   100% { opacity: 0.1; }
-} 
+}
 
-
-button {
-  border: none;
-  background-color: #22313f;
-  font-size: 12px;
-  color: white;
+#logo {
   cursor: pointer;
+}
+
+#logo:hover{
+/*   filter: sepia() saturate(10000%) hue-rotate(100deg); */
 }
 
 .logoc img{
   width: 32px;
   margin-top: 0;
   padding: 40px 0 0 18px;
+/*   filter: sepia() saturate(10000%) hue-rotate(30deg); this turns png green */
+}
+
+.logoc img:hover{
+  filter: sepia() saturate(10000%) hue-rotate(30deg);
 }
 
 .logowrapper {
   margin: 0 0 0 29px;
 }
-
+/* 
 .nibbler {
   fill: #242b31;
-}
+} */
 
 .ilike {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  fill: #007d7d;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  fill: #8ac1c0;
 }
 
 .interest {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  fill:#007d7d;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  fill: #8ac1c0;
+}
+
+.csar a {
+  fill:orange;
+}
+
+.cspg a{
+  fill:#EF2D56;
+}
+
+#_12:hover{
+  cursor:s-resize;
+}
+
+#_13:hover{
+  cursor:e-resize;
+}
+
+#_11:hover{
+  cursor:nw-resize;
 }
