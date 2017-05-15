@@ -124,8 +124,13 @@ $(document).ready(function() {
             var $a = $('[data-attach="#' + id + '"]').find('a').first()
             if ($a.length) {
                 var href = $a.attr('href')
-                var tgt = $.attr('target') || '_blank'
-                window.open(href, tgt)
+                var tgt = $a.attr('target')
+                if (tgt)
+                    // open in a new window of the target attribute is set (see issue #13)
+                    window.open(href, tgt)
+                else
+                    // just change the current location if target attribute is not set
+                    window.location.href = href
             }
         }
     })
