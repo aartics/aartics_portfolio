@@ -142,6 +142,48 @@ $(document).ready(function() {
       $('.child4').css({'left':getleft()})
       $('.child4').css({'opacity':getopacityButtons()})
       $('.contact_class').css({'animation':'none'})
+    
+    if ($(window).scrollLeft() > 0) {
+      $('#area2').hover(function() {
+          $('#area2').css({'color':'cyan'})
+          $('#area2').css({'border-bottom':'2px solid aqua'})
+      }, function() {
+          $('#area2').css({'color':'white'})
+          $('#area2').css({'border-bottom':'none'})
+      })
+
+      $('#area3').hover(function() {
+          $('#area3').css({'color':'orange'})
+          $('#area3').css({'border-bottom':'2px solid orange'})
+      }, function() {
+          $('#area3').css({'color':'white'})
+          $('#area3').css({'border-bottom':'none'})
+      })
+
+      $('#area4').hover(function() {
+          $('#area4').css({'color':'#EF2D56'})
+          $('#area4').css({'border-bottom':'2px solid #EF2D56'})
+      }, function() {
+          $('#area4').css({'color':'white'})
+          $('#area4').css({'border-bottom':'none'})
+      })
+
+      $('#area5').hover(function() {
+          $('#area5').css({'color':'#FFC107'})
+          $('#area5').css({'border-bottom':'2px solid #FFC107'})
+      }, function() {
+          $('#area5').css({'color':'white'})
+          $('#area5').css({'border-bottom':'none'})
+      })
+
+      $('#area6').hover(function() {
+          $('#area6').css({'color':'white'})
+          $('#area6').css({'border-bottom':'2px solid white'})
+      }, function() {
+          $('#area6').css({'color':'white'})
+          $('#area6').css({'border-bottom':'none'})
+      })
+    }
 
     if (($(window).scrollLeft() > 200) && ($(window).scrollLeft() < 800)) {
         $('#area2').css({'color':'cyan'})
@@ -348,7 +390,6 @@ $(document).ready(function() {
         // call it once to get started
         tick();
     }
-
 
 })
 
