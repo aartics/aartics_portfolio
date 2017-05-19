@@ -68,7 +68,7 @@ header {
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 0.0;
+/*   opacity: 0.0; */
 }
 
 .child2 {
@@ -184,47 +184,6 @@ button:focus {outline:0;}
 raleway {
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
-}
-
-.credits {
-  font-size: 12px;
-  fill: white;
-}
-
-#credits7 a{
-  font-size: 12px;
-  fill: #FFC107;
-}
-
-#credits11 a{
-  fill: #FFC107;
-}
-
-#credits12 a{
-  fill: #FFC107;
-}
-
-#credits7 a:hover {
-  font-size: 12px;
-  fill: #00BCD4;
-}
-
-#credits9 a{
-  font-size: 12px;
-  fill: #ffffff;
-}
-
-#credits9 a:hover{
-  font-size: 12px;
-  fill: #00BCD4;
-}
-
-#credits11 a:hover{
-  fill: #00BCD4;
-}
-
-#credits12 a:hover{
-  fill: #00BCD4;
 }
 
 .project_box_arch {
@@ -458,4 +417,24 @@ raleway {
 
 .cspg a{
   fill:#EF2D56;
+}
+
+#credtitle1, #credtitle2 {
+  font-size: 40px;
+  fill: white;
+}
+
+.credits {
+  font-size: 33px;
+  fill: #aeaeae;
+}
+
+#credlinks a{
+  font-size: 36px;
+  fill: #F8C537;
+}
+
+#credlinks{
+  font-size: 36px;
+  fill: #aeaeae;
 }
