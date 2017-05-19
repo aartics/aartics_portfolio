@@ -27,7 +27,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 45px;
+  height: 100px;
   background-color: #22313f;
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -39,29 +39,31 @@
 
 #back-button {
   float: left;
+  padding: 20px 0 20px 30px;
 }
 
 #back-button a{
   text-decoration: none;
-  padding-left: 12px;
   color: #85CB33;
+  font-size: 30px;
 }
 
 #back-button a:hover{
   color: #00BCD4;
 }
 
-#icon {
+#logoaa {
   float: left;
-  height: 20px;
+  height: 50px;
 }
 
 .project-name {
   float: right;
-  padding-right: 10px;
+  padding: 20px 30px 20px 0;
 }
 
 .project-name a {
+  font-size: 30px;
   float: right;
   padding-right: 10px;
   text-decoration: none;
