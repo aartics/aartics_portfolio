@@ -446,3 +446,14 @@ raleway {
   font-size: 36px;
   fill: #aeaeae;
 }
+
+
+#credcontact {
+  font-size: 36px;
+  fill: #aeaeae;
+}
+
+#credcontact a{
+  font-size: 36px;
+  fill: #F8C537;
+}
