@@ -140,6 +140,9 @@ header button {
   cursor: pointer;
   width: 200px;
   height: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Raleway';
 /*   border-bottom: 2px solid green; */
 }
 
