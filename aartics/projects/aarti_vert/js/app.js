@@ -6,6 +6,10 @@ $(document).ready(function() {
         history.go(1)
     }
 
+    $('header').fadeTo( "fast" , 0.2, function() {
+       // Animation complete.
+    });
+    
     var polyData = window.PolyData
 
     var step = 100 / (polyData.states - 1)
@@ -25,15 +29,22 @@ $(document).ready(function() {
             if (ppoints.length == 1)
                 ppoints = $poly.attr('points').split(' ')
             var xMax = +ppoints[0]
+            var yMax = +ppoints[1] //adding y here, delete if breaks
             for (var i=0; i<ppoints.length; i+=2) {
                 var ppoint = +ppoints[i]
                 if (ppoint > xMax)
                     xMax = ppoint
             }
+            for (var i=1; i<(ppoints.length-1); i+=2) {
+                var ppoint = +ppoints[i]
+                if (ppoint > yMax)
+                    yMax = ppoint
+            }            
             $me.children().each(function() {
                 var $child = $(this)
-                var xRel = +$child.attr('data-x-rel') || 0
-                $child.attr('x', xMax + xRel)
+//                 var xRel = +$child.attr('data-x-rel') || 0
+                var yRel = +$child.attr('data-y-rel') || 0
+                $child.attr('y', yMax + yRel)
             })
             var clipPath = $me.attr('data-clip-path')
             if (clipPath) {
@@ -136,13 +147,262 @@ $(document).ready(function() {
     })
 
     window.addEventListener("scroll", function(event) {
+      $('header').css({'opacity':getopacity()})
+      $('.child1').css({'opacity':getopacityChild1()})
+      $('.child3').css({'top':getleftText()})
+//       $('.child4').css({'left':getleft()})
+      $('.child4').css({'opacity':getopacityButtons()})
+      $('.contact_class').css({'animation':'none'})
+    
+    if ($(window).scrollTop() > 0) {
+      $('#area2').click(function() {
+          $('#area2').css({'color':'cyan'})
+          $('#area2').css({'border-bottom':'2px solid aqua'})
+      }, function() {
+          $('#area2').css({'color':'white'})
+          $('#area2').css({'border-bottom':'none'})
+      })
 
+      $('#area3').click(function() {
+          $('#area3').css({'color':'orange'})
+          $('#area3').css({'border-bottom':'2px solid orange'})
+      }, function() {
+          $('#area3').css({'color':'white'})
+          $('#area3').css({'border-bottom':'none'})
+      })
+
+      $('#area4').click(function() {
+          $('#area4').css({'color':'#EF2D56'})
+          $('#area4').css({'border-bottom':'2px solid #EF2D56'})
+      }, function() {
+          $('#area4').css({'color':'white'})
+          $('#area4').css({'border-bottom':'none'})
+      })
+
+      $('#area5').click(function() {
+          $('#area5').css({'color':'#FFC107'})
+          $('#area5').css({'border-bottom':'2px solid #FFC107'})
+      }, function() {
+          $('#area5').css({'color':'white'})
+          $('#area5').css({'border-bottom':'none'})
+      })
+
+      $('#area6').click(function() {
+          $('#area6').css({'color':'white'})
+          $('#area6').css({'border-bottom':'2px solid white'})
+      }, function() {
+          $('#area6').css({'color':'white'})
+          $('#area6').css({'border-bottom':'none'})
+      })
+    }
+
+    if (($(window).scrollTop() > 500) && ($(window).scrollTop() < 1500)) {
+        $('#area2').css({'color':'cyan'})
+        $('#area2').css({'border-bottom':'2px solid aqua'})
+    } else if (($(window).scrollTop() <= 200)) {
+        $('#area2').css({'color':'white'})
+        $('#area2').css({'border-bottom':'none'})
+    } else {
+        $('#area2').css({'color':'white'})
+        $('#area2').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollTop() > 1300) && ($(window).scrollTop() < 2100)) {
+        $('#area3').css({'color':'orange'})
+        $('#area3').css({'border-bottom':'2px solid orange'})
+    } else if (($(window).scrollTop() <= 700)) {
+        $('#area3').css({'color':'white'})
+        $('#area3').css({'border-bottom':'none'})
+    } else {
+        $('#area3').css({'color':'white'})
+        $('#area3').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollTop() > 1900) && ($(window).scrollTop() < 2800)) {
+        $('#area4').css({'color':'#EF2D56'})
+        $('#area4').css({'border-bottom':'2px solid #EF2D56'})
+    } else if (($(window).scrollTop() <= 1400)) {
+        $('#area4').css({'color':'white'})
+        $('#area4').css({'border-bottom':'none'})
+    } else {
+        $('#area4').css({'color':'white'})
+        $('#area4').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollTop() > 2600) && ($(window).scrollTop() < 3700)) {
+        $('#area5').css({'color':'#FFC107'})
+        $('#area5').css({'border-bottom':'2px solid #FFC107'})
+    } else if (($(window).scrollTop() <= 1800)) {
+        $('#area5').css({'color':'white'})
+        $('#area5').css({'border-bottom':'none'})
+    } else {
+        $('#area5').css({'color':'white'})
+        $('#area5').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollTop() > 3600) && ($(window).scrollTop() < 5001)) {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'2px solid white'})
+    } else if (($(window).scrollTop() <= 2100)) {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'none'})
+    } else {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'none'})
+    }
+
+
+      function getopacity() {
+            var opacitystring = '0.0'
+            if (($(window).scrollTop() > 95) && ($(window).scrollTop() < 300)) {
+                opacitystring = $(window).scrollTop()/300
+            } else if ($(window).scrollTop() <= 95) {
+                opacitystring = '0.2'
+            } else {
+                opacitystring = '1.0'
+            }
+            return opacitystring         
+      }
+
+      function getopacityChild1() {
+            var opacitystring = '0.0'
+            if ($(window).scrollTop() < 300) {
+                opacitystring = $(window).scrollTop()/300
+            } else {
+                opacitystring = '1.0'
+            }
+            return opacitystring          
+      }
+      
+      function getopacityButtons() {
+            var opacitystring = '1.0'
+            if (($(window).scrollTop() > 10) && ($(window).scrollTop() < 100)) {
+                opacitystring = 1 - ($(window).scrollTop()/100)
+            } else if (($(window).scrollTop() <= 10)) {
+                opacitystring = '1.0'
+            } else {
+                opacitystring = '0.0'
+            }
+            return opacitystring         
+      }
+
+      function getleftText() {
+          var leftstring = '0'
+          if ($(window).scrollTop() < 600) {
+              leftstring = '-' + ($(window).scrollTop()).toString() + "px"
+          } else {
+              leftstring = '-600px'
+          }
+          return leftstring
+      }
+
+      function getleft() {
+          var leftstring = '0'
+          if ($(window).scrollTop() < 600) {
+              leftstring = '-' + ($(window).scrollTop()).toString() + "px"
+          } else {
+              leftstring = '-700px'
+          }
+          return leftstring
+      }
+     
       var scrollPercent = ($(window).scrollTop() / ($(document).height() - $(window).height())).toFixed(4)
-      console.log(scrollPercent)
-
+//       console.log(scrollPercent)
       updatePolygons(scrollPercent)
       updateAttached()
-      
+ 
     }, false);
+
+    // Breadcrumb
+
+    $('#area1 , #bz0, #logo').on('click', function() {
+        scrollToY(0, 1, 'easeInOutSine');
+    })
+    
+    $('#area2 , #bz1 , #aarti , #_1').on('click', function() {
+        scrollToY(700, 100, 'easeInOutSine');
+    })
+
+    $('#area3 , #bz2').on('click', function() {
+        scrollToY(1800, 1, 'easeInOutSine');
+    })
+
+    $('#area4 , #bz3').on('click', function() {
+        scrollToY(2700, 1, 'easeInOutSine');
+    })
+
+    $('#area5 , #bz4').on('click', function() {
+        scrollToY(3500, 1, 'easeInOutSine');
+    })
+
+    $('#area6').on('click', function() {
+        scrollToY(5000, 1, 'easeInOutSine');
+    })
+
+    // http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+    window.requestAnimFrame = (function(){
+      return  window.requestAnimationFrame       ||
+              window.webkitRequestAnimationFrame ||
+              window.mozRequestAnimationFrame    ||
+              function( callback ){
+                window.setTimeout(callback, 1000 / 60);
+              };
+    })();
+
+    //Function to animate the breadcrumbs. Copied from stackoverflow here:
+    //http://stackoverflow.com/questions/12199363/scrollto-with-animation
+
+    function scrollToY(scrollTargetY, speed, easing) {
+        // scrollTargetY: the target scrollY property of the window
+        // speed: time in pixels per second
+        // easing: easing equation to use
+
+        var scrollY = window.scrollY,
+            scrollTargetY = scrollTargetY || 0,
+            speed = speed || 2000,
+            easing = easing || 'easeOutSine',
+            currentTime = 0;
+
+        // min time .1, max time .8 seconds
+        var time = Math.max(.1, Math.min(Math.abs(scrollY - scrollTargetY) / speed, .8));
+
+        // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
+        var PI_D2 = Math.PI / 2,
+            easingEquations = {
+                easeOutSine: function (pos) {
+                    return Math.sin(pos * (Math.PI / 2));
+                },
+                easeInOutSine: function (pos) {
+                    return (-0.5 * (Math.cos(Math.PI * pos) - 1));
+                },
+                easeInOutQuint: function (pos) {
+                    if ((pos /= 0.5) < 1) {
+                        return 0.5 * Math.pow(pos, 5);
+                    }
+                    return 0.5 * (Math.pow((pos - 2), 5) + 2);
+                }
+            };
+
+        // add animation loop
+        function tick() {
+            currentTime += 1 / 60;
+
+            var p = currentTime / time;
+            var t = easingEquations[easing](p);
+
+            if (p < 1) {
+                requestAnimFrame(tick);
+
+                window.scrollTo(0, scrollY + ((scrollTargetY - scrollY) * t));
+            } else {
+//                 console.log('scroll done');
+                window.scrollTo(0, scrollTargetY);
+            }
+        }
+
+        // call it once to get started
+        tick();
+    }
+
 
 })
