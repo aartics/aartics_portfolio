@@ -103,6 +103,7 @@ header {
   font-family: "ABeeZee", sans-serif;
   text-rendering:optimizeLegibility;
   -webkit-font-feature-settings: "kern" 1;
+  -webkit-text-stroke: 0.5px;
   margin: 450px 0 0 0;
   color: white;
 }
