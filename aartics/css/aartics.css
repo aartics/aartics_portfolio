@@ -24,7 +24,7 @@
 
 
 body {
-  width: 3000px;
+  width: 3500px;
   overflow-y: hidden;
   padding: 0;
   margin: 0;
@@ -33,51 +33,152 @@ body {
   background-color: #22313f;
 }
 
+header {
+  position: fixed;
+  right: 0;
+  z-index: 30;
+}
+
+.child1 text {
+  cursor:default;
+}
+
+.child1 text a{
+  cursor:pointer;
+}
+
+.aarticslogo {
+  position: fixed;
+  left: 50px;
+  top: 10px;
+  z-index: 25;
+}
+
+.parent {
+  position: relative;
+  width: 3700px;
+  height: 760px;
+}
+
+.child1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.0;
+}
+
+.child2 {
+  width: 1050px;
+  height: 760px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.child3 {
+  width: 1000px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.child4 {
+  width: 900px;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  margin-top: 160px;
+}
+
+
+.child3 h1 {
+  font-family: "ABeeZee";
+  margin: 200px 0 0 50px;
+  color: white;
+}
+
+.child3 p{
+  color: #e0e0e0;
+  margin: 60px 200px 0 50px;
+}
+
 .cls-1 {
   fill: #374959;
   fill-opacity: .8;
   stroke: #29626d;
-  z-index: 1;
 }
 
 .cls-2 {
   fill: rgba(34, 49, 63, 0.89);
   stroke-width: 2px;
   stroke: #b5b5b5;
-  z-index:2;
 
 }
 
-h1 {
-  color:white;
-  font-size: 24px;
-  padding-left: 80px;
-  padding-top: 5px;
+#ul_home_hypers {
+  list-style: none;
+  text-align: right;
 }
 
-text {
-  fill: whitesmoke;
+#ul_home_hypers li{
+  padding: 30px 0 0 0;
 }
 
-.backgroundgrad {
-/*   background: radial-gradient(black 15%, white 60%); */
-  background: #22313f;
-  width: 3000px;
-  height: 760px;
-  /* position: fixed; */
-  bottom: 0;
-  left: 0;
-  z-index:1;
-}
-.scroll
-{
-  /* position: fixed; */
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
+header button {
+  border: none;
+  background-color: #22313f;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+  width: 95px;
+/*   border-bottom: 2px solid green; */
 }
 
-.raleway {
+button:focus {outline:0;}
+
+#ul_top_hypers li {
+  display: inline;
+  padding: 0 9px 0 9px;
+}
+
+#ul_top_hypers {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+#area2:hover {
+  color: aqua;
+  border-bottom: 2px solid aqua;
+}
+
+#area3:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+#area4:hover {
+  color: #EF2D56;
+  border-bottom: 2px solid #EF2D56;
+}
+
+#area5:hover {
+  color: #FFC107;
+  border-bottom: 2px solid #FFC107;
+}
+
+#area6:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+raleway {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
@@ -123,11 +224,6 @@ text {
   fill: #00BCD4;
 }
 
-.project_box {
-  stroke:#8ac1c0;
-  stroke-width: 7px;
-}
-
 .project_box_arch {
   stroke:#ffffff;
   stroke-width: 1px;
@@ -164,66 +260,66 @@ text {
   stroke-width: 7px;
 }
 
+.project_box {
+  stroke:#99e7e8;
+  stroke-width: 7px;
+}
+
 #_7 {
-  fill: #75fffa;
+/*   fill: #374959; */
   fill-opacity: 0.0;
+/*   animation: hideshow 2s ease infinite; */
+
 }
 
 #_7:hover, #_7.hovered{
+  fill: #1EFC1E;
   fill-opacity: 0.8;
-/*   stroke:#75FFFA; */
-  stroke: url('#exampleGradient');
+  stroke: white;
+  animation: none;
 
 }
 
 #_16 {
-  fill: #75fffa;
+/*   fill: #374959; */
   fill-opacity: 0.0;
+/*   animation: hideshow 2s ease infinite; */
 }
 
 #_16:hover, #_16.hovered{
+  fill: #1EFC1E;
   fill-opacity: 0.8;
-  stroke:url('#exampleGradient');
+  stroke: white;
+  animation: none;
 }
 
 
 #_18 {
-  fill: #75fffa;
+/*   fill:#374959; */
   fill-opacity: 0.0;
+/*   animation: hideshow 2s ease infinite; */
 }
 
 #_18:hover, #_18.hovered{
+  fill: #1EFC1E;
   fill-opacity: 0.8;
-  stroke:url('#exampleGradient');
-}
-
-#_3 {
-  fill: #75fffa;
-  fill-opacity: 0.0;
-}
-
-#_3:hover, #_3.hovered{
-  fill-opacity: 0.8;
-  stroke:url('#exampleGradient');
+  stroke: white;
+  animation: none;
 }
 
 .contact_class {
   fill: #22313f;
-  fill-opacity: 0.4;
-  stroke: #71F300;
-  stroke-width: 4px;
+  fill-opacity: 1;
+  stroke: url(#linear);
+  stroke-width: 7px;
+  cursor: pointer;
+  animation: hideshow 2s ease infinite;
+  visibility: visible;
+  pointer-events: visiblePainted;
 }
 
-.contact_text a{
-  font-size: 18px;
-  fill: white;
-}
-.contact_text a:hover {
-  fill: red;
-}
-
-.ux {
-  fill:#548687;
+#_1:hover{
+  stroke: url(#linear2);
 }
 
 .traleway {
@@ -256,7 +352,8 @@ text {
 .casestudy a{
   font-family: Raleway;
   font-size: 10.5px;
-  fill:#548687;
+/*   fill:#548687; */
+  fill:aqua;
 }
 
 .projectdescription a{
@@ -313,5 +410,63 @@ text {
   20% { opacity: 1; }
   60% { opacity: 1; }
   100% { opacity: 0.1; }
-} 
+}
 
+#logo {
+  cursor: pointer;
+}
+
+#logo:hover{
+/*   filter: sepia() saturate(10000%) hue-rotate(100deg); */
+}
+
+.logoc img{
+  width: 32px;
+  margin-top: 0;
+  padding: 40px 0 0 18px;
+/*   filter: sepia() saturate(10000%) hue-rotate(30deg); this turns png green */
+}
+
+.logoc img:hover{
+  filter: sepia() saturate(10000%) hue-rotate(30deg);
+}
+
+.logowrapper {
+  margin: 0 0 0 29px;
+}
+/* 
+.nibbler {
+  fill: #242b31;
+} */
+
+.ilike {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  fill: #8ac1c0;
+}
+
+.interest {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  fill: #8ac1c0;
+}
+
+.csar a {
+  fill:orange;
+}
+
+.cspg a{
+  fill:#EF2D56;
+}
+
+#_12:hover{
+  cursor:s-resize;
+}
+
+#_13:hover{
+  cursor:e-resize;
+}
+
+#_11:hover{
+  cursor:nw-resize;
+}
