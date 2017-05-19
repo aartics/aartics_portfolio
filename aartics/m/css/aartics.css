@@ -101,9 +101,9 @@ header {
 
 .child3 h1 {
   font-family: "ABeeZee", sans-serif;
-  text-rendering:optimizeLegibility;
+/*   text-rendering:optimizeLegibility; */
   -webkit-font-feature-settings: "kern" 1;
-  -webkit-text-stroke: 0.5px;
+  text-rendering: geometricPrecision;
   margin: 450px 0 0 0;
   color: white;
 }
