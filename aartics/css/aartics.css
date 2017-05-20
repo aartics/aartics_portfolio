@@ -208,12 +208,12 @@ raleway {
 }
 
 #credits9 a{
-  font-size: 12px;
-  fill: #ffffff;
+  font-size: 14px;
+  fill: #b3b3b3;
 }
 
 #credits9 a:hover{
-  font-size: 12px;
+  font-size: 14px;
   fill: #00BCD4;
 }
 
@@ -498,4 +498,40 @@ raleway {
 
 #tirp5, #tirp6:hover{
   cursor:nw-resize;
+}
+
+.creds {
+  fill: #c7c7c7;
+  font-family: 'Raleway';
+  font-size: 14px;
+}
+
+#credabme, #credabweb {
+  fill: white;
+  font-family: 'Raleway';
+  font-size: 19px;
+}
+
+#credcontact {
+  font-size: 18px;
+}
+
+#credcontact a{
+  fill: #F8C537;
+}
+
+#credlinks {
+  font-size: 19px;
+}
+
+#credlinks a{
+  fill: #F8C537;
+}
+
+#credlinks a:hover{
+  fill: #00BCD4;
+}
+
+#credcontact a:hover{
+  fill: #00BCD4;
 }
