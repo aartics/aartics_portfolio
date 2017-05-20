@@ -6,10 +6,6 @@ $(document).ready(function() {
         history.go(1)
     }
 
-    $('header').fadeTo( "fast" , 0.3, function() {
-       // Animation complete.
-    });
-
     var polyData = window.PolyData
 
     var step = 100 / (polyData.states - 1)
@@ -96,6 +92,111 @@ $(document).ready(function() {
         return polygonPoints
     }
 
+    //Calculate the location of the text and polygons when coming back on page
+    var scrollPercent = ($(window).scrollLeft() / ($(document).width() - $(window).width())).toFixed(4)
+    updatePolygons(scrollPercent)
+    updateAttached()
+
+    if ($(window).scrollLeft() > 0) {
+      $('#area2').hover(function() {
+          $('#area2').css({'color':'cyan'})
+          $('#area2').css({'border-bottom':'2px solid aqua'})
+      }, function() {
+          $('#area2').css({'color':'white'})
+          $('#area2').css({'border-bottom':'none'})
+      })
+
+      $('#area3').hover(function() {
+          $('#area3').css({'color':'orange'})
+          $('#area3').css({'border-bottom':'2px solid orange'})
+      }, function() {
+          $('#area3').css({'color':'white'})
+          $('#area3').css({'border-bottom':'none'})
+      })
+
+      $('#area4').hover(function() {
+          $('#area4').css({'color':'#EF2D56'})
+          $('#area4').css({'border-bottom':'2px solid #EF2D56'})
+      }, function() {
+          $('#area4').css({'color':'white'})
+          $('#area4').css({'border-bottom':'none'})
+      })
+
+      $('#area5').hover(function() {
+          $('#area5').css({'color':'#FFC107'})
+          $('#area5').css({'border-bottom':'2px solid #FFC107'})
+      }, function() {
+          $('#area5').css({'color':'white'})
+          $('#area5').css({'border-bottom':'none'})
+      })
+
+      $('#area6').hover(function() {
+          $('#area6').css({'color':'white'})
+          $('#area6').css({'border-bottom':'2px solid white'})
+      }, function() {
+          $('#area6').css({'color':'white'})
+          $('#area6').css({'border-bottom':'none'})
+      })
+    }
+
+    if (($(window).scrollLeft() > 200) && ($(window).scrollLeft() < 800)) {
+        $('#area2').css({'color':'cyan'})
+        $('#area2').css({'border-bottom':'2px solid aqua'})
+    } else if (($(window).scrollLeft() <= 200)) {
+        $('#area2').css({'color':'white'})
+        $('#area2').css({'border-bottom':'none'})
+        $('.child1').css({'opacity':'0.0'})
+        $('header').css({'opacity':'0.3'})
+    } else {
+        $('#area2').css({'color':'white'})
+        $('#area2').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollLeft() > 700) && ($(window).scrollLeft() < 1500)) {
+        $('#area3').css({'color':'orange'})
+        $('#area3').css({'border-bottom':'2px solid orange'})
+    } else if (($(window).scrollLeft() <= 700)) {
+        $('#area3').css({'color':'white'})
+        $('#area3').css({'border-bottom':'none'})
+    } else {
+        $('#area3').css({'color':'white'})
+        $('#area3').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollLeft() > 1400) && ($(window).scrollLeft() < 1900)) {
+        $('#area4').css({'color':'#EF2D56'})
+        $('#area4').css({'border-bottom':'2px solid #EF2D56'})
+    } else if (($(window).scrollLeft() <= 1400)) {
+        $('#area4').css({'color':'white'})
+        $('#area4').css({'border-bottom':'none'})
+    } else {
+        $('#area4').css({'color':'white'})
+        $('#area4').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollLeft() > 1800) && ($(window).scrollLeft() < 2200)) {
+        $('#area5').css({'color':'#FFC107'})
+        $('#area5').css({'border-bottom':'2px solid #FFC107'})
+    } else if (($(window).scrollLeft() <= 1800)) {
+        $('#area5').css({'color':'white'})
+        $('#area5').css({'border-bottom':'none'})
+    } else {
+        $('#area5').css({'color':'white'})
+        $('#area5').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollLeft() > 2100) && ($(window).scrollLeft() < 3501)) {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'2px solid white'})
+    } else if (($(window).scrollLeft() <= 2100)) {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'none'})
+    } else {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'none'})
+    }
+
+
     // Propagate polygon.has_link hovering to the descendant links of the group
     // that is attached to that polygon (with data-attach), by adding/removing
     // the .hovered class to all the links inside the group.
@@ -121,18 +222,19 @@ $(document).ready(function() {
 
     // Clicking on a polygon with the .has_link class will open the href of the
     // first link inside a group that is attached to the polygon (with data-attach).
-    $('svg').on('click', 'polygon.has_link', function(e) {
-        var $target = $(e.target)
-        var id = $target.attr('id')
-        if (id) {
-            var $a = $('[data-attach="#' + id + '"]').find('a').first()
-            if ($a.length) {
-                var href = $a.attr('href')
-                var tgt = $.attr('target') || '_blank'
-                window.open(href, tgt)
-            }
-        }
-    })
+//     $('svg').on('click', 'polygon.has_link', function(e) {
+//         var $target = $(e.target)
+//         var id = $target.attr('id')
+//         if (id) {
+//             var $a = $('[data-attach="#' + id + '"]').find('a').first()
+//             if ($a.length) {
+//                 var href = $a.attr('href')
+//                 var tgt = $.attr('target') || '_blank'
+//                 window.open(href, tgt)
+//             }
+//         }
+//     })
+
 
     // Animate polygons based on horizontal scroll position
     window.addEventListener("scroll", function(event) {
@@ -142,7 +244,60 @@ $(document).ready(function() {
       $('.child4').css({'left':getleft()})
       $('.child4').css({'opacity':getopacityButtons()})
       $('.contact_class').css({'animation':'none'})
-    
+
+      function getopacity() {
+            var opacitystring = '0.0'
+            if (($(window).scrollLeft() > 95) && ($(window).scrollLeft() < 300)) {
+                opacitystring = $(window).scrollLeft()/300
+            } else if ($(window).scrollLeft() <= 95) {
+                opacitystring = '0.3'
+            } else {
+                opacitystring = '1.0'
+            }
+            return opacitystring         
+      }
+
+      function getopacityChild1() {
+            var opacitystring = '0.0'
+            if ($(window).scrollLeft() < 300) {
+                opacitystring = $(window).scrollLeft()/300
+            } else {
+                opacitystring = '1.0'
+            }
+            return opacitystring          
+      }
+      
+      function getopacityButtons() {
+            var opacitystring = '1.0'
+            if (($(window).scrollLeft() > 10) && ($(window).scrollLeft() < 100)) {
+                opacitystring = 1 - ($(window).scrollLeft()/100)
+            } else if (($(window).scrollLeft() <= 10)) {
+                opacitystring = '1.0'
+            } else {
+                opacitystring = '0.0'
+            }
+            return opacitystring         
+      }
+
+      function getleftText() {
+          var leftstring = '0'
+          if ($(window).scrollLeft() < 600) {
+              leftstring = '-' + ($(window).scrollLeft()).toString() + "px"
+          } else {
+              leftstring = '-600px'
+          }
+          return leftstring
+      }
+
+      function getleft() {
+          var leftstring = '0'
+          if ($(window).scrollLeft() < 600) {
+              leftstring = '-' + ($(window).scrollLeft()).toString() + "px"
+          } else {
+              leftstring = '-700px'
+          }
+          return leftstring
+      }
     if ($(window).scrollLeft() > 0) {
       $('#area2').hover(function() {
           $('#area2').css({'color':'cyan'})
@@ -241,60 +396,6 @@ $(document).ready(function() {
     }
 
 
-      function getopacity() {
-            var opacitystring = '0.0'
-            if (($(window).scrollLeft() > 95) && ($(window).scrollLeft() < 300)) {
-                opacitystring = $(window).scrollLeft()/300
-            } else if ($(window).scrollLeft() <= 95) {
-                opacitystring = '0.3'
-            } else {
-                opacitystring = '1.0'
-            }
-            return opacitystring         
-      }
-
-      function getopacityChild1() {
-            var opacitystring = '0.0'
-            if ($(window).scrollLeft() < 300) {
-                opacitystring = $(window).scrollLeft()/300
-            } else {
-                opacitystring = '1.0'
-            }
-            return opacitystring          
-      }
-      
-      function getopacityButtons() {
-            var opacitystring = '1.0'
-            if (($(window).scrollLeft() > 10) && ($(window).scrollLeft() < 100)) {
-                opacitystring = 1 - ($(window).scrollLeft()/100)
-            } else if (($(window).scrollLeft() <= 10)) {
-                opacitystring = '1.0'
-            } else {
-                opacitystring = '0.0'
-            }
-            return opacitystring         
-      }
-
-      function getleftText() {
-          var leftstring = '0'
-          if ($(window).scrollLeft() < 600) {
-              leftstring = '-' + ($(window).scrollLeft()).toString() + "px"
-          } else {
-              leftstring = '-600px'
-          }
-          return leftstring
-      }
-
-      function getleft() {
-          var leftstring = '0'
-          if ($(window).scrollLeft() < 600) {
-              leftstring = '-' + ($(window).scrollLeft()).toString() + "px"
-          } else {
-              leftstring = '-700px'
-          }
-          return leftstring
-      }
-     
       var scrollPercent = ($(window).scrollLeft() / ($(document).width() - $(window).width())).toFixed(4)
       updatePolygons(scrollPercent)
       updateAttached()
@@ -391,6 +492,55 @@ $(document).ready(function() {
         tick();
     }
 
+    //Ensure links open in the same window:
+    $('#_7').click(function() {
+        window.location.href = "projects/resonateai"
+    })
+    $('#_18').click(function() {
+        window.location.href = "projects/karunavr"
+    })
+    $('#_16').click(function() {
+        window.location.href = "projects/aartics_story"
+    })
+    $('#_24').click(function() {
+        window.location.href = "projects/aartics_architecture.pdf"
+    })
+    $('#_30').click(function() {
+        window.location.href = "projects/mumbai"
+    })
+    $('#_29').click(function() {
+        window.location.href = "projects/coimbatore"
+    })
+    $('#_27').click(function() {
+        window.location.href = "projects/barcelona"
+    })
+    $('#_28').click(function() {
+        window.location.href = "projects/assen"
+    })
+    $('#_31').click(function() {
+        window.location.href = "projects/allsportsbar"
+    })
+    $('#_38').click(function() {
+        window.location.href = "projects/bendy"
+    })
+    $('#_39').click(function() {
+        window.location.href = "https://github.com/aartics/chess_models"
+    })
+    $('#_40').click(function() {
+        window.location.href = "projects/graphics"
+    })
+    $('#_36').click(function() {
+        window.location.href = "projects/octet"
+    })
+    $('#_44').click(function() {
+        window.location.href = "https://github.com/aartics"
+    })
+    $('#_49').click(function() {
+        window.location.href = "https://www.linkedin.com/in/aartics/"
+    })
+    $('#_48').click(function() {
+        window.location.href = "aartics_resume.pdf"
+    })
 })
 
 

@@ -5,10 +5,6 @@ $(document).ready(function() {
     window.onpopstate = function(event) {
         history.go(1)
     }
-
-    $('header').fadeTo( "fast" , 0.2, function() {
-       // Animation complete.
-    });
     
     var polyData = window.PolyData
 
@@ -103,6 +99,107 @@ $(document).ready(function() {
         return polygonPoints
     }
 
+    var scrollPercent = ($(window).scrollTop() / ($(document).height() - $(window).height())).toFixed(4)
+    updatePolygons(scrollPercent)
+    updateAttached()
+
+    if ($(window).scrollTop() > 0) {
+      $('#area2').click(function() {
+          $('#area2').css({'color':'cyan'})
+          $('#area2').css({'border-bottom':'2px solid aqua'})
+      }, function() {
+          $('#area2').css({'color':'white'})
+          $('#area2').css({'border-bottom':'none'})
+      })
+
+      $('#area3').click(function() {
+          $('#area3').css({'color':'orange'})
+          $('#area3').css({'border-bottom':'2px solid orange'})
+      }, function() {
+          $('#area3').css({'color':'white'})
+          $('#area3').css({'border-bottom':'none'})
+      })
+
+      $('#area4').click(function() {
+          $('#area4').css({'color':'#EF2D56'})
+          $('#area4').css({'border-bottom':'2px solid #EF2D56'})
+      }, function() {
+          $('#area4').css({'color':'white'})
+          $('#area4').css({'border-bottom':'none'})
+      })
+
+      $('#area5').click(function() {
+          $('#area5').css({'color':'#FFC107'})
+          $('#area5').css({'border-bottom':'2px solid #FFC107'})
+      }, function() {
+          $('#area5').css({'color':'white'})
+          $('#area5').css({'border-bottom':'none'})
+      })
+
+      $('#area6').click(function() {
+          $('#area6').css({'color':'white'})
+          $('#area6').css({'border-bottom':'2px solid white'})
+      }, function() {
+          $('#area6').css({'color':'white'})
+          $('#area6').css({'border-bottom':'none'})
+      })
+    }
+
+    if (($(window).scrollTop() > 500) && ($(window).scrollTop() < 1500)) {
+        $('#area2').css({'color':'cyan'})
+        $('#area2').css({'border-bottom':'2px solid aqua'})
+    } else if (($(window).scrollTop() <= 200)) {
+        $('#area2').css({'color':'white'})
+        $('#area2').css({'border-bottom':'none'})
+    } else {
+        $('#area2').css({'color':'white'})
+        $('#area2').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollTop() > 1300) && ($(window).scrollTop() < 2100)) {
+        $('#area3').css({'color':'orange'})
+        $('#area3').css({'border-bottom':'2px solid orange'})
+    } else if (($(window).scrollTop() <= 700)) {
+        $('#area3').css({'color':'white'})
+        $('#area3').css({'border-bottom':'none'})
+    } else {
+        $('#area3').css({'color':'white'})
+        $('#area3').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollTop() > 1900) && ($(window).scrollTop() < 2800)) {
+        $('#area4').css({'color':'#EF2D56'})
+        $('#area4').css({'border-bottom':'2px solid #EF2D56'})
+    } else if (($(window).scrollTop() <= 1400)) {
+        $('#area4').css({'color':'white'})
+        $('#area4').css({'border-bottom':'none'})
+    } else {
+        $('#area4').css({'color':'white'})
+        $('#area4').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollTop() > 2600) && ($(window).scrollTop() < 3700)) {
+        $('#area5').css({'color':'#FFC107'})
+        $('#area5').css({'border-bottom':'2px solid #FFC107'})
+    } else if (($(window).scrollTop() <= 1800)) {
+        $('#area5').css({'color':'white'})
+        $('#area5').css({'border-bottom':'none'})
+    } else {
+        $('#area5').css({'color':'white'})
+        $('#area5').css({'border-bottom':'none'})
+    }
+
+    if (($(window).scrollTop() > 3600) && ($(window).scrollTop() < 5001)) {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'2px solid white'})
+    } else if (($(window).scrollTop() <= 2100)) {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'none'})
+    } else {
+        $('#area6').css({'color':'white'})
+        $('#area6').css({'border-bottom':'none'})
+    }
+
     // Propagate polygon.has_link hovering to the descendant links of the group
     // that is attached to that polygon (with data-attach), by adding/removing
     // the .hovered class to all the links inside the group.
@@ -128,23 +225,23 @@ $(document).ready(function() {
 
     // Clicking on a polygon with the .has_link class will open the href of the
     // first link inside a group that is attached to the polygon (with data-attach).
-    $('svg').on('click', 'polygon.has_link', function(e) {
-        var $target = $(e.target)
-        var id = $target.attr('id')
-        if (id) {
-            var $a = $('[data-attach="#' + id + '"]').find('a').first()
-            if ($a.length) {
-                var href = $a.attr('href')
-                var tgt = $a.attr('target')
-                if (tgt)
-                    // open in a new window of the target attribute is set (see issue #13)
-                    window.open(href, tgt)
-                else
-                    // just change the current location if target attribute is not set
-                    window.location.href = href
-            }
-        }
-    })
+    // $('svg').on('click', 'polygon.has_link', function(e) {
+    //     var $target = $(e.target)
+    //     var id = $target.attr('id')
+    //     if (id) {
+    //         var $a = $('[data-attach="#' + id + '"]').find('a').first()
+    //         if ($a.length) {
+    //             var href = $a.attr('href')
+    //             var tgt = $a.attr('target')
+    //             if (tgt)
+    //                 // open in a new window of the target attribute is set (see issue #13)
+    //                 window.open(href, tgt)
+    //             else
+    //                 // just change the current location if target attribute is not set
+    //                 window.location.href = href
+    //         }
+    //     }
+    // })
 
     window.addEventListener("scroll", function(event) {
       $('header').css({'opacity':getopacity()})
@@ -307,7 +404,6 @@ $(document).ready(function() {
       }
      
       var scrollPercent = ($(window).scrollTop() / ($(document).height() - $(window).height())).toFixed(4)
-//       console.log(scrollPercent)
       updatePolygons(scrollPercent)
       updateAttached()
  
@@ -403,6 +499,54 @@ $(document).ready(function() {
         // call it once to get started
         tick();
     }
-
+    //Ensure links open in the same window:
+    $('#_7').click(function() {
+        window.location.href = "../projects/resonateai"
+    })
+    $('#_18').click(function() {
+        window.location.href = "../projects/karunavr"
+    })
+    $('#_16').click(function() {
+        window.location.href = "../projects/aartics_story"
+    })
+    $('#_24').click(function() {
+        window.location.href = "../projects/aartics_architecture.pdf"
+    })
+    $('#_30').click(function() {
+        window.location.href = "../projects/mumbai"
+    })
+    $('#_29').click(function() {
+        window.location.href = "../projects/coimbatore"
+    })
+    $('#_27').click(function() {
+        window.location.href = "../projects/barcelona"
+    })
+    $('#_28').click(function() {
+        window.location.href = "../projects/assen"
+    })
+    $('#_31').click(function() {
+        window.location.href = "../projects/allsportsbar"
+    })
+    $('#_38').click(function() {
+        window.location.href = "../projects/bendy"
+    })
+    $('#_39').click(function() {
+        window.location.href = "https://github.com/aartics/chess_models"
+    })
+    $('#_40').click(function() {
+        window.location.href = "../projects/graphics"
+    })
+    $('#_36').click(function() {
+        window.location.href = "../projects/octet"
+    })
+    $('#_44').click(function() {
+        window.location.href = "https://github.com/aartics"
+    })
+    $('#_49').click(function() {
+        window.location.href = "https://www.linkedin.com/in/aartics/"
+    })
+    $('#_48').click(function() {
+        window.location.href = "../aartics_resume.pdf"
+    })
 
 })

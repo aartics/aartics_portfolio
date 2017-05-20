@@ -67,7 +67,7 @@ header {
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 0.0;
+/*   opacity: 0.0; */
 }
 
 .child2 {
@@ -138,6 +138,7 @@ header button {
   color: white;
   cursor: pointer;
   width: 95px;
+  font-family: 'Raleway';
 /*   border-bottom: 2px solid green; */
 }
 
@@ -434,10 +435,10 @@ raleway {
 .logowrapper {
   margin: 0 0 0 29px;
 }
-/* 
+
 .nibbler {
-  fill: #242b31;
-} */
+  fill: rgba(36, 41, 49, 0.73);
+}
 
 .ilike {
   font-family: "Raleway", sans-serif;
@@ -449,6 +450,22 @@ raleway {
   font-family: "Raleway", sans-serif;
   font-size: 22px;
   fill: #8ac1c0;
+}
+
+#arch1 {
+  fill: orange;
+}
+
+#arch2 {
+  fill: orange;
+}
+
+#grpd0, #grpd1, #grpd2 {
+  fill: #EF2D56;
+}
+
+#ab1, #ab2, #ab3 {
+  fill: #F8C537;
 }
 
 .csar a {
@@ -468,5 +485,17 @@ raleway {
 }
 
 #_11:hover{
+  cursor:nw-resize;
+}
+
+#tr4, #tr5:hover{
+  cursor:s-resize;
+}
+
+#mdia8, #mdia9:hover{
+  cursor:e-resize;
+}
+
+#tirp5, #tirp6:hover{
   cursor:nw-resize;
 }
