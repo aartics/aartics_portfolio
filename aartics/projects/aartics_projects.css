@@ -57,12 +57,67 @@
   height: 50px;
 }
 
-.project-name {
-  float: right;
-  padding: 20px 30px 20px 0;
+#project-content {
+  background-color: #22313f;
 }
 
-.project-name a {
+.dropdown {
+  float: right;
+  padding: 5px 5px 20px 0;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgba(76, 175, 80, 0);
+    color: white;
+    padding: 16px;
+    font-size: 25px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: thick solid #4CAF50;
+    cursor: pointer;
+    font-family: 'Raleway';
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #4CAF50;
+}
+
+
+/* .project-name {
   font-size: 30px;
   float: right;
   padding-right: 10px;
@@ -70,9 +125,9 @@
   color: #EAF2EF;
 }
 
-.project-name a:hover{
+.project-name:hover{
   color: #00BCD4;
-}
+} */
 
 #project-content {
   text-align: center;
@@ -91,19 +146,18 @@
   padding: 100px 0px 20px 0px;
   margin-top: 100px;
   border-style: solid;
-  border-width: 2px 0 0 0;
+  border-width: 8px 0 0 0;
   border-color: #efefef;
-/*   background-color: #f8f8f8; */
   color: #000000;
   font-size: 31px;
-  color: #00a3c3;
+  color: aqua;
 
 }
 
 .image-title h4 {
   font-family: 'Raleway', sans-serif;
   font-weight:400;
-  color: #00a3c3;
+  color: aqua;
   font-size: 31px;
 
 }
@@ -127,7 +181,7 @@
   font-weight:lighter;
   padding-top: 0;
   margin-top: 0;
-  color: #000000;
+  color: #dadada;
 }
 
 .image-title ul {
@@ -146,7 +200,7 @@
 
 
 body {
-  background-color: white;
+  background-color: #22313f;
   margin:0;
 }
 
@@ -172,24 +226,26 @@ body {
 #contents {
   font-family: 'Raleway', sans-serif;
   margin: none;
-  padding: 50px 200px 50px 250px;
+  padding: 50px 0 50px 0;
   text-align: left;
-  background-color: #3C6E71;
+  background-color: #55828B;
   color: #ffffff;
+  font-size: 30px;
+  text-align: center;
 }
 
 #contents ul {
   font-family: 'Raleway', sans-serif;
   list-style: none;
   font-weight:lighter;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 #contents ul a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight:lighter;
-  color: #e8e8e8;
+  color: #22313F;
 }
 
 #contents ul a:hover {
@@ -225,4 +281,49 @@ body {
 
 #bef {
   margin-top: 0;
+}
+
+footer {
+  background-color: black;
+  height: 80px;
+  font-family: 'Raleway';
+  color: #c3c3c3;
+  padding: 0 0 0 0;
+  font-size: 20px;
+  padding-top: 3px;
+}
+
+.parentfooter {
+  position: relative;
+  top: 0;
+}
+
+.signature {
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+.signature p {
+  padding-top: 5px;
+}
+
+.signature a {
+  text-decoration: none;
+  color: #85CB33;
+}
+
+.logowrapper {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.logoc img {
+  height: 30px;
+  padding: 20px 50px 0 0;
+}
+
+.logoc img:hover{
+  filter: sepia() saturate(10000%) hue-rotate(30deg);
 }
