@@ -184,6 +184,16 @@
   color: #dadada;
 }
 
+.image-title p a {
+  text-decoration: none;
+  color: #89ff01;
+}
+
+.image-title p a: hover {
+  text-decoration: none;
+  color: #00BCD4;
+}
+
 .image-title ul {
   list-style: none;
   text-align: left;
