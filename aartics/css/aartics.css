@@ -224,9 +224,10 @@ header {
   border-bottom: 2px solid white;
 }
  */
+
 raleway {
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .credits {
@@ -543,6 +544,11 @@ raleway {
 
 #tirp5, #tirp6:hover{
   cursor:nw-resize;
+}
+
+#c1 {
+  stroke: url(#linear3);
+  stroke-width: 2px;
 }
 
 .creds {
