@@ -30,7 +30,8 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  background-color: #22313f;
+/*   background-color: #22313f; */
+
 }
 
 header {
@@ -87,6 +88,8 @@ header {
   top: 0;
   left: 0;
   z-index: 4;
+/*   background-color: red; */
+/*   background-image: url("../img/cover.png"); */
 }
 
 .child4 {
@@ -101,51 +104,41 @@ header {
 .child3 h1 {
   font-family: "ABeeZee";
   margin: 200px 0 0 50px;
-  color: white;
+  color: black;
 }
 
 .child3 p{
-  color: #e0e0e0;
+  color: #000000;
   margin: 60px 200px 0 50px;
 }
 
 .cls-1 {
-  fill: #374959;
+  fill: #ffffff;
   fill-opacity: .8;
-  stroke: #29626d;
+  stroke: #000000;
 }
 
 .cls-2 {
-  fill: rgba(34, 49, 63, 0.89);
-  stroke-width: 2px;
-  stroke: #b5b5b5;
+  fill: rgba(255, 255, 255, 0.89);
+  stroke-width: 1px;
+  stroke: #000000;
 
 }
 
-#ul_home_hypers {
-  list-style: none;
-  text-align: right;
-}
-
-#ul_home_hypers li{
-  padding: 30px 0 0 0;
-}
-
-header button {
+/* header button {
   border: none;
-  background-color: #22313f;
+  background-color: #ffffff;
   font-size: 12px;
-  color: white;
+  color: black;
   cursor: pointer;
   width: 95px;
   font-family: 'Raleway';
-/*   border-bottom: 2px solid green; */
-}
+} */
 
-button:focus {outline:0;}
+/* button:focus {outline:0;} */
 
 #ul_top_hypers li {
-  display: inline;
+  display: inline-block;
   padding: 0 9px 0 9px;
 }
 
@@ -154,6 +147,58 @@ button:focus {outline:0;}
   margin: 0 0 0 0;
 }
 
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    background-color: #ffffff;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    width: 95px;
+    font-family: 'Raleway';
+}
+
+.dropbtn:focus {
+  outline: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    font-size: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: rgb(210, 210, 210);
+}
+
+
+
+
+/* 
 #area2:hover {
   color: aqua;
   border-bottom: 2px solid aqua;
@@ -178,7 +223,7 @@ button:focus {outline:0;}
   color: white;
   border-bottom: 2px solid white;
 }
-
+ */
 raleway {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -226,7 +271,7 @@ raleway {
 }
 
 .project_box_arch {
-  stroke:#ffffff;
+  stroke:#000000;
   stroke-width: 1px;
 }
 
@@ -238,7 +283,7 @@ raleway {
 }
 
 .project_box_product {
-  stroke:#ffffff;
+  stroke:#000000;
   stroke-width: 1px;
 }
 
@@ -250,7 +295,7 @@ raleway {
 }
 
 .project_box_soft {
-  stroke:#ffffff;
+  stroke:#000000;
   stroke-width: 1px;  
 }
 
@@ -262,7 +307,7 @@ raleway {
 }
 
 .project_box {
-  stroke:#99e7e8;
+  stroke:#000000;
   stroke-width: 7px;
 }
 
@@ -276,7 +321,7 @@ raleway {
 #_7:hover, #_7.hovered{
   fill: #1EFC1E;
   fill-opacity: 0.8;
-  stroke: white;
+  stroke: black;
   animation: none;
 
 }
@@ -290,7 +335,7 @@ raleway {
 #_16:hover, #_16.hovered{
   fill: #1EFC1E;
   fill-opacity: 0.8;
-  stroke: white;
+  stroke: black;
   animation: none;
 }
 
@@ -304,12 +349,12 @@ raleway {
 #_18:hover, #_18.hovered{
   fill: #1EFC1E;
   fill-opacity: 0.8;
-  stroke: white;
+  stroke: black;
   animation: none;
 }
 
 .contact_class {
-  fill: #22313f;
+  fill: #ffffff;
   fill-opacity: 1;
   stroke: url(#linear);
   stroke-width: 7px;
@@ -327,13 +372,13 @@ raleway {
   font-family: Raleway;
   font-style: italic;
   font-size: 15px;
-  fill: #ffffff;
+  fill: #000000;
 }
 
 #aarti {
   font-family: Raleway;
   font-size: 35px;
-  fill:#ffffff;
+  fill:#000000;
 }
 
 #c {
@@ -369,7 +414,7 @@ raleway {
   font-family: Raleway;
   font-style: thin;
   font-size: 20px;
-  fill: #ffffff;  
+  fill: #000000;  
 }
 
 .titleux {
@@ -437,19 +482,19 @@ raleway {
 }
 
 .nibbler {
-  fill: rgba(36, 41, 49, 0.73);
+  fill: rgba(255, 255, 255, 0.73);
 }
 
 .ilike {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  fill: #8ac1c0;
+  fill: #000000;
 }
 
 .interest {
   font-family: "Raleway", sans-serif;
   font-size: 22px;
-  fill: #8ac1c0;
+  fill: #000000;
 }
 
 #arch1 {
@@ -501,13 +546,13 @@ raleway {
 }
 
 .creds {
-  fill: #c7c7c7;
+  fill: #000000;
   font-family: 'Raleway';
   font-size: 14px;
 }
 
 #credabme, #credabweb {
-  fill: white;
+  fill: black;
   font-family: 'Raleway';
   font-size: 19px;
 }

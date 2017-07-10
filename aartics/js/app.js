@@ -102,7 +102,7 @@ $(document).ready(function() {
           $('#area2').css({'color':'cyan'})
           $('#area2').css({'border-bottom':'2px solid aqua'})
       }, function() {
-          $('#area2').css({'color':'white'})
+          $('#area2').css({'color':'black'})
           $('#area2').css({'border-bottom':'none'})
       })
 
@@ -110,7 +110,7 @@ $(document).ready(function() {
           $('#area3').css({'color':'orange'})
           $('#area3').css({'border-bottom':'2px solid orange'})
       }, function() {
-          $('#area3').css({'color':'white'})
+          $('#area3').css({'color':'black'})
           $('#area3').css({'border-bottom':'none'})
       })
 
@@ -118,7 +118,7 @@ $(document).ready(function() {
           $('#area4').css({'color':'#EF2D56'})
           $('#area4').css({'border-bottom':'2px solid #EF2D56'})
       }, function() {
-          $('#area4').css({'color':'white'})
+          $('#area4').css({'color':'black'})
           $('#area4').css({'border-bottom':'none'})
       })
 
@@ -126,7 +126,7 @@ $(document).ready(function() {
           $('#area5').css({'color':'#FFC107'})
           $('#area5').css({'border-bottom':'2px solid #FFC107'})
       }, function() {
-          $('#area5').css({'color':'white'})
+          $('#area5').css({'color':'black'})
           $('#area5').css({'border-bottom':'none'})
       })
 
@@ -134,7 +134,7 @@ $(document).ready(function() {
           $('#area6').css({'color':'white'})
           $('#area6').css({'border-bottom':'2px solid white'})
       }, function() {
-          $('#area6').css({'color':'white'})
+          $('#area6').css({'color':'black'})
           $('#area6').css({'border-bottom':'none'})
       })
     }
@@ -143,12 +143,12 @@ $(document).ready(function() {
         $('#area2').css({'color':'cyan'})
         $('#area2').css({'border-bottom':'2px solid aqua'})
     } else if (($(window).scrollLeft() <= 200)) {
-        $('#area2').css({'color':'white'})
+        $('#area2').css({'color':'black'})
         $('#area2').css({'border-bottom':'none'})
         $('.child1').css({'opacity':'0.0'})
         $('header').css({'opacity':'0.3'})
     } else {
-        $('#area2').css({'color':'white'})
+        $('#area2').css({'color':'black'})
         $('#area2').css({'border-bottom':'none'})
     }
 
@@ -156,10 +156,10 @@ $(document).ready(function() {
         $('#area3').css({'color':'orange'})
         $('#area3').css({'border-bottom':'2px solid orange'})
     } else if (($(window).scrollLeft() <= 700)) {
-        $('#area3').css({'color':'white'})
+        $('#area3').css({'color':'black'})
         $('#area3').css({'border-bottom':'none'})
     } else {
-        $('#area3').css({'color':'white'})
+        $('#area3').css({'color':'black'})
         $('#area3').css({'border-bottom':'none'})
     }
 
@@ -167,10 +167,10 @@ $(document).ready(function() {
         $('#area4').css({'color':'#EF2D56'})
         $('#area4').css({'border-bottom':'2px solid #EF2D56'})
     } else if (($(window).scrollLeft() <= 1400)) {
-        $('#area4').css({'color':'white'})
+        $('#area4').css({'color':'black'})
         $('#area4').css({'border-bottom':'none'})
     } else {
-        $('#area4').css({'color':'white'})
+        $('#area4').css({'color':'black'})
         $('#area4').css({'border-bottom':'none'})
     }
 
@@ -178,21 +178,21 @@ $(document).ready(function() {
         $('#area5').css({'color':'#FFC107'})
         $('#area5').css({'border-bottom':'2px solid #FFC107'})
     } else if (($(window).scrollLeft() <= 1800)) {
-        $('#area5').css({'color':'white'})
+        $('#area5').css({'color':'black'})
         $('#area5').css({'border-bottom':'none'})
     } else {
-        $('#area5').css({'color':'white'})
+        $('#area5').css({'color':'black'})
         $('#area5').css({'border-bottom':'none'})
     }
 
     if (($(window).scrollLeft() > 2100) && ($(window).scrollLeft() < 3501)) {
-        $('#area6').css({'color':'white'})
+        $('#area6').css({'color':'black'})
         $('#area6').css({'border-bottom':'2px solid white'})
     } else if (($(window).scrollLeft() <= 2100)) {
-        $('#area6').css({'color':'white'})
+        $('#area6').css({'color':'black'})
         $('#area6').css({'border-bottom':'none'})
     } else {
-        $('#area6').css({'color':'white'})
+        $('#area6').css({'color':'black'})
         $('#area6').css({'border-bottom':'none'})
     }
 
@@ -241,8 +241,6 @@ $(document).ready(function() {
       $('header').css({'opacity':getopacity()})
       $('.child1').css({'opacity':getopacityChild1()})
       $('.child3').css({'left':getleftText()})
-      $('.child4').css({'left':getleft()})
-      $('.child4').css({'opacity':getopacityButtons()})
       $('.contact_class').css({'animation':'none'})
 
       function getopacity() {
@@ -303,7 +301,7 @@ $(document).ready(function() {
           $('#area2').css({'color':'cyan'})
           $('#area2').css({'border-bottom':'2px solid aqua'})
       }, function() {
-          $('#area2').css({'color':'white'})
+          $('#area2').css({'color':'black'})
           $('#area2').css({'border-bottom':'none'})
       })
 
@@ -311,7 +309,7 @@ $(document).ready(function() {
           $('#area3').css({'color':'orange'})
           $('#area3').css({'border-bottom':'2px solid orange'})
       }, function() {
-          $('#area3').css({'color':'white'})
+          $('#area3').css({'color':'black'})
           $('#area3').css({'border-bottom':'none'})
       })
 
@@ -319,7 +317,7 @@ $(document).ready(function() {
           $('#area4').css({'color':'#EF2D56'})
           $('#area4').css({'border-bottom':'2px solid #EF2D56'})
       }, function() {
-          $('#area4').css({'color':'white'})
+          $('#area4').css({'color':'black'})
           $('#area4').css({'border-bottom':'none'})
       })
 
@@ -327,7 +325,7 @@ $(document).ready(function() {
           $('#area5').css({'color':'#FFC107'})
           $('#area5').css({'border-bottom':'2px solid #FFC107'})
       }, function() {
-          $('#area5').css({'color':'white'})
+          $('#area5').css({'color':'black'})
           $('#area5').css({'border-bottom':'none'})
       })
 
@@ -335,7 +333,7 @@ $(document).ready(function() {
           $('#area6').css({'color':'white'})
           $('#area6').css({'border-bottom':'2px solid white'})
       }, function() {
-          $('#area6').css({'color':'white'})
+          $('#area6').css({'color':'black'})
           $('#area6').css({'border-bottom':'none'})
       })
     }
@@ -344,10 +342,10 @@ $(document).ready(function() {
         $('#area2').css({'color':'cyan'})
         $('#area2').css({'border-bottom':'2px solid aqua'})
     } else if (($(window).scrollLeft() <= 200)) {
-        $('#area2').css({'color':'white'})
+        $('#area2').css({'color':'black'})
         $('#area2').css({'border-bottom':'none'})
     } else {
-        $('#area2').css({'color':'white'})
+        $('#area2').css({'color':'black'})
         $('#area2').css({'border-bottom':'none'})
     }
 
@@ -355,10 +353,10 @@ $(document).ready(function() {
         $('#area3').css({'color':'orange'})
         $('#area3').css({'border-bottom':'2px solid orange'})
     } else if (($(window).scrollLeft() <= 700)) {
-        $('#area3').css({'color':'white'})
+        $('#area3').css({'color':'black'})
         $('#area3').css({'border-bottom':'none'})
     } else {
-        $('#area3').css({'color':'white'})
+        $('#area3').css({'color':'black'})
         $('#area3').css({'border-bottom':'none'})
     }
 
@@ -366,10 +364,10 @@ $(document).ready(function() {
         $('#area4').css({'color':'#EF2D56'})
         $('#area4').css({'border-bottom':'2px solid #EF2D56'})
     } else if (($(window).scrollLeft() <= 1400)) {
-        $('#area4').css({'color':'white'})
+        $('#area4').css({'color':'black'})
         $('#area4').css({'border-bottom':'none'})
     } else {
-        $('#area4').css({'color':'white'})
+        $('#area4').css({'color':'black'})
         $('#area4').css({'border-bottom':'none'})
     }
 
@@ -377,21 +375,21 @@ $(document).ready(function() {
         $('#area5').css({'color':'#FFC107'})
         $('#area5').css({'border-bottom':'2px solid #FFC107'})
     } else if (($(window).scrollLeft() <= 1800)) {
-        $('#area5').css({'color':'white'})
+        $('#area5').css({'color':'black'})
         $('#area5').css({'border-bottom':'none'})
     } else {
-        $('#area5').css({'color':'white'})
+        $('#area5').css({'color':'black'})
         $('#area5').css({'border-bottom':'none'})
     }
 
     if (($(window).scrollLeft() > 2100) && ($(window).scrollLeft() < 3501)) {
-        $('#area6').css({'color':'white'})
+        $('#area6').css({'color':'black'})
         $('#area6').css({'border-bottom':'2px solid white'})
     } else if (($(window).scrollLeft() <= 2100)) {
-        $('#area6').css({'color':'white'})
+        $('#area6').css({'color':'black'})
         $('#area6').css({'border-bottom':'none'})
     } else {
-        $('#area6').css({'color':'white'})
+        $('#area6').css({'color':'black'})
         $('#area6').css({'border-bottom':'none'})
     }
 
@@ -542,5 +540,4 @@ $(document).ready(function() {
         window.location.href = "aartics_resume.pdf"
     })
 })
-
 
