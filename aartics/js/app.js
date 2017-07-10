@@ -187,7 +187,7 @@ $(document).ready(function() {
 
     if (($(window).scrollLeft() > 2100) && ($(window).scrollLeft() < 3501)) {
         $('#area6').css({'color':'black'})
-        $('#area6').css({'border-bottom':'2px solid white'})
+        $('#area6').css({'border-bottom':'2px solid black'})
     } else if (($(window).scrollLeft() <= 2100)) {
         $('#area6').css({'color':'black'})
         $('#area6').css({'border-bottom':'none'})
@@ -330,8 +330,8 @@ $(document).ready(function() {
       })
 
       $('#area6').hover(function() {
-          $('#area6').css({'color':'white'})
-          $('#area6').css({'border-bottom':'2px solid white'})
+          $('#area6').css({'color':'black'})
+          $('#area6').css({'border-bottom':'2px solid black'})
       }, function() {
           $('#area6').css({'color':'black'})
           $('#area6').css({'border-bottom':'none'})
@@ -384,7 +384,7 @@ $(document).ready(function() {
 
     if (($(window).scrollLeft() > 2100) && ($(window).scrollLeft() < 3501)) {
         $('#area6').css({'color':'black'})
-        $('#area6').css({'border-bottom':'2px solid white'})
+        $('#area6').css({'border-bottom':'2px solid black'})
     } else if (($(window).scrollLeft() <= 2100)) {
         $('#area6').css({'color':'black'})
         $('#area6').css({'border-bottom':'none'})
