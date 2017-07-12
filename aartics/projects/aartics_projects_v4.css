@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/YZaO6llzOP57DpTBv2GnyFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ABeeZee'), local('ABeeZee-Regular'), url(https://fonts.gstatic.com/s/abeezee/v9/yTibYMDoFfqshd01j2jrvwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* All things header ---START--- */
+
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    x; */
+}
+
+
+header {
+  position: fixed;
+  right: 0;
+  z-index: 30;
+}
+
+.aarticslogo {
+  position: fixed;
+  left: 50px;
+  top: 10px;
+  z-index: 25;
+}
+
+
+#ul_top_hypers li {
+  display: inline-block;
+  padding: 0 9px 0 9px;
+}
+
+#ul_top_hypers {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    background-color: #ffffff;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    width: 95px;
+    font-family: 'Raleway';
+}
+
+.dropbtn:focus {
+  outline: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    font-family: 'Raleway';
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+/*     background-color: rgb(210, 210, 210); */
+}
+
+
+#area2:hover {
+  color: aqua;
+  border-bottom: 2px solid aqua;
+}
+
+#area3:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+#area4:hover {
+  color: #EF2D56;
+  border-bottom: 2px solid #EF2D56;
+}
+
+#area5:hover {
+  color: #FFC107;
+  border-bottom: 2px solid #FFC107;
+}
+
+#area6:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+/* All things header ---END--- */
+
+body {
+    margin: 0;
+}
+
+.columnsContainer {
+    position: relative;
+    margin: 0;
+}
+.leftColumn,
+.rightColumn {
+    border: 1px solid #ccc;
+    padding: 0;
+    display: inline-block;
+}
+.leftColumn {
+    margin-bottom: 5px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 400px) {
+    .leftColumn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 600px;
+/*       margin-right: 39.5em; */
+    }
+    .rightColumn {
+      margin-left: 600px;
+    }
+}
