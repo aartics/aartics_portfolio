@@ -136,35 +136,27 @@ header {
 
 /* All things header ---END--- */
 
-body {
-    margin: 0;
+#heroimage {
+  background-color: red;
+  height: 760px;
 }
 
-.columnsContainer {
-    position: relative;
-    margin: 0;
-}
-.leftColumn,
-.rightColumn {
-    border: 1px solid #ccc;
-    padding: 0;
-    display: inline-block;
-}
-.leftColumn {
-    margin-bottom: 5px;
+#intro-text {
+  height: 760px;
+  padding-top: 400px;
 }
 
-/* MEDIA QUERIES */
+.intro-tile {
+  height: 400px;
+  text-align: center;
+}
 
-@media screen and (max-width: 400px) {
-    .leftColumn {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 600px;
-/*       margin-right: 39.5em; */
-    }
-    .rightColumn {
-      margin-left: 600px;
-    }
+.intro-tile img {
+  display: block;
+  margin: auto;
+  height: 90px;
+}
+
+.boxtitle {
+  padding: 90px 0 0 0;
 }
