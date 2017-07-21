@@ -62,7 +62,7 @@ header {
 /* Dropdown Button */
 .dropbtn {
     border: none;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
     color: black;
     cursor: pointer;
@@ -136,14 +136,73 @@ header {
 
 /* All things header ---END--- */
 
+body {
+  overflow-x:hidden;
+}
+
+header {
+/*   overflow-x:hidden; */
+}
+
+.container-fluid {
+  overflow-x:hidden;
+}
+
 #heroimage {
-  background-color: red;
+  background-color: #D2FF96;
   height: 760px;
+}
+
+#heroimageimg {
+  height: 90%;
+  padding: 50px 0 0 50px;
+}
+
+#intro-logo {
+  height: 70px;
+  margin-top: 140px;
 }
 
 #intro-text {
   height: 760px;
-  padding-top: 400px;
+  text-align: center;
+  background-color: #D2FF96;
+}
+
+#intro-text h1 {
+  font-family: "ABeeZee";
+  font-weight:bolder;
+  font-size: 30pt;
+  margin: 200px 0 0 0;
+  color: #000000;
+}
+
+#intro-text p {
+  color: #000000;
+  margin: 40px 10px 0 10px;
+  font-family: 'Raleway';
+  font-size: 14pt;
+  display: block;
+}
+
+.intro-icon {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.intro-icon img {
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.intro-icon h6 {
+/*   margin-left: 30px; */
+  margin-top: 20px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  color: #000000;
 }
 
 .intro-tile {
