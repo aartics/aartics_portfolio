@@ -149,12 +149,12 @@ header {
 }
 
 #heroimage {
-  background-color: #D2FF96;
+  background-color: #ffffff;
   height: 760px;
 }
 
 #heroimageimg {
-  height: 90%;
+  height: 750px;
   padding: 50px 0 0 50px;
 }
 
@@ -166,7 +166,7 @@ header {
 #intro-text {
   height: 760px;
   text-align: center;
-  background-color: #D2FF96;
+  background-color: rgb(255, 255, 255);
 }
 
 #intro-text h1 {
@@ -205,6 +205,11 @@ header {
   color: #000000;
 }
 
+#downarrow {
+  margin-top: 80px;
+  width: 160px;
+}
+
 .intro-tile {
   height: 400px;
   text-align: center;
@@ -216,6 +221,30 @@ header {
   height: 90px;
 }
 
+.introdesc {
+  padding: 20px 0 0 0;
+  font-family: 'Raleway';
+  font-size: 12pt;
+  color: white;
+}
+
 .boxtitle {
   padding: 90px 0 0 0;
+  font-family: 'ABeeZee';
+  font-size: 22pt;
+  font-weight: bolder;
+  color: white;
+}
+
+
+#problem {
+  background-color: #46494C;
+}
+
+#solution {
+  background-color: #4C5C68;
+}
+
+#process {
+  background-color: #1985A1;
 }

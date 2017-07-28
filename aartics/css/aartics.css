@@ -131,21 +131,21 @@ header {
   top: 0;
   left: 0;
   z-index: 4;
+  /*text-align: center;*/
 /*    background-color: red; */
 /*    background-image: url("../img/cover.png"); */
 }
 
 .child3 h1 {
   font-family: "ABeeZee";
-  margin: 200px 0 0 50px;
+  margin: 200px 0 0 60px;
   color: black;
 }
 
 .child3 p{
   color: #000000;
-  margin: 60px 200px 0 50px;
+  margin: 60px 0 0 60px;
 }
-
 
 body {
   width: 3500px;
