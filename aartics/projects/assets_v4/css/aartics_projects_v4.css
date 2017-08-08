@@ -173,7 +173,7 @@ header {
   font-family: "ABeeZee";
   font-weight:bolder;
   font-size: 30pt;
-  margin: 200px 0 0 0;
+  margin: 20px 0 0 0;
   color: #000000;
 }
 
@@ -207,12 +207,19 @@ header {
 
 #downarrow {
   margin-top: 80px;
-  width: 160px;
+  width: 40px;
 }
 
 .intro-tile {
   height: 400px;
   text-align: center;
+}
+
+.intro-tile a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
 }
 
 .intro-tile img {
@@ -229,22 +236,109 @@ header {
 }
 
 .boxtitle {
-  padding: 90px 0 0 0;
+  padding: 75px 0 0 0;
   font-family: 'ABeeZee';
-  font-size: 22pt;
-  font-weight: bolder;
+  font-size: 24pt;
   color: white;
 }
 
 
 #problem {
-  background-color: #46494C;
+/*   background-color: #D95B43; */
+  background-color: #00BCD4;
 }
 
 #solution {
-  background-color: #4C5C68;
+  background-color: #70868E;
+/*   background-color: #38618C; */
 }
 
 #process {
-  background-color: #1985A1;
+/*   background-color: #38618C; */
+/*   background-color: #542437; */
+  background-color: #cf045e;
+
+}
+
+.itemblock-sectionlogo {
+  display: block;
+  margin: auto;
+  margin-top: 140px;
+  height: 90px;
+}
+
+.itemblock-sectiontitle-problem {
+  text-align: center;
+  font-family: 'ABeeZee';
+  margin-top: 5px;
+  font-size: 12pt;
+  color: #00BCD4;
+}
+
+.itemblock-sectiontitle-solution {
+  text-align: center;
+  font-family: 'ABeeZee';
+  margin-top: 5px;
+  font-size: 12pt;
+  color: #70868E;
+}
+
+.itemblock-sectiontitle-process {
+  text-align: center;
+  font-family: 'ABeeZee';
+  margin-top: 5px;
+  font-size: 12pt;
+  color: #cf045e;
+}
+
+.itemblock-itemtitle {
+  text-align: center;
+  font-family: "ABeeZee";
+  font-weight:bolder;
+  font-size: 30pt;
+  margin: auto;
+  margin-top: 40px;
+  color: #000000;  
+}
+
+.itemblock-paragraph {
+  color: #000000;
+  margin: 40px 10px 0 10px;
+  font-family: 'Raleway';
+  font-size: 14pt;
+  display: block;
+  text-align: center;
+}
+
+.itemblock-list-ul {
+  color: #000000;
+  margin: 10px auto auto 20px;
+  font-family: 'Raleway';
+  font-size: 12pt;
+  display: block;
+}
+
+.itemblock-material a{
+  text-decoration: none;
+  color: #00BCD4;
+  margin: 40px 10px 200px 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  display: block;
+  text-align: center;   
+}
+
+.itemblock-material a:hover {
+  color: aqua;
+}
+
+.itemblock-image-img {
+  width: 100%;
+}
+
+.itemblock-image-title {
+  font-family: 'Raleway';
+  text-align: center;
+  font-size: 16px;
 }

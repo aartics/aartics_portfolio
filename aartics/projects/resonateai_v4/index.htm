@@ -6,15 +6,18 @@
 	<title>aartics - resonate.ai</title>
 	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../aartics_projects_v4.css"/>
+    <link rel="stylesheet" href="../assets_v4/css/aartics_projects_v4.css"/>
+    <link rel="stylesheet" href="css/resonate_v4.css"/>
     <link rel="icon" 
       type="image/png" 
       href="../../favico.png">
+    <script src="../assets_v4/js/aartics_projects_js.js"></script>
 </head>
 <body>
     <header>
@@ -62,14 +65,15 @@
     </ul>
     </header>
     <div class="aarticslogo">
-        <img id="logo" width="40px" src="../../aartics_icon.png"/>
+<!--         <img id="logo" width="40px" src="../../aartics_icon.png"/> -->
+    	<p>aartics.com</p>
     </div>
 	<div class="container-fluid">
 	  <div class="row">
 		<div class="col-sm-4" id="intro-text">
-<!-- 		<img src="local_img/resonate_logo.png" id="intro-logo"/> -->
+		<img src="local_img/resonate_logo.png" id="intro-logo"/>
 		<h1>resonate.ai</h1>
-		<p>Experience how machine learning and A.I. can aid users sound more trustworthy and confident</p>
+		<p>As a UX Designer for Resonate.ai, I helped define an experience of how machine learning and A.I. can aid users sound more trustworthy and confident</p>
 			<div class="row">
 				<div class="col-sm-6 col-md-6 col-lg-6 intro-icon">
 					<img src="local_img/teamsize_icon.png"/>
@@ -92,55 +96,105 @@
 	</div>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-4 intro-tile" id="problem">		
-				<p class="boxtitle">PROBLEM</p>
-				<img src="local_img/icon_problem.png"/>
-				<p class="introdesc">Our client Resonate.ai approached us with a machine learning algorithm that can suggest the "tone" of any content. Our challenge was to design a delightful experience for financial marketers to use the product.</p>
+			<div class="col-sm-4 intro-tile" id="problem">
+				<a href="#problem-1">		
+					<p class="boxtitle" id="problemtitle">problem</p>
+					<img src="../assets_v4/img/icon_problem.png"/>
+					<p class="introdesc">Our client Resonate.ai approached us with a machine learning algorithm that can suggest the "tone" of any content. Our challenge was to design a delightful experience for financial marketers to use the product.</p>
+				</a>
 			</div>
 			<div class="col-sm-4 intro-tile" id="solution">
-				<p class="boxtitle">SOLUTION</p>
-				<img src="local_img/icon_solution.png"/>
+				<p class="boxtitle" id="solutiontitle">solution</p>
+				<img src="../assets_v4/img/icon_solution.png"/>
 				<p class="introdesc">This handy tool helps you create dummy text for all your layout needs. 
 				We are gradually adding new functionality and we welcome your suggestions and feedback.
 				Please feel free to send us any additional dummy texts.</p>
 			</div>
 			<div class="col-sm-4 intro-tile" id="process">
-				<p class="boxtitle">PROCESS</p>
-				<img src="local_img/icon_process.png"/>
-				<p class="introdesc"> Research  &nbsp;&nbsp;|&nbsp;&nbsp;  Wireframe &nbsp;&nbsp;|&nbsp;&nbsp; Product Design &nbsp;&nbsp;|&nbsp;&nbsp; Prototype &nbsp;&nbsp;|&nbsp;&nbsp; Interaction Design &nbsp;&nbsp;|&nbsp;&nbsp; Visual Design </p>
+				<p class="boxtitle" id="processtitle">process</p>
+				<img src="../assets_v4/img/icon_process.png"/>
+				<p class="introdesc"> Research  &nbsp;&nbsp;|&nbsp;&nbsp;  Wireframe &nbsp;&nbsp;|&nbsp;&nbsp; Product Design &nbsp;&nbsp;|&nbsp;&nbsp; Prototype &nbsp;&nbsp;|&nbsp;&nbsp; Feature and User Flow Map &nbsp;&nbsp;|&nbsp;&nbsp; Interaction Design &nbsp;&nbsp;|&nbsp;&nbsp; Visual Design &nbsp;&nbsp;|&nbsp;&nbsp; Product Roadmap</p>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
+	
+	<div class="container-fluid itemblock" id="problem-1">
 	  <div class="row">
-		<div class="col-sm-4" id="intro-text">
-		<h1>resonate.ai</h1>
-		<p>Experience how machine learning and A.I. can aid users sound more trustworthy and confident</p>
+		<div class="col-sm-4 itemblock-textholder">
+		<img class="itemblock-sectionlogo" src="../assets_v4/img/icon_problem_color.png"/>
+		<p class="itemblock-sectiontitle-problem">problem synthesis</p>
+		<h1 class="itemblock-itemtitle">toward an m.v.p</h1>
+		<p class="itemblock-paragraph">As a team, we interviewed the client and summarized a starting M.V.P for the product as:</p>
+		<ul class="itemblock-list-ul">
+			<li class="itemblock-list-li">WHAT: Browser application + plug-in for email</li>
+			<li class="itemblock-list-li">WHO: Financial Startup Materketing</li>
+			<li class="itemblock-list-li">WHY: Improve tone of marketing content</li>
+		</ul>
+		<p class="itemblock-material"><a href="local_img/interview_with_client_resonate_aartics.pdf">CLICK FOR PDF OF INTERVIEW</a></p>
 		</div>
-		<div class="col-sm-8" id="heroimage">
-			<img src="local_img/resonate_comp_analysis.png" width="100%"/>
+		<div class="col-sm-8 itemblock-image-div">
+			<img class="itemblock-image-img" src="local_img/resonate_interview.png"/>
 		</div>
 	  </div>
 	</div>
-	<div class="container-fluid">
+	<div class="container-fluid itemblock" id="resonate_before">
 	  <div class="row">
-		<div class="col-sm-8">
-			<img src="local_img/res_mailchimp.png" width="100%"/>
+		<div class="col-sm-8 itemblock-image-div" id="existing-product-div">
+			<p class="itemblock-image-title">Screenshot of existing product:</p>
+			<img class="itemblock-image-img" id="resonate_before_img" src="local_img/res_before_01.png"/>
 		</div>
-		<div class="col-sm-4" id="intro-text">
-		<h1>resonate.ai</h1>
-		<p>Experience how machine learning and A.I. can aid users sound more trustworthy and confident</p>
+		<div class="col-sm-4 itemblock-textholder">
+		<img class="itemblock-sectionlogo" src="../assets_v4/img/icon_problem_color.png"/>
+		<p class="itemblock-sectiontitle-problem">problem synthesis</p>
+		<h1 class="itemblock-itemtitle">usability testing</h1>
+		<p class="itemblock-paragraph">Usability testing on existing product led us to remove non measurable tones like "joy", "anticipation", and "popularity" from the existing product classifiers. We priortized the features to:</p>
+		<ul class="itemblock-list-ul">
+			<li class="itemblock-list-li">1. Reduce classifiers: Identify and Infuse Persuasion in inline content</li>
+			<li class="itemblock-list-li">2. Data Mining: Identify structural elements in overall content</li>
+			<li class="itemblock-list-li">3. Brand customization: Train the algorithm to identify and infuse brand personalization in inline content</li>
+		</ul>
 		</div>
 	  </div>
 	</div>
-	<div class="container-fluid">
+	<div class="container-fluid itemblock">
 	  <div class="row">
-		<div class="col-sm-4" id="intro-text">
-			<h1>resonate.ai</h1>
-			<p>Experience how machine learning and A.I. can aid users sound more trustworthy and confident</p>
+		<div class="col-sm-4 itemblock-textholder">
+		<img class="itemblock-sectionlogo" src="../assets_v4/img/icon_problem_color.png"/>
+		<p class="itemblock-sectiontitle-problem">problem synthesis</p>
+		<h1 class="itemblock-itemtitle">product strategy</h1>
+		<p class="itemblock-paragraph">We presented a product vision and strategy based on what the layers are of telling an effective story</p>
 		</div>
-		<div class="col-sm-8">
-			<img src="local_img/res_user_personas.png" width="100%"/>
+		<div class="col-sm-8 itemblock-image-div">
+			<p class="itemblock-image-title">Product vision strategy:</p>
+			<img class="itemblock-image-img" id="product-vision-img" src="local_img/res_structural_change.png"/>
+		</div>
+	  </div>
+	</div>
+	<div class="container-fluid itemblock">
+	  <div class="row">
+		<div class="col-sm-8 itemblock-image-div" id="existing-product-div">
+			<p class="itemblock-image-title"></p>
+			<img class="itemblock-image-img" src="local_img/resonate_paper_prototype.jpg"/>
+		</div>
+		<div class="col-sm-4 itemblock-textholder">
+		<img class="itemblock-sectionlogo" src="../assets_v4/img/icon_solution_color.png"/>
+		<p class="itemblock-sectiontitle-solution">solution discovery</p>
+		<h1 class="itemblock-itemtitle">paper prototype</h1>
+		<p class="itemblock-paragraph">We made an interactive paper prototype to mimic product features which was used to identify and prioritize necessary features. It also led to further research on identifying classifiers.</p>
+		</div>
+	  </div>
+	</div>
+	<div class="container-fluid itemblock">
+	  <div class="row">
+		<div class="col-sm-4 itemblock-textholder">
+		<img class="itemblock-sectionlogo" src="../assets_v4/img/icon_solution_color.png"/>
+		<p class="itemblock-sectiontitle-solution">solution discovery</p>
+		<h1 class="itemblock-itemtitle">paper prototype</h1>
+		<p class="itemblock-paragraph">We made an interactive paper prototype to mimic product features which was used to identify and prioritize necessary features. It also led to further research on identifying classifiers.</p>
+		</div>
+		<div class="col-sm-8 itemblock-image-div" id="existing-product-div">
+			<p class="itemblock-image-title"></p>
+			<img class="itemblock-image-img" src="local_img/resonate_paper_prototype.jpg"/>
 		</div>
 	  </div>
 	</div>
