@@ -37,26 +37,37 @@
 
 header {
   position: fixed;
-  right: 0;
   z-index: 30;
 }
 
 .aarticslogo {
   position: fixed;
-  left: 50px;
-  top: 10px;
-  z-index: 25;
+  left: 9px;
+  top: 0px;
+}
+
+.aarticslogobtn img {
+  padding: 3px 0 0 9px;
+  margin: 0 0 0 0;
 }
 
 
 #ul_top_hypers li {
   display: inline-block;
-  padding: 0 9px 0 9px;
+  padding: 5px 9px 0 9px;
 }
 
 #ul_top_hypers {
+  position: fixed;
+  right: -9px;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 730px) {
+  #ul_top_hypers {
+    visibility: hidden;
+  }
 }
 
 /* Dropdown Button */

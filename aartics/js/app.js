@@ -146,7 +146,7 @@ $(document).ready(function() {
         $('#area2').css({'color':'black'})
         $('#area2').css({'border-bottom':'none'})
         $('.child1').css({'opacity':'0.0'})
-        $('header').css({'opacity':'0.3'})
+        // $('header').css({'opacity':'0.3'})
     } else {
         $('#area2').css({'color':'black'})
         $('#area2').css({'border-bottom':'none'})
@@ -238,7 +238,7 @@ $(document).ready(function() {
 
     // Animate polygons based on horizontal scroll position
     window.addEventListener("scroll", function(event) {
-      $('header').css({'opacity':getopacity()})
+      // $('header').css({'opacity':getopacity()})
       $('.child1').css({'opacity':getopacityChild1()})
       $('.child3').css({'left':getleftText()})
       $('.contact_class').css({'animation':'none'})
