@@ -23,7 +23,7 @@
 }
 
 html, body {
-    text-rendering: geometricPrecision;
+    text-rendering:optimizeLegibility;
 }
 
 /* All things header ---START--- */
