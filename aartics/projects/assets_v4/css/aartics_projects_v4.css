@@ -136,6 +136,119 @@ header {
 
 /* All things header ---END--- */
 
+/* ---ALL THINGS FOOTER START--- */
+
+.logocwrapper {
+  text-align: center;
+}
+
+.logoc img {
+  height: 49px;
+  padding: 20px 15px 0 15px;
+}
+
+.logoc img:hover{
+  filter: sepia() saturate(10000%) hue-rotate(30deg);
+}
+
+.unoux {
+  background-color: #00bcd4;
+}
+
+.dosarch {
+  background-color: #FF9800;
+}
+
+.tresmaker {
+  background-color: #EF2D56;
+}
+
+.quatroeng {
+  background-color: #FFC107;
+}
+
+.cincoabout {
+  background-color: black;
+}
+
+.footer-tile {
+  height: 300px;
+  border-top: solid 5px white;
+/*   border-bottom: solid 5px white; */
+}
+
+.footer-tile h3 {
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 17pt;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  color: white;
+}
+
+#abouth3 {
+  color: white;
+}
+
+.footer-tile li, ul {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11pt;
+  text-decoration: none;
+  list-style-type: circle;
+  color: white;
+}
+
+.footer-tile ul {
+  padding: 0 0 0 20px;
+}
+
+.footer-tile a:link {
+  color: white;
+}
+
+.footer-tile a:visited {
+  color: #3F51B5;
+}
+
+.footer-tile a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-tile a:active {
+  color: white;
+}
+
+.footer-tile p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11pt;
+  color: white;
+  text-align: center;
+}
+
+.signature {
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+
+#signed {
+  font-size: 14pt;
+  font-family: 'Raleway', sans-serif;
+}
+
+#signed a {
+  color: #8BC34A;
+  text-decoration: none;
+}
+
+#signed a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ---ALL THINGS FOOTER END ---*/
+
+
 body {
   overflow-x:hidden;
 }
@@ -260,6 +373,10 @@ header {
 
 }
 
+.itemblock {
+  border-bottom: solid 2px #c7c7c7;
+}
+
 .itemblock-sectionlogo {
   display: block;
   margin: auto;
@@ -318,10 +435,13 @@ header {
   display: block;
 }
 
+.itemblock-material {
+  margin: 40px 10px 140px 10px;  
+}
+
 .itemblock-material a{
   text-decoration: none;
   color: #00BCD4;
-  margin: 40px 10px 200px 10px;
   font-family: 'Raleway', sans-serif;
   font-size: 12pt;
   font-weight: bold;
@@ -333,12 +453,31 @@ header {
   color: aqua;
 }
 
+.itemblock-image-div {
+/*   min-height: 600px; */
+  text-align: center;
+}
+
 .itemblock-image-img {
-  width: 100%;
+  width: 96%;
+  padding-bottom: 40px;
 }
 
 .itemblock-image-title {
   font-family: 'Raleway';
   text-align: center;
   font-size: 16px;
+  padding-top: 40px;
+}
+
+.itemblock-image-title-div {
+  background-color: #e3e2e1;
+}
+
+.finish {
+  width: 100%;
+}
+
+.no-padding {
+  padding: 0;
 }
