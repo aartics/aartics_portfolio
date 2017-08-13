@@ -225,9 +225,9 @@ header {
 
 
 .cls-1 {
-  fill: #ffffff;
+  fill: #e0e0e0;
   fill-opacity: .8;
-  stroke: #000000;
+  stroke: #8a8a8a;
 }
 
 .cls-2 {
@@ -597,4 +597,70 @@ raleway {
 
 #credcontact a:hover{
   fill: #00BCD4;
+}
+
+.home-1 {
+  fill: #f0efef;
+}
+
+.home-1, .home-2, .home-3, .home-4, .home-5 {
+  stroke: #000;
+}
+
+.home-1, .home-2, .home-3, .home-4, .home-5, .home-6 {
+  stroke-miterlimit: 10;
+}
+
+.home-2 {
+  fill: #f8c536;
+}
+
+.home-3 {
+  fill: #d96a92;
+}
+
+.home-4 {
+  fill: #c07a2a;
+}
+
+.home-5 {
+  fill: #024e56;
+  opacity: 0.49;
+}
+
+.home-6 {
+  fill: none;
+  stroke: #231f20;
+  stroke-width: 2px;
+}
+
+@keyframes homeanimation {
+  0% { opacity: 1.0; }
+/*   30% { opacity: 0.2; } */
+  20% { opacity: 0.2; }
+  100% { opacity: 0.0; }
+}
+
+.hideshowhome {
+  animation: homeanimation 2s ease infinite;
+}
+
+.bzz02 {
+  animation-delay: 0.2s;
+}
+
+.bzz03 {
+  animation-delay: 0.4s;
+}
+
+.bzz04 {
+  animation-delay: 0.6s;
+}
+
+.bzz05 {
+  animation-delay: 0.8s;
+}
+
+.bzz06 {
+  animation-delay: 1.0s;
 }

@@ -240,6 +240,7 @@ $(document).ready(function() {
     window.addEventListener("scroll", function(event) {
       // $('header').css({'opacity':getopacity()})
       $('.child1').css({'opacity':getopacityChild1()})
+      $('#test1').css({'opacity':getopacityArrow1()})
       $('.child3').css({'left':getleftText()})
       $('.contact_class').css({'animation':'none'})
 
@@ -261,6 +262,16 @@ $(document).ready(function() {
                 opacitystring = $(window).scrollLeft()/300
             } else {
                 opacitystring = '1.0'
+            }
+            return opacitystring          
+      }
+
+      function getopacityArrow1() {
+            var opacitystring = '1.0'
+            if ($(window).scrollLeft() < 300) {
+                opacitystring = (1 - $(window).scrollLeft()/300)
+            } else {
+                opacitystring = '0.0'
             }
             return opacitystring          
       }
