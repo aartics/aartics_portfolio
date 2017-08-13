@@ -139,6 +139,9 @@ header {
 
 /* All things header ---END--- */
 
+
+/* ---Landing section BEGIN--- */
+
 .child3 {
   width: 1200px;
   height: 100%;
@@ -153,7 +156,7 @@ header {
 
 #intro-logo {
   height: 80px;
-  margin-top: 140px;
+  margin-top: 200px;
   margin-right: 550px;
 /*   opacity: 0.3; */
 }
@@ -169,6 +172,14 @@ header {
   color: #000000;
   margin: 40px 550px 0 60px;
 }
+
+#test1 {
+  position: absolute;
+  top: 15px;
+  right: -200px;
+}
+
+/* ---Landing Section END --- */
 
 .child1 text {
   cursor:default;
@@ -361,7 +372,7 @@ raleway {
   stroke: url(#linear);
   stroke-width: 7px;
   cursor: pointer;
-  animation: hideshow 2s ease infinite;
+/*   animation: hideshow 2s ease infinite; */
   visibility: visible;
   pointer-events: visiblePainted;
 }

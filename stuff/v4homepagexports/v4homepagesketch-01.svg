@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760">
+  <defs>
+    <style>
+      .home-1 {
+        opacity: 0.58;
+      }
+
+      .home-2 {
+        fill: #f0efef;
+      }
+
+      .home-10, .home-12, .home-13, .home-15, .home-16, .home-19, .home-20, .home-21, .home-3, .home-4, .home-5, .home-6, .home-7, .home-9 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .home-10, .home-12, .home-13, .home-15, .home-16, .home-19, .home-20, .home-3, .home-4, .home-5, .home-6, .home-7, .home-9 {
+        stroke: #44b649;
+      }
+
+      .home-4 {
+        stroke-dasharray: 12.24 12.24;
+      }
+
+      .home-5 {
+        stroke-dasharray: 12.33 12.33;
+      }
+
+      .home-6 {
+        stroke-dasharray: 12.12 12.12;
+      }
+
+      .home-7 {
+        stroke-dasharray: 12.04 12.04;
+      }
+
+      .home-8 {
+        fill: #f8c536;
+      }
+
+      .home-9 {
+        stroke-dasharray: 12.15 12.15;
+      }
+
+      .home-10 {
+        stroke-dasharray: 12.23 12.23;
+      }
+
+      .home-11 {
+        fill: #f48faf;
+      }
+
+      .home-12 {
+        stroke-dasharray: 12.08 12.08;
+      }
+
+      .home-13 {
+        stroke-dasharray: 12.13 12.13;
+      }
+
+      .home-14 {
+        fill: #c07a2a;
+      }
+
+      .home-15 {
+        stroke-dasharray: 12.03 12.03;
+      }
+
+      .home-16 {
+        stroke-dasharray: 12.05 12.05;
+      }
+
+      .home-17 {
+        opacity: 0.49;
+      }
+
+      .home-18 {
+        fill: #12545e;
+      }
+
+      .home-19 {
+        stroke-dasharray: 12.26 12.26;
+      }
+
+      .home-20 {
+        stroke-dasharray: 11.73 11.73;
+      }
+
+      .home-21 {
+        stroke: #231f20;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>v4homepagesketch</title>
+  <g id="Layer_3" data-name="Layer 3" class="home-1">
+    <g>
+      <polygon class="home-2" points="697.77 88.3 799.95 242 877 380 799.95 520 697.77 674.23 866.56 380 697.77 88.3"/>
+      <g>
+        <polyline class="home-3" points="700.78 93.5 697.77 88.3 701.1 93.3"/>
+        <polyline class="home-4" points="707.87 103.5 799.95 242 871.09 369.42"/>
+        <polyline class="home-3" points="874.08 374.76 877 380 874.11 385.26"/>
+        <polyline class="home-5" points="868.16 396.06 799.95 520 704.49 664.09"/>
+        <polyline class="home-3" points="701.09 669.23 697.77 674.23 700.76 669.03"/>
+        <line class="home-6" x1="706.79" y1="658.52" x2="860.56" y2="390.46"/>
+        <polyline class="home-3" points="863.57 385.2 866.56 380 863.55 374.81"/>
+        <line class="home-7" x1="857.53" y1="364.39" x2="703.79" y2="98.71"/>
+      </g>
+    </g>
+    <g>
+      <polygon class="home-8" points="631.16 88.3 765 242 847 380 767 520 631.16 674.23 799.95 380 631.16 88.3"/>
+      <g>
+        <polyline class="home-3" points="634.17 93.5 631.16 88.3 635.1 92.83"/>
+        <polyline class="home-9" points="643.08 101.99 765 242 840.83 369.62"/>
+        <polyline class="home-3" points="843.93 374.84 847 380 844.02 385.21"/>
+        <polyline class="home-10" points="837.95 395.83 767 520 639.17 665.14"/>
+        <polyline class="home-3" points="635.13 669.73 631.16 674.23 634.15 669.03"/>
+        <line class="home-6" x1="640.18" y1="658.52" x2="793.95" y2="390.46"/>
+        <polyline class="home-3" points="796.96 385.2 799.95 380 796.95 374.81"/>
+        <line class="home-7" x1="790.92" y1="364.39" x2="637.18" y2="98.71"/>
+      </g>
+    </g>
+    <g>
+      <polygon class="home-11" points="510.19 88.3 710 242 788 380 709 520 510.19 674.23 678.98 380 510.19 88.3"/>
+      <g>
+        <polyline class="home-3" points="513.2 93.5 510.19 88.3 514.95 91.96"/>
+        <polyline class="home-12" points="524.52 99.33 710 242 782.08 369.52"/>
+        <polyline class="home-3" points="785.05 374.78 788 380 785.05 385.23"/>
+        <polyline class="home-13" points="779.09 395.79 709 520 519.73 666.84"/>
+        <polyline class="home-3" points="514.93 670.55 510.19 674.23 513.18 669.03"/>
+        <line class="home-6" x1="519.21" y1="658.52" x2="672.98" y2="390.46"/>
+        <polyline class="home-3" points="675.99 385.2 678.98 380 675.97 374.81"/>
+        <line class="home-7" x1="669.94" y1="364.39" x2="516.21" y2="98.71"/>
+      </g>
+    </g>
+    <g>
+      <polygon class="home-14" points="408.09 88.3 663 242 743 380 659 520 408.09 674.23 576.88 380 408.09 88.3"/>
+      <g>
+        <polyline class="home-3" points="411.1 93.5 408.09 88.3 413.23 91.4"/>
+        <polyline class="home-15" points="423.54 97.61 663 242 736.97 369.61"/>
+        <polyline class="home-3" points="739.99 374.81 743 380 739.91 385.14"/>
+        <polyline class="home-16" points="733.71 395.48 659 520 418.34 667.94"/>
+        <polyline class="home-3" points="413.2 671.09 408.09 674.23 411.08 669.03"/>
+        <line class="home-6" x1="417.11" y1="658.52" x2="570.88" y2="390.46"/>
+        <polyline class="home-3" points="573.89 385.2 576.88 380 573.87 374.81"/>
+        <line class="home-7" x1="567.85" y1="364.39" x2="414.11" y2="98.71"/>
+      </g>
+    </g>
+    <g class="home-17">
+      <polygon class="home-18" points="285.31 88.3 606 242 685 380 605 520 285.31 674.23 454.09 380 285.31 88.3"/>
+      <g>
+        <polyline class="home-3" points="288.31 93.5 285.31 88.3 290.72 90.9"/>
+        <polyline class="home-19" points="301.77 96.2 606 242 678.97 369.47"/>
+        <polyline class="home-3" points="682.02 374.79 685 380 682.02 385.21"/>
+        <polyline class="home-20" points="676.21 395.39 605 520 295.99 669.08"/>
+        <polyline class="home-3" points="290.71 671.63 285.31 674.23 288.29 669.03"/>
+        <line class="home-6" x1="294.32" y1="658.52" x2="448.09" y2="390.46"/>
+        <polyline class="home-3" points="451.11 385.2 454.09 380 451.09 374.81"/>
+        <line class="home-7" x1="445.06" y1="364.39" x2="291.33" y2="98.71"/>
+      </g>
+    </g>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <polyline class="home-21" points="285.31 88.3 454.09 380 285.31 674.23"/>
+    <polyline class="home-21" points="408.09 88.3 576.88 380 408.09 674.23"/>
+    <polyline class="home-21" points="509.86 88.3 678.64 380 509.86 674.23"/>
+    <polyline class="home-21" points="631.16 88.3 799.95 380 631.16 674.23"/>
+    <polyline class="home-21" points="697.77 88.3 866.56 380 697.77 674.23"/>
+    <polyline class="home-21" points="749.12 88.3 917.91 380 749.12 674.23"/>
+  </g>
+</svg>
