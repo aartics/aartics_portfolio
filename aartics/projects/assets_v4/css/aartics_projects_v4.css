@@ -224,11 +224,11 @@ header {
 }
 
 .footer-tile a:visited {
-  color: #3F51B5;
+  color: #000000;
 }
 
 .footer-tile a:hover {
-  color: black;
+  color: #4e4e4e;
   font-weight: bold;
   text-decoration: none;
 }
