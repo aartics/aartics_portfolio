@@ -149,15 +149,14 @@ header {
   top: 0;
   left: 0;
   z-index: 4;
-  text-align: center;
+/*   text-align: center; */
 /*    background-color: red; */
 /*    background-image: url("../img/cover.png"); */
 }
 
 #intro-logo {
-  height: 80px;
-  margin-top: 200px;
-  margin-right: 550px;
+  height: 70px;
+  margin: 180px 0 20px 60px;
 /*   opacity: 0.3; */
 }
 
@@ -177,6 +176,7 @@ header {
   position: absolute;
   top: 15px;
   right: -200px;
+  z-index: 20;
 }
 
 /* ---Landing Section END --- */
@@ -487,11 +487,13 @@ raleway {
 }
 
 .logoc img:hover{
-  filter: sepia() saturate(10000%) hue-rotate(30deg);
+/*   filter: sepia() saturate(10000%) hue-rotate(60deg); */
+  filter:sepia(200%) contrast(10%) saturate(10000%) hue-rotate(42deg);
 }
 
 .logowrapper {
-  margin: 0 600px 0 29px;
+  margin: 0 600px 0 40px;
+  z-index: 50;
 }
 
 .nibbler {
@@ -636,13 +638,17 @@ raleway {
 
 @keyframes homeanimation {
   0% { opacity: 1.0; }
-/*   30% { opacity: 0.2; } */
-  20% { opacity: 0.2; }
+  30% { opacity: 0.2; }
+  60% { opacity: 0.1; }
   100% { opacity: 0.0; }
 }
 
 .hideshowhome {
   animation: homeanimation 2s ease infinite;
+}
+
+#homearrow {
+/*   stroke-dasharray: 5; */
 }
 
 .bzz02 {

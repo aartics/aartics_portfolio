@@ -97,6 +97,53 @@ $(document).ready(function() {
     updatePolygons(scrollPercent)
     updateAttached()
 
+    if ($(window).scrollLeft() > 20) {
+        $('#test1').hide()
+    } else {
+        $('#test1').show()
+    }
+
+    $('#area2').hover(function() {
+      $('#area2').css({'color':'cyan'})
+      $('#area2').css({'border-bottom':'2px solid aqua'})
+    }, function() {
+      $('#area2').css({'color':'black'})
+      $('#area2').css({'border-bottom':'none'})
+    })
+
+    $('#area3').hover(function() {
+      $('#area3').css({'color':'orange'})
+      $('#area3').css({'border-bottom':'2px solid orange'})
+    }, function() {
+      $('#area3').css({'color':'black'})
+      $('#area3').css({'border-bottom':'none'})
+    })
+
+    $('#area4').hover(function() {
+      $('#area4').css({'color':'#EF2D56'})
+      $('#area4').css({'border-bottom':'2px solid #EF2D56'})
+    }, function() {
+      $('#area4').css({'color':'black'})
+      $('#area4').css({'border-bottom':'none'})
+    })
+
+    $('#area5').hover(function() {
+      $('#area5').css({'color':'#FFC107'})
+      $('#area5').css({'border-bottom':'2px solid #FFC107'})
+    }, function() {
+      $('#area5').css({'color':'black'})
+      $('#area5').css({'border-bottom':'none'})
+    })
+
+    $('#area6').hover(function() {
+      $('#area6').css({'color':'black'})
+      $('#area6').css({'border-bottom':'2px solid black'})
+    }, function() {
+      $('#area6').css({'color':'black'})
+      $('#area6').css({'border-bottom':'none'})
+    })
+
+    
     if ($(window).scrollLeft() > 0) {
       $('#area2').hover(function() {
           $('#area2').css({'color':'cyan'})
@@ -238,6 +285,12 @@ $(document).ready(function() {
 
     // Animate polygons based on horizontal scroll position
     window.addEventListener("scroll", function(event) {
+
+
+    if ($(window).scrollLeft() == 0) {
+        $('#test1').show()
+    }
+      
       // $('header').css({'opacity':getopacity()})
       $('.child1').css({'opacity':getopacityChild1()})
       $('#test1').css({'opacity':getopacityArrow1()})
@@ -267,9 +320,9 @@ $(document).ready(function() {
       }
 
       function getopacityArrow1() {
-            var opacitystring = '1.0'
-            if ($(window).scrollLeft() < 300) {
-                opacitystring = (1 - $(window).scrollLeft()/300)
+            var opacitystring = '0.0'
+            if ($(window).scrollLeft() < 50) {
+                opacitystring = (1 - $(window).scrollLeft()/50)
             } else {
                 opacitystring = '0.0'
             }
