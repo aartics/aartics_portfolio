@@ -13,7 +13,6 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets_v4/css/aartics_projects_v4.css"/>
-    <link rel="stylesheet" href="css/resonate_v4.css"/>
     <link rel="icon" 
       type="image/png" 
       href="../../favico.png">
@@ -67,22 +66,19 @@
         <li class="a_top_hypers"><button class="dropbtn" id="area6">About</button></li>
     </ul>
     </header>
-    <div class="aarticslogo">
-        <img id="logo" width="40px" src="../../aartics_icon.png"/>
-    </div>
 	<div class="container-fluid">
 	  <div class="row">
 		<div class="col-sm-4" id="intro-text">
-<!-- 		<img src="local_img/resonate_logo.png" id="intro-logo"/> -->
+		<img src="local_img/karunalogo.png" id="intro-logo"/>
 		<h1>karuna.vr</h1>
 		<p>As a UX Engineer intern, I helped to create the navigation menu scene for a Virtual Reality application for pain management</p>
 			<div class="row">
 				<div class="col-sm-6 col-md-6 col-lg-6 intro-icon">
-					<img src="local_img/sandtimer_solid.png"/>
+					<img src="../assets_v4/img/sandtimer_solid.png"/>
 					<h6>Team size: 1</h6>
 				</div>
 				<div class="col-sm-6 col-md-6 col-lg-6 intro-icon">
-					<img src="local_img/sandtime.png"/>
+					<img src="../assets_v4/img/sandtime.png"/>
 					<h6>Duration: 6 months</h6>
 				</div>					
 			</div>
@@ -91,64 +87,180 @@
 			</div>
 		</div>
 		<div class="col-sm-8" id="heroimage">
-<!-- 			<img src="local_img/hero_resonate_3.png" id="heroimageimg"/> -->
 			<img src="local_img/karunagif.gif" id="heroimageimg"/>
 		</div>
 	  </div>
 	</div>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-4 intro-tile" id="problem">		
-				<p class="boxtitle">PROBLEM</p>
-				<img src="local_img/icon_problem.png"/>
-				<p class="introdesc">Our client Resonate.ai approached us with a machine learning algorithm that can suggest the "tone" of any content. Our challenge was to design a delightful experience for financial marketers to use the product.</p>
+			<div class="col-xs-12 col-sm-12 col-md-4 intro-tile" id="problem">
+				<a href="#problem-1">		
+					<p class="boxtitle" id="problemtitle">problem</p>
+					<img id="problemsrc" src="../assets_v4/img/icon_problem.png"/>
+					<p class="introdesc" id="problemdesc">Our client Resonate.ai approached us with a machine learning algorithm 
+					that can suggest the "tone" of any content. 
+					Our challenge was to design a delightful experience for financial marketers to use the product.</p>
+				</a>
 			</div>
-			<div class="col-sm-4 intro-tile" id="solution">
-				<p class="boxtitle">SOLUTION</p>
-				<img src="local_img/icon_solution.png"/>
-				<p class="introdesc">This handy tool helps you create dummy text for all your layout needs. 
-				We are gradually adding new functionality and we welcome your suggestions and feedback.
-				Please feel free to send us any additional dummy texts.</p>
+			<div class="col-xs-12 col-sm-12 col-md-4 intro-tile" id="solution">
+				<a href="#solution-1">
+					<p class="boxtitle" id="solutiontitle">solution</p>
+					<img id="solutionsrc" src="../assets_v4/img/icon_solution.png"/>
+					<p class="introdesc" id="solutiondesc">We designed and delivered prototypes for an 
+					application which can make tone suggestions in a web-based document editor
+					and a plug-in for email applications. The feel, voice and tone for 
+					the product attempts to mimic Scarlett Johanssen's movie personalities.</p>
+				</a>
 			</div>
-			<div class="col-sm-4 intro-tile" id="process">
-				<p class="boxtitle">PROCESS</p>
-				<img src="local_img/icon_process.png"/>
-				<p class="introdesc"> Research  &nbsp;&nbsp;|&nbsp;&nbsp;  Wireframe &nbsp;&nbsp;|&nbsp;&nbsp; Product Design &nbsp;&nbsp;|&nbsp;&nbsp; Prototype &nbsp;&nbsp;|&nbsp;&nbsp; Interaction Design &nbsp;&nbsp;|&nbsp;&nbsp; Visual Design </p>
+			<div class="col-xs-12 col-sm-12 col-md-4 intro-tile" id="process">
+				<a href="#process-1">
+					<p class="boxtitle" id="processtitle">process</p>
+					<img id="processsrc" src="../assets_v4/img/icon_process.png"/>
+					<p class="introdesc" id="processdesc"> Research  &nbsp;&nbsp;|&nbsp;&nbsp;  Wireframe &nbsp;&nbsp;|&nbsp;&nbsp; Product Design &nbsp;&nbsp;|&nbsp;&nbsp; Prototype &nbsp;&nbsp;|&nbsp;&nbsp; Feature and User Flow Map &nbsp;&nbsp;|&nbsp;&nbsp; Interaction Design &nbsp;&nbsp;|&nbsp;&nbsp; Visual Design &nbsp;&nbsp;|&nbsp;&nbsp; Product Roadmap</p>
+				</a>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
+	<div class="container-fluid itemblock" id="problem-1">
 	  <div class="row">
-		<div class="col-sm-4" id="intro-text">
-		<h1>resonate.ai</h1>
-		<p>Experience how machine learning and A.I. can aid users sound more trustworthy and confident</p>
+		<div class="col-xs-12 col-md-4 itemblock-textholder">
+			<img class="itemblock-sectionlogo" src="../assets_v4/img/icon_problem_color.png"/>
+			<p class="itemblock-sectiontitle-problem">problem synthesis</p>
+			<h1 class="itemblock-itemtitle">requirements gathering</h1>
+			<p class="itemblock-paragraph">The existing menu categories were confusing</p>
+			<ul class="itemblock-list-ul">
+				<li class="itemblock-list-li">WHAT: Design and develop a menu scene in Unity for navigating scenes for Karuna VR application</li>
+				<li class="itemblock-list-li">WHO: Physical Therapists + Pain inflicted patients</li>
+				<li class="itemblock-list-li">WHY: Patient registration, data collection, calibration of HTC Vive in application, selection 
+				pain exercises</li>
+			</ul>
+			<p class="itemblock-material"></p>
 		</div>
-		<div class="col-sm-8" id="heroimage">
-			<img src="local_img/resonate_comp_analysis.png" width="100%"/>
+		<div class="col-xs-12 col-md-8 itemblock-image-div">
+			<div class="row itemblock-image-title-div">
+				<p class="itemblock-image-title">Screenshots of previous menu:</p>
+				<img class="itemblock-image-img" src="local_img/screenshot_existing.png"/>
+			</div>
 		</div>
 	  </div>
 	</div>
-	<div class="container-fluid">
+	<div class="container-fluid itemblock" id="solution-1">
 	  <div class="row">
-		<div class="col-sm-8">
-			<img src="local_img/res_mailchimp.png" width="100%"/>
+		<div class="col-xs-12 col-md-4 col-md-push-8 itemblock-textholder">
+			<img class="itemblock-sectionlogo" src="../assets_v4/img/icon_solution_color.png"/>
+			<p class="itemblock-sectiontitle-solution">solution discovery</p>
+			<h1 class="itemblock-itemtitle">final menu in unity</h1>
+			<p class="itemblock-paragraph">I developed the menu in Unity with Unity UI assets and simple C# code</p>
+			<p class="itemblock-material">&nbsp;</p>
 		</div>
-		<div class="col-sm-4" id="intro-text">
-		<h1>resonate.ai</h1>
-		<p>Experience how machine learning and A.I. can aid users sound more trustworthy and confident</p>
+		<div class="col-xs-12 col-md-8 col-md-pull-4 itemblock-image-div">
+				<div class="row itemblock-image-title-div">
+					<p class="itemblock-image-title">Video of Karuna VR menu that I designed and developed in Unity:</p>
+					  <video class="itemblock-image-img" autoplay controls loop>
+						<source src="local_img/karuna_menu_aartics.mov">
+					  </video>
+				</div>
 		</div>
 	  </div>
 	</div>
-	<div class="container-fluid">
+	<div class="container-fluid itemblock" id="process-1">
 	  <div class="row">
-		<div class="col-sm-4" id="intro-text">
-			<h1>resonate.ai</h1>
-			<p>Experience how machine learning and A.I. can aid users sound more trustworthy and confident</p>
+		<div class="col-xs-12 col-md-4 itemblock-textholder">
+			<img class="itemblock-sectionlogo" src="../assets_v4/img/icon_process_color.png"/>
+			<p class="itemblock-sectiontitle-process">process</p>
+			<h1 class="itemblock-itemtitle">mocking up body selection functionality</h1>
+			<p class="itemblock-paragraph">I made mockups on Sketch and Illustrator to discuss designing of features:</p>
+			<ul class="itemblock-list-ul">
+				<li class="itemblock-list-li">Indicate Pain on individual points</li>
+				<li class="itemblock-list-li">Select scene based on pain</li>
+			</ul>
+			<p class="itemblock-material">&nbsp;</p>
 		</div>
-		<div class="col-sm-8">
-			<img src="local_img/res_user_personas.png" width="100%"/>
+		<div class="col-xs-12 col-md-8 itemblock-image-div">
+			<div class="row itemblock-image-title-div">
+				<p class="itemblock-image-title">Mockup of scene selection menu:</p>
+				<img class="itemblock-image-img" src="local_img/choose_scene.png"/>
+			</div>
 		</div>
 	  </div>
+	</div>
+	<div class="container-fluid itemblock">
+	  <div class="row">
+		<div class="col-xs-12 col-md-4 col-md-push-8 itemblock-textholder">
+			<img class="itemblock-sectionlogo" src="../assets_v4/img/icon_process_color.png"/>
+			<p class="itemblock-sectiontitle-process">process</p>
+			<h1 class="itemblock-itemtitle">graphic assets in sketch</h1>
+			<p class="itemblock-paragraph">We identified personas in Financial Startup Markets, and used these personas in prototypes to deliberate on features:</p>
+			<ul class="itemblock-list-ul">
+				<li class="itemblock-list-li">PATRICK: Junior Marketer</li>
+				<li class="itemblock-list-li">BRIAN: Patrick's boss</li>
+				<li class="itemblock-list-li">DANIEL: Founder</li>
+				<li class="itemblock-list-li">LIZ: Venture Capitalist</li>
+			</ul>
+			<p class="itemblock-material">&nbsp;</p>
+		</div>
+		<div class="col-xs-12 col-md-8 col-md-pull-4 itemblock-image-div">
+			<div class="row itemblock-image-title-div">
+				<p class="itemblock-image-title">Personas representing Financial Startups:</p>
+				<img class="itemblock-image-img" src="local_img/sketch_assets.png"/>
+			</div>
+		</div>
+	  </div>
+	</div>	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-2 footer-tile unoux">
+				<h3>more ux design:</h3>
+				<ul>
+					<li><a href="https://www.aartics.com/projects/resonateai">Resonate.ai</a></li>
+					<li><a href="https://www.aartics.com/projects/aartics_story">3D aartics.com</li>
+					<li><a href="https://www.aartics.com/projects/sfac">SF Arts Commission</a></li>
+					<li><a href="https://www.aartics.com/projects/wolflion">Wolf and Lion</a></li>
+					<li><a href="https://www.aartics.com/projects/karunavr">Karuna VR</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-2 footer-tile dosarch">
+				<h3>architecture:</h3>
+				<ul>
+					<li><a href="https://www.aartics.com/projects/aartics_architecture.pdf">Architecture Portfolio PDF</a></li>
+					<li><a href="https://www.aartics.com/projects/coimbatore">Mall in Coimbatore</a></li>
+					<li><a href="https://www.aartics.com/projects/assen">City Boulevard, Assen</a></li>
+					<li><a href="https://www.aartics.com/projects/mumbai">Recentering Mumbai</a></li>
+					<li><a href="https://www.aartics.com/projects/barcelona">Barcelona Idea</a></li>
+				</ul>				
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-2 footer-tile tresmaker">
+				<h3>maker projects:</h3>
+				<ul>
+					<li><a href="https://www.aartics.com/projects/bendy">Shelter-Cart, New York</a></li>
+					<li><a href="https://github.com/aartics/chess_models">Chess of Thrones</a></li>
+					<li><a href="https://www.aartics.com/projects/octet">Octet Truss Block</a></li>
+					<li><a href="https://www.aartics.com/projects/allsportsbar">All Sports Bar</a></li>
+					<li><a href="https://www.aartics.com/projects/graphics">Miscellaneous Graphics</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-2 footer-tile quatroeng">
+				<h3>engineering profile:</h3>
+				<ul>
+					<li><a href="https://www.aartics.com">My Website: aartics.com</a></li>
+					<li><a href="https://github.com/aartics">My GitHub</a></li>
+					<li><a href="https://www.linkedin.com/in/aartics">My LinkedIn Profile</a></li>
+					<li><a href="aartics_resume.pdf">My Resume</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 footer-tile cincoabout">
+				<h3 id="abouth3">about me:</h3>
+				<p>I'm Aarti. I'm a designer + developer and I'm bringing together my past experience in architecture and software engineering to build new futures. Get in touch:</p>
+				<div class="row logocwrapper">
+					<a href="https://www.aartics.com" class="logoc"><img src="../aartics_icon.png"></a>
+					<a href="aartics_resume.pdf" class="logoc"><img src="../../img/resume_white.png"/></a>
+					<a href="https://www.linkedin.com/in/aartics" class="logoc"><img src="../../img/linkedin_white.png"/></a>
+					<a href="mailto:aartics@gmail.com" class="logoc"><img src="../../img/mail_white.png"/></a>
+					<a href="https://github.com/aartics" class="logoc"><img src="../../img/github_white.png"/></a>
+				</div>
+				<p class="signature" id="signed">designed and developed by<a href="https://www.aartics.com"> &copy; aartics &nbsp;</a></p>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
