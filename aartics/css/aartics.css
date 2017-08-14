@@ -143,7 +143,7 @@ header {
 /* ---Landing section BEGIN--- */
 
 .child3 {
-  width: 1200px;
+  width: 1000px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -162,20 +162,20 @@ header {
 
 .child3 h1 {
   font-family: "ABeeZee";
-  margin: 20px 550px 0 60px;
+  margin: 20px 0 0 60px;
   font-size: 30pt;
   color: black;
 }
 
 .child3 p{
   color: #000000;
-  margin: 40px 550px 0 60px;
+  margin: 40px 0px 0 60px;
 }
 
 #test1 {
   position: absolute;
   top: 15px;
-  right: -200px;
+  right: -420px;
   z-index: 20;
 }
 
@@ -321,12 +321,13 @@ raleway {
 
 .project_box {
   stroke:#000000;
-  stroke-width: 7px;
+  stroke-width: 3px;
 }
 
 #_7 {
 /*   fill: #374959; */
-  fill-opacity: 0.0;
+  fill: aqua;
+  fill-opacity: 0.5;
 /*   animation: hideshow 2s ease infinite; */
 
 }
@@ -341,7 +342,8 @@ raleway {
 
 #_16 {
 /*   fill: #374959; */
-  fill-opacity: 0.0;
+  fill: aqua;
+  fill-opacity: 0.5;
 /*   animation: hideshow 2s ease infinite; */
 }
 
@@ -354,15 +356,15 @@ raleway {
 
 
 #_18 {
-/*   fill:#374959; */
-  fill-opacity: 0.0;
+  fill: aqua;
+  fill-opacity: 0.5;
 /*   animation: hideshow 2s ease infinite; */
 }
 
-#_18:hover, #_18.hovered{
+#_18:hover, #_18.hovered {
   fill: #1EFC1E;
   fill-opacity: 0.8;
-  stroke: black;
+  stroke: #FF5722;
   animation: none;
 }
 
@@ -412,7 +414,7 @@ raleway {
   font-family: Raleway;
   font-size: 10.5px;
 /*   fill:#548687; */
-  fill:aqua;
+  fill:black;
 }
 
 .projectdescription a{
@@ -548,7 +550,7 @@ raleway {
   cursor:nw-resize;
 }
 
-#tr4, #tr5:hover{
+/* #tr4, #tr5:hover{
   cursor:s-resize;
 }
 
@@ -558,7 +560,7 @@ raleway {
 
 #tirp5, #tirp6:hover{
   cursor:nw-resize;
-}
+} */
 
 #c1 {
   stroke: url(#linear3);
