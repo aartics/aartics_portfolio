@@ -104,16 +104,16 @@ $(document).ready(function() {
     }
 
     $('#area2').hover(function() {
-      $('#area2').css({'color':'cyan'})
-      $('#area2').css({'border-bottom':'2px solid aqua'})
+      $('#area2').css({'color':'#00bcd4'})
+      $('#area2').css({'border-bottom':'2px solid #00bcd4'})
     }, function() {
       $('#area2').css({'color':'black'})
       $('#area2').css({'border-bottom':'none'})
     })
 
     $('#area3').hover(function() {
-      $('#area3').css({'color':'orange'})
-      $('#area3').css({'border-bottom':'2px solid orange'})
+      $('#area3').css({'color':'#FF9800'})
+      $('#area3').css({'border-bottom':'2px solid #FF9800'})
     }, function() {
       $('#area3').css({'color':'black'})
       $('#area3').css({'border-bottom':'none'})
@@ -146,16 +146,16 @@ $(document).ready(function() {
     
     if ($(window).scrollLeft() > 0) {
       $('#area2').hover(function() {
-          $('#area2').css({'color':'cyan'})
-          $('#area2').css({'border-bottom':'2px solid aqua'})
+          $('#area2').css({'color':'#00bcd4'})
+          $('#area2').css({'border-bottom':'2px solid #00bcd4'})
       }, function() {
           $('#area2').css({'color':'black'})
           $('#area2').css({'border-bottom':'none'})
       })
 
       $('#area3').hover(function() {
-          $('#area3').css({'color':'orange'})
-          $('#area3').css({'border-bottom':'2px solid orange'})
+          $('#area3').css({'color':'#FF9800'})
+          $('#area3').css({'border-bottom':'2px solid #FF9800'})
       }, function() {
           $('#area3').css({'color':'black'})
           $('#area3').css({'border-bottom':'none'})
@@ -187,8 +187,8 @@ $(document).ready(function() {
     }
 
     if (($(window).scrollLeft() > 200) && ($(window).scrollLeft() < 800)) {
-        $('#area2').css({'color':'cyan'})
-        $('#area2').css({'border-bottom':'2px solid aqua'})
+        $('#area2').css({'color':'#00bcd4'})
+        $('#area2').css({'border-bottom':'2px solid #00bcd4'})
     } else if (($(window).scrollLeft() <= 200)) {
         $('#area2').css({'color':'black'})
         $('#area2').css({'border-bottom':'none'})
@@ -200,8 +200,8 @@ $(document).ready(function() {
     }
 
     if (($(window).scrollLeft() > 700) && ($(window).scrollLeft() < 1500)) {
-        $('#area3').css({'color':'orange'})
-        $('#area3').css({'border-bottom':'2px solid orange'})
+        $('#area3').css({'color':'#FF9800'})
+        $('#area3').css({'border-bottom':'2px solid #FF9800'})
     } else if (($(window).scrollLeft() <= 700)) {
         $('#area3').css({'color':'black'})
         $('#area3').css({'border-bottom':'none'})
@@ -362,16 +362,16 @@ $(document).ready(function() {
       }
     if ($(window).scrollLeft() > 0) {
       $('#area2').hover(function() {
-          $('#area2').css({'color':'cyan'})
-          $('#area2').css({'border-bottom':'2px solid aqua'})
+          $('#area2').css({'color':'#00bcd4'})
+          $('#area2').css({'border-bottom':'2px solid #00bcd4'})
       }, function() {
           $('#area2').css({'color':'black'})
           $('#area2').css({'border-bottom':'none'})
       })
 
       $('#area3').hover(function() {
-          $('#area3').css({'color':'orange'})
-          $('#area3').css({'border-bottom':'2px solid orange'})
+          $('#area3').css({'color':'#FF9800'})
+          $('#area3').css({'border-bottom':'2px solid #FF9800'})
       }, function() {
           $('#area3').css({'color':'black'})
           $('#area3').css({'border-bottom':'none'})
@@ -403,8 +403,8 @@ $(document).ready(function() {
     }
 
     if (($(window).scrollLeft() > 200) && ($(window).scrollLeft() < 800)) {
-        $('#area2').css({'color':'cyan'})
-        $('#area2').css({'border-bottom':'2px solid aqua'})
+        $('#area2').css({'color':'#00bcd4'})
+        $('#area2').css({'border-bottom':'2px solid #00bcd4'})
     } else if (($(window).scrollLeft() <= 200)) {
         $('#area2').css({'color':'black'})
         $('#area2').css({'border-bottom':'none'})
@@ -414,8 +414,8 @@ $(document).ready(function() {
     }
 
     if (($(window).scrollLeft() > 700) && ($(window).scrollLeft() < 1500)) {
-        $('#area3').css({'color':'orange'})
-        $('#area3').css({'border-bottom':'2px solid orange'})
+        $('#area3').css({'color':'#FF9800'})
+        $('#area3').css({'border-bottom':'2px solid #FF9800'})
     } else if (($(window).scrollLeft() <= 700)) {
         $('#area3').css({'color':'black'})
         $('#area3').css({'border-bottom':'none'})

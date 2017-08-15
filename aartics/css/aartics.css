@@ -113,13 +113,13 @@ header {
 
 
 #area2:hover {
-  color: aqua;
-  border-bottom: 2px solid aqua;
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
 }
 
 #area3:hover {
-  color: orange;
-  border-bottom: 2px solid orange;
+  color: #FF9800;
+  border-bottom: 2px solid #FF9800;
 }
 
 #area4:hover {
@@ -326,45 +326,48 @@ raleway {
 
 #_7 {
 /*   fill: #374959; */
-  fill: aqua;
-  fill-opacity: 0.5;
+  fill: white;
+  fill-opacity: 0.9;
 /*   animation: hideshow 2s ease infinite; */
 
 }
 
 #_7:hover, #_7.hovered{
-  fill: #1EFC1E;
-  fill-opacity: 0.8;
-  stroke: black;
+  fill: #00bcd4;
+  fill-opacity: 0.3;
+  stroke: aqua;
+  stroke-width: 9px;
   animation: none;
 
 }
 
 #_16 {
 /*   fill: #374959; */
-  fill: aqua;
-  fill-opacity: 0.5;
+  fill: white;
+  fill-opacity: 0.9;
 /*   animation: hideshow 2s ease infinite; */
 }
 
 #_16:hover, #_16.hovered{
-  fill: #1EFC1E;
-  fill-opacity: 0.8;
-  stroke: black;
+  fill: #00bcd4;
+  fill-opacity: 0.3;
+  stroke: aqua;
+  stroke-width: 9px;
   animation: none;
 }
 
 
 #_18 {
-  fill: aqua;
-  fill-opacity: 0.5;
+  fill: white;
+  fill-opacity: 0.9;
 /*   animation: hideshow 2s ease infinite; */
 }
 
 #_18:hover, #_18.hovered {
-  fill: #1EFC1E;
-  fill-opacity: 0.8;
-  stroke: #FF5722;
+  fill: #00bcd4;
+  fill-opacity: 0.3;
+  stroke: aqua;
+  stroke-width: 9px;
   animation: none;
 }
 
@@ -414,7 +417,7 @@ raleway {
   font-family: Raleway;
   font-size: 10.5px;
 /*   fill:#548687; */
-  fill:black;
+  fill:#00bcd4;
 }
 
 .projectdescription a{
@@ -490,7 +493,18 @@ raleway {
 
 .logoc img:hover{
 /*   filter: sepia() saturate(10000%) hue-rotate(60deg); */
-  filter:sepia(200%) contrast(10%) saturate(10000%) hue-rotate(42deg);
+/*   filter:sepia(200%) contrast(10%) saturate(10000%) hue-rotate(42deg); */
+        /* for demonstration purposes; originals not entirely black */
+     filter:   
+        contrast(1000%)
+        /* black to white */
+        invert(100%)
+        /* white to off-white */
+        sepia(100%)
+        /* off-white to yellow */
+        saturate(10000%)
+        /* do whatever you want with yellow */
+        hue-rotate(35deg);
 }
 
 .logowrapper {
@@ -539,15 +553,15 @@ raleway {
 }
 
 #_12:hover{
-  cursor:s-resize;
+/*   cursor:s-resize; */
 }
 
 #_13:hover{
-  cursor:e-resize;
+/*   cursor:e-resize; */
 }
 
 #_11:hover{
-  cursor:nw-resize;
+/*   cursor:nw-resize; */
 }
 
 /* #tr4, #tr5:hover{
@@ -575,8 +589,8 @@ raleway {
 
 #credabme, #credabweb {
   fill: black;
-  font-family: 'Raleway';
-  font-size: 19px;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 24px;
 }
 
 #credcontact {
@@ -584,7 +598,7 @@ raleway {
 }
 
 #credcontact a{
-  fill: #F8C537;
+  fill: #E91E63;
 }
 
 #credlinks {
@@ -592,7 +606,7 @@ raleway {
 }
 
 #credlinks a{
-  fill: #F8C537;
+  fill: #E91E63;
 }
 
 #credlinks a:hover{
@@ -609,6 +623,7 @@ raleway {
 
 .home-1, .home-2, .home-3, .home-4, .home-5 {
   stroke: #000;
+  stroke-width: 0.0px;
 }
 
 .home-1, .home-2, .home-3, .home-4, .home-5, .home-6 {
