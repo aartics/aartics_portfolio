@@ -39,7 +39,12 @@
 
 header {
   position: fixed;
-  z-index: 30;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 28px;
+  width: 100%;
+  background-color: white;
 }
 
 .aarticslogo {
@@ -86,6 +91,9 @@ header {
     cursor: pointer;
     width: 95px;
     font-family: 'Raleway';
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
 }
 
 .dropbtn:focus {
@@ -126,15 +134,14 @@ header {
 /*     background-color: rgb(210, 210, 210); */
 }
 
-
 #area2:hover {
-  color: aqua;
-  border-bottom: 2px solid aqua;
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
 }
 
 #area3:hover {
-  color: orange;
-  border-bottom: 2px solid orange;
+  color: #FF9800;
+  border-bottom: 2px solid #FF9800;
 }
 
 #area4:hover {
@@ -148,6 +155,31 @@ header {
 }
 
 #area6:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+#area2dd:hover #area2 {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+}
+
+#area3dd:hover #area3 {
+  color: #FF9800;
+  border-bottom: 2px solid #FF9800;
+}
+
+#area4dd:hover #area4 {
+  color: #EF2D56;
+  border-bottom: 2px solid #EF2D56;
+}
+
+#area5dd:hover #area5 {
+  color: #FFC107;
+  border-bottom: 2px solid #FFC107;
+}
+
+#area6dd:hover #area6 {
   color: black;
   border-bottom: 2px solid black;
 }

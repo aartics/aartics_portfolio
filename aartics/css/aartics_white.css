@@ -30,7 +30,7 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-/*     background-color: #22313f; */
+  /*   background-color: #22313f; */
 }
 
 /* All things header ---START--- */
@@ -72,9 +72,6 @@ header {
     cursor: pointer;
     width: 95px;
     font-family: 'Raleway';
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
 }
 
 .dropbtn:focus {
@@ -136,31 +133,6 @@ header {
 }
 
 #area6:hover {
-  color: black;
-  border-bottom: 2px solid black;
-}
-
-#area2dd:hover #area2 {
-  color: #00bcd4;
-  border-bottom: 2px solid #00bcd4;
-}
-
-#area3dd:hover #area3 {
-  color: #FF9800;
-  border-bottom: 2px solid #FF9800;
-}
-
-#area4dd:hover #area4 {
-  color: #EF2D56;
-  border-bottom: 2px solid #EF2D56;
-}
-
-#area5dd:hover #area5 {
-  color: #FFC107;
-  border-bottom: 2px solid #FFC107;
-}
-
-#area6dd:hover #area6 {
   color: black;
   border-bottom: 2px solid black;
 }
@@ -253,7 +225,7 @@ header {
 
 
 .cls-1 {
-  fill: #b7b7b4;
+  fill: #e0e0e0;
   fill-opacity: .8;
   stroke: #8a8a8a;
 }
