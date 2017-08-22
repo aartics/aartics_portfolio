@@ -253,17 +253,23 @@ header {
 
 
 .cls-1 {
-  fill: #b7b7b4;
-  fill-opacity: .8;
+  fill: #b4c1cc;
+  fill-opacity: .7;
   stroke: #8a8a8a;
+  stroke-width: 0.5;
 }
 
 .cls-2 {
   fill: rgba(255, 255, 255, 0.89);
-  stroke-width: 1px;
-  stroke: #000000;
-
+  stroke-width: 0.5;
+  stroke: #afafaf;
 }
+
+/* .op {
+  fill: #fffffff7;
+  stroke-width: 0.5px;
+  stroke: #c3c3c3;
+} */
 
 raleway {
   font-family: 'Raleway', sans-serif;
@@ -314,6 +320,8 @@ raleway {
 .project_box_arch {
   stroke:#000000;
   stroke-width: 1px;
+/*   fill: #9e9d9b;
+  fill-opacity: 0.8; */
 }
 
 .project_box_arch:hover, .project_box_arch.hovered{
@@ -326,6 +334,8 @@ raleway {
 .project_box_product {
   stroke:#000000;
   stroke-width: 1px;
+/*   fill: #ece7e9;
+  fill-opacity: 0.8; */
 }
 
 .project_box_product:hover, .project_box_product.hovered{
@@ -338,6 +348,8 @@ raleway {
 .project_box_soft {
   stroke:#000000;
   stroke-width: 1px;  
+  fill: #f6eac8;
+  fill-opacity: 0.8;
 }
 
 .project_box_soft:hover, .project_box_soft.hovered{
@@ -361,6 +373,40 @@ raleway {
 }
 
 #_7:hover, #_7.hovered{
+  fill: #00bcd4;
+  fill-opacity: 0.3;
+  stroke: aqua;
+  stroke-width: 9px;
+  animation: none;
+
+}
+
+#_11 {
+/*   fill: #374959; */
+  fill: white;
+  fill-opacity: 0.9;
+/*   animation: hideshow 2s ease infinite; */
+
+}
+
+#_11:hover, #_11.hovered{
+  fill: #00bcd4;
+  fill-opacity: 0.3;
+  stroke: aqua;
+  stroke-width: 9px;
+  animation: none;
+
+}
+
+#_13 {
+/*   fill: #374959; */
+  fill: white;
+  fill-opacity: 0.9;
+/*   animation: hideshow 2s ease infinite; */
+
+}
+
+#_13:hover, #_13.hovered{
   fill: #00bcd4;
   fill-opacity: 0.3;
   stroke: aqua;
@@ -541,7 +587,7 @@ raleway {
 }
 
 .nibbler {
-  fill: rgba(255, 255, 255, 0.73);
+  fill: rgba(105, 105, 105, 0.91);
 }
 
 .ilike {
@@ -603,6 +649,18 @@ raleway {
 #tirp5, #tirp6:hover{
   cursor:nw-resize;
 } */
+
+#tr4 {
+  fill: #00bcd4;
+}
+
+#tr4a {
+  fill: #00bcd4;
+}
+
+#tr5 {
+  fill: #00bcd4;
+}
 
 #c1 {
   stroke: url(#linear3);
