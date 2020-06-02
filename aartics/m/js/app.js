@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
     // prevents going back from the site
-    history.pushState(null, null, location.href)
-    window.onpopstate = function(event) {
-        history.go(1)
-    }
+    // history.pushState(null, null, location.href)
+    // window.onpopstate = function(event) {
+    //    history.go(1)
+    // }
     
     var polyData = window.PolyData
 
