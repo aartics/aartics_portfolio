@@ -1,0 +1,533 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/YZaO6llzOP57DpTBv2GnyFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ABeeZee'), local('ABeeZee-Regular'), url(https://fonts.gstatic.com/s/abeezee/v9/yTibYMDoFfqshd01j2jrvwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+
+/* All things header ---START--- */
+
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    x; */
+}
+
+
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 28px;
+  width: 100%;
+  background-color: white;
+}
+
+.aarticslogo {
+  position: fixed;
+  left: 9px;
+  top: 0px;
+}
+
+.aarticslogobtn img {
+  padding: 3px 0 0 9px;
+  margin: 0 0 0 0;
+}
+
+
+#ul_top_hypers li {
+  display: inline-block;
+  padding: 5px 9px 0 9px;
+}
+
+#ul_top_hypers {
+  position: fixed;
+  right: -9px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 730px) {
+  #ul_top_hypers {
+    visibility: hidden;
+  }
+
+  .aarticslogobtn img {
+    height: 22px;
+  }
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    width: 95px;
+    font-family: 'Raleway';
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.dropbtn:focus {
+  outline: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    font-family: 'Raleway';
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+/*     background-color: rgb(210, 210, 210); */
+}
+
+#area2:hover {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+}
+
+#area3:hover {
+  color: #FF9800;
+  border-bottom: 2px solid #FF9800;
+}
+
+#area4:hover {
+  color: #EF2D56;
+  border-bottom: 2px solid #EF2D56;
+}
+
+#area5:hover {
+  color: #FFC107;
+  border-bottom: 2px solid #FFC107;
+}
+
+#area6:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+#area2dd:hover #area2 {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+}
+
+#area3dd:hover #area3 {
+  color: #FF9800;
+  border-bottom: 2px solid #FF9800;
+}
+
+#area4dd:hover #area4 {
+  color: #EF2D56;
+  border-bottom: 2px solid #EF2D56;
+}
+
+#area5dd:hover #area5 {
+  color: #FFC107;
+  border-bottom: 2px solid #FFC107;
+}
+
+#area6dd:hover #area6 {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+/* All things header ---END--- */
+
+/* ---ALL THINGS FOOTER START--- */
+
+.logocwrapper {
+  text-align: center;
+}
+
+.logoc img {
+  height: 49px;
+  padding: 20px 15px 0 15px;
+}
+
+.logoc img:hover{
+  filter: sepia() saturate(10000%) hue-rotate(30deg);
+}
+
+.unoux {
+  background-color: #00bcd4;
+}
+
+.dosarch {
+  background-color: #FF9800;
+}
+
+.tresmaker {
+  background-color: #EF2D56;
+}
+
+.quatroeng {
+  background-color: #FFC107;
+}
+
+.cincoabout {
+  background-color: black;
+}
+
+.footer-tile {
+  height: 300px;
+  border-top: solid 5px white;
+/*   border-bottom: solid 5px white; */
+}
+
+.footer-tile h3 {
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 17pt;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  color: white;
+}
+
+#abouth3 {
+  color: white;
+}
+
+.footer-tile li, ul {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11pt;
+  text-decoration: none;
+  list-style-type: circle;
+  color: white;
+}
+
+.footer-tile ul {
+  padding: 0 0 0 20px;
+}
+
+.footer-tile a:link {
+  color: white;
+}
+
+.footer-tile a:visited {
+  color: #000000;
+}
+
+.footer-tile a:hover {
+  color: #4e4e4e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-tile a:active {
+  color: white;
+}
+
+.footer-tile p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11pt;
+  color: white;
+  text-align: center;
+}
+
+.signature {
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+
+#signed {
+  font-size: 14pt;
+  font-family: 'Raleway', sans-serif;
+}
+
+#signed a {
+  color: #8BC34A;
+  text-decoration: none;
+}
+
+#signed a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ---ALL THINGS FOOTER END ---*/
+
+
+body {
+  overflow-x:hidden;
+}
+
+header {
+/*   overflow-x:hidden; */
+}
+
+.container-fluid {
+  overflow-x:hidden;
+}
+
+#heroimage {
+  background-color: #ffffff;
+  height: 760px;
+}
+
+#heroimageimg {
+  height: 750px;
+  padding: 50px 0 0 50px;
+}
+
+#intro-logo {
+  height: 70px;
+  margin-top: 140px;
+}
+
+#intro-text {
+  height: 760px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+#intro-text h1 {
+  font-family: "ABeeZee";
+  font-weight:bolder;
+  font-size: 30pt;
+  margin: 20px 0 0 0;
+  color: #000000;
+}
+
+#intro-text p {
+  color: #000000;
+  margin: 40px 10px 0 10px;
+  font-family: 'Raleway';
+  font-size: 14pt;
+  display: block;
+}
+
+.intro-icon {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.intro-icon img {
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.intro-icon h6 {
+/*   margin-left: 30px; */
+  margin-top: 20px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  color: #000000;
+}
+
+#downarrow {
+  margin-top: 80px;
+  width: 40px;
+}
+
+.intro-tile {
+  height: 400px;
+  text-align: center;
+}
+
+.intro-tile a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.intro-tile img {
+  display: block;
+  margin: auto;
+  height: 90px;
+}
+
+.introdesc {
+  padding: 20px 0 0 0;
+  font-family: 'Raleway';
+  font-size: 12pt;
+  color: white;
+}
+
+.boxtitle {
+  padding: 75px 0 0 0;
+  font-family: 'ABeeZee';
+  font-size: 24pt;
+  color: white;
+}
+
+
+#problem {
+/*   background-color: #D95B43; */
+  background-color: #00BCD4;
+}
+
+#solution {
+  background-color: #70868E;
+/*   background-color: #38618C; */
+}
+
+#process {
+/*   background-color: #38618C; */
+/*   background-color: #542437; */
+  background-color: #cf045e;
+
+}
+
+.itemblock {
+  border-bottom: solid 2px #c7c7c7;
+}
+
+.itemblock-sectionlogo {
+  display: block;
+  margin: auto;
+  margin-top: 140px;
+  height: 90px;
+}
+
+.itemblock-sectiontitle-problem {
+  text-align: center;
+  font-family: 'ABeeZee';
+  margin-top: 5px;
+  font-size: 12pt;
+  color: #00BCD4;
+}
+
+.itemblock-sectiontitle-solution {
+  text-align: center;
+  font-family: 'ABeeZee';
+  margin-top: 5px;
+  font-size: 12pt;
+  color: #70868E;
+}
+
+.itemblock-sectiontitle-process {
+  text-align: center;
+  font-family: 'ABeeZee';
+  margin-top: 5px;
+  font-size: 12pt;
+  color: #cf045e;
+}
+
+.itemblock-itemtitle {
+  text-align: center;
+  font-family: "ABeeZee";
+  font-weight:bolder;
+  font-size: 30pt;
+  margin: auto;
+  margin-top: 40px;
+  color: #000000;  
+}
+
+.itemblock-paragraph {
+  color: #000000;
+  margin: 40px 10px 0 10px;
+  font-family: 'Raleway';
+  font-size: 14pt;
+  display: block;
+  text-align: center;
+}
+
+.itemblock-list-ul {
+  color: #000000;
+  margin: 10px auto auto 20px;
+  font-family: 'Raleway';
+  font-size: 12pt;
+  display: block;
+}
+
+.itemblock-material {
+  margin: 40px 10px 140px 10px;  
+}
+
+.itemblock-material a{
+  text-decoration: none;
+  color: #00BCD4;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  display: block;
+  text-align: center;   
+}
+
+.itemblock-material a:hover {
+  color: aqua;
+}
+
+.itemblock-image-div {
+/*   min-height: 600px; */
+  text-align: center;
+}
+
+.itemblock-image-img {
+  width: 96%;
+  padding-bottom: 40px;
+}
+
+.itemblock-image-title {
+  font-family: 'Raleway';
+  text-align: center;
+  font-size: 16px;
+  padding-top: 40px;
+}
+
+.itemblock-image-title-div {
+  background-color: #e3e2e1;
+}
+
+.finish {
+  width: 100%;
+}
+
+.no-padding {
+  padding: 0;
+}

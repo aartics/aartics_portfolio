@@ -1,0 +1,775 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/YZaO6llzOP57DpTBv2GnyFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ABeeZee'), local('ABeeZee-Regular'), url(https://fonts.gstatic.com/s/abeezee/v9/yTibYMDoFfqshd01j2jrvwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+body {
+  width: 3500px;
+  overflow-y: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+/*     background-color: #22313f; */
+}
+
+/* All things header ---START--- */
+
+header {
+  position: fixed;
+  right: 0;
+  z-index: 30;
+}
+
+.aarticslogo {
+  position: fixed;
+  left: 9px;
+  top: 0px;
+}
+
+.aarticslogobtn img {
+  padding: 3px 0 0 9px;
+  margin: 0 0 0 0;
+}
+
+
+#ul_top_hypers li {
+  display: inline-block;
+  padding: 0 9px 0 9px;
+}
+
+#ul_top_hypers {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    background-color: #ffffff;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    width: 95px;
+    font-family: 'Raleway';
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.dropbtn:focus {
+  outline: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+/*     background-color: rgb(210, 210, 210); */
+}
+
+
+#area2:hover {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+}
+
+#area3:hover {
+  color: #FF9800;
+  border-bottom: 2px solid #FF9800;
+}
+
+#area4:hover {
+  color: #EF2D56;
+  border-bottom: 2px solid #EF2D56;
+}
+
+#area5:hover {
+  color: #FFC107;
+  border-bottom: 2px solid #FFC107;
+}
+
+#area6:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+#area2dd:hover #area2 {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+}
+
+#area3dd:hover #area3 {
+  color: #FF9800;
+  border-bottom: 2px solid #FF9800;
+}
+
+#area4dd:hover #area4 {
+  color: #EF2D56;
+  border-bottom: 2px solid #EF2D56;
+}
+
+#area5dd:hover #area5 {
+  color: #FFC107;
+  border-bottom: 2px solid #FFC107;
+}
+
+#area6dd:hover #area6 {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+/* All things header ---END--- */
+
+
+/* ---Landing section BEGIN--- */
+
+.child3 {
+  width: 1000px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+/*   text-align: center; */
+/*    background-color: red; */
+/*    background-image: url("../img/cover.png"); */
+}
+
+#intro-logo {
+  height: 70px;
+  margin: 180px 0 20px 60px;
+/*   opacity: 0.3; */
+}
+
+.child3 h1 {
+  font-family: "ABeeZee";
+  margin: 20px 0 0 60px;
+  font-size: 30pt;
+  color: black;
+}
+
+.child3 p{
+  color: #000000;
+  margin: 40px 0px 0 60px;
+}
+
+#test1 {
+  position: absolute;
+  top: 15px;
+  right: -420px;
+  z-index: 20;
+}
+
+/* ---Landing Section END --- */
+
+.child1 text {
+  cursor:default;
+}
+
+.child1 text a{
+  cursor:pointer;
+}
+
+.parent {
+  position: relative;
+  width: 3700px;
+  height: 760px;
+}
+
+.child1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+/*   opacity: 0.0; */
+}
+
+.child2 {
+  width: 1050px;
+  height: 760px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.child4 {
+  width: 900px;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  margin-top: 160px;
+}
+
+
+.cls-1 {
+  fill: #b4c1cc;
+  fill-opacity: .7;
+  stroke: #8a8a8a;
+  stroke-width: 0.5;
+}
+
+.cls-2 {
+  fill: rgba(255, 255, 255, 0.89);
+  stroke-width: 0.5;
+  stroke: #afafaf;
+}
+
+/* .op {
+  fill: #fffffff7;
+  stroke-width: 0.5px;
+  stroke: #c3c3c3;
+} */
+
+raleway {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.credits {
+  font-size: 12px;
+  fill: white;
+}
+
+#credits7 a{
+  font-size: 12px;
+  fill: #FFC107;
+}
+
+#credits11 a{
+  fill: #FFC107;
+}
+
+#credits12 a{
+  fill: #FFC107;
+}
+
+#credits7 a:hover {
+  font-size: 12px;
+  fill: #00BCD4;
+}
+
+#credits9 a{
+  font-size: 14px;
+  fill: #b3b3b3;
+}
+
+#credits9 a:hover{
+  font-size: 14px;
+  fill: #00BCD4;
+}
+
+#credits11 a:hover{
+  fill: #00BCD4;
+}
+
+#credits12 a:hover{
+  fill: #00BCD4;
+}
+
+.project_box_arch {
+  stroke:#000000;
+  stroke-width: 1px;
+/*   fill: #9e9d9b;
+  fill-opacity: 0.8; */
+}
+
+.project_box_arch:hover, .project_box_arch.hovered{
+  fill: orange;
+  fill-opacity: 0.8;
+  stroke: orange;
+  stroke-width: 7px;
+}
+
+.project_box_product {
+  stroke:#000000;
+  stroke-width: 1px;
+/*   fill: #ece7e9;
+  fill-opacity: 0.8; */
+}
+
+.project_box_product:hover, .project_box_product.hovered{
+  fill: #EF2D56;
+  fill-opacity: 0.8;
+  stroke: #EF2D56;
+  stroke-width: 7px;
+}
+
+.project_box_soft {
+  stroke:#000000;
+  stroke-width: 1px;  
+  fill: #f6eac8;
+  fill-opacity: 0.8;
+}
+
+.project_box_soft:hover, .project_box_soft.hovered{
+  fill: #F8C537;
+  fill-opacity: 0.8;
+  stroke: #F8C537;
+  stroke-width: 7px;
+}
+
+.project_box {
+  stroke:#000000;
+  stroke-width: 3px;
+}
+
+#_7 {
+/*   fill: #374959; */
+  fill: white;
+  fill-opacity: 0.9;
+/*   animation: hideshow 2s ease infinite; */
+
+}
+
+#_7:hover, #_7.hovered{
+  fill: #00bcd4;
+  fill-opacity: 0.3;
+  stroke: aqua;
+  stroke-width: 9px;
+  animation: none;
+
+}
+
+#_11 {
+/*   fill: #374959; */
+  fill: white;
+  fill-opacity: 0.9;
+/*   animation: hideshow 2s ease infinite; */
+
+}
+
+#_11:hover, #_11.hovered{
+  fill: #00bcd4;
+  fill-opacity: 0.3;
+  stroke: aqua;
+  stroke-width: 9px;
+  animation: none;
+
+}
+
+#_13 {
+/*   fill: #374959; */
+  fill: white;
+  fill-opacity: 0.9;
+/*   animation: hideshow 2s ease infinite; */
+
+}
+
+#_13:hover, #_13.hovered{
+  fill: #00bcd4;
+  fill-opacity: 0.3;
+  stroke: aqua;
+  stroke-width: 9px;
+  animation: none;
+
+}
+
+#_16 {
+/*   fill: #374959; */
+  fill: white;
+  fill-opacity: 0.9;
+/*   animation: hideshow 2s ease infinite; */
+}
+
+#_16:hover, #_16.hovered{
+  fill: #00bcd4;
+  fill-opacity: 0.3;
+  stroke: aqua;
+  stroke-width: 9px;
+  animation: none;
+}
+
+
+#_18 {
+  fill: white;
+  fill-opacity: 0.9;
+/*   animation: hideshow 2s ease infinite; */
+}
+
+#_18:hover, #_18.hovered {
+  fill: #00bcd4;
+  fill-opacity: 0.3;
+  stroke: aqua;
+  stroke-width: 9px;
+  animation: none;
+}
+
+.contact_class {
+  fill: #ffffff;
+  fill-opacity: 1;
+  stroke: url(#linear);
+  stroke-width: 7px;
+  cursor: pointer;
+/*   animation: hideshow 2s ease infinite; */
+  visibility: visible;
+  pointer-events: visiblePainted;
+}
+
+#_1:hover{
+  stroke: url(#linear2);
+}
+
+.traleway {
+  font-family: Raleway;
+  font-style: italic;
+  font-size: 15px;
+  fill: #000000;
+}
+
+#aarti {
+  font-family: Raleway;
+  font-size: 35px;
+  fill:#000000;
+}
+
+#c {
+  font-size: 35px;
+}
+#sharma {
+  font-size: 35px;
+}
+
+
+#pipe {
+  font-size: 70px;
+  font-weight: lighter;
+  fill: #548687;
+}
+
+.casestudy a{
+  font-family: Raleway;
+  font-size: 10.5px;
+/*   fill:#548687; */
+  fill:#00bcd4;
+}
+
+.projectdescription a{
+  font-family: Raleway;
+  font-weight:lighter;
+  font-style: thin;
+  font-size: 15px;
+  fill: #E5FFDE;
+}
+
+.projectname a{
+  font-family: Raleway;
+  font-style: thin;
+  font-size: 20px;
+  fill: #000000;  
+}
+
+.titleux {
+  font-size: 22px;
+  fill:#548687;
+}
+
+.titlearch{
+  font-size: 22px;
+  fill: #b76d00;
+}
+
+/* .titlearch a:hover, .titlearch a.hovered{
+  fill: red;
+} */
+
+.titleprod {
+  fill:#a24559;
+}
+
+.titleengg {
+  font-size: 20px;
+  fill:#F8C537;
+}
+
+.has_link { 
+  cursor: pointer; 
+}
+
+#arrow {
+  font-size: 90px;
+  font-weight: lighter;
+  fill: #71f300;
+  animation: hideshow 2.5s ease infinite;
+}
+
+@keyframes hideshow {
+  0% { opacity: 0.1; }
+  20% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { opacity: 0.1; }
+}
+
+#logo {
+  cursor: pointer;
+}
+
+#logo:hover{
+/*   filter: sepia() saturate(10000%) hue-rotate(100deg); */
+}
+
+.logoc img{
+  width: 35px;
+  margin-top: 0;
+  padding: 40px 10px 0 18px;
+/*   filter: sepia() saturate(10000%) hue-rotate(30deg); this turns png green */
+}
+
+.logoc img:hover{
+/*   filter: sepia() saturate(10000%) hue-rotate(60deg); */
+/*   filter:sepia(200%) contrast(10%) saturate(10000%) hue-rotate(42deg); */
+        /* for demonstration purposes; originals not entirely black */
+     filter:   
+        contrast(1000%)
+        /* black to white */
+        invert(100%)
+        /* white to off-white */
+        sepia(100%)
+        /* off-white to yellow */
+        saturate(10000%)
+        /* do whatever you want with yellow */
+        hue-rotate(35deg);
+}
+
+.logowrapper {
+  margin: 0 600px 0 40px;
+  z-index: 50;
+}
+
+.nibbler {
+  fill: rgba(105, 105, 105, 0.91);
+}
+
+.ilike {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  fill: #000000;
+}
+
+.interest {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  fill: #000000;
+}
+
+#arch1 {
+  fill: orange;
+}
+
+#arch2 {
+  fill: orange;
+}
+
+#grpd0, #grpd1, #grpd2 {
+  fill: #EF2D56;
+}
+
+#ab1, #ab2, #ab3 {
+  fill: #F8C537;
+}
+
+.csar a {
+  fill:orange;
+}
+
+.cspg a{
+  fill:#EF2D56;
+}
+
+#_12:hover{
+/*   cursor:s-resize; */
+}
+
+#_13:hover{
+/*   cursor:e-resize; */
+}
+
+#_11:hover{
+/*   cursor:nw-resize; */
+}
+
+/* #tr4, #tr5:hover{
+  cursor:s-resize;
+}
+
+#mdia8, #mdia9:hover{
+  cursor:e-resize;
+}
+
+#tirp5, #tirp6:hover{
+  cursor:nw-resize;
+} */
+
+#tr4 {
+  fill: #00bcd4;
+}
+
+#tr4a {
+  fill: #00bcd4;
+}
+
+#tr5 {
+  fill: #00bcd4;
+}
+
+#c1 {
+  stroke: url(#linear3);
+  stroke-width: 2px;
+}
+
+.creds {
+  fill: #000000;
+  font-family: 'Raleway';
+  font-size: 14px;
+}
+
+#credabme, #credabweb {
+  fill: black;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 24px;
+}
+
+#credcontact {
+  font-size: 18px;
+}
+
+#credcontact a{
+  fill: #E91E63;
+}
+
+#credlinks {
+  font-size: 19px;
+}
+
+#credlinks a{
+  fill: #E91E63;
+}
+
+#credlinks a:hover{
+  fill: #00BCD4;
+}
+
+#credcontact a:hover{
+  fill: #00BCD4;
+}
+
+.home-1 {
+  fill: #f0efef;
+}
+
+.home-1, .home-2, .home-3, .home-4, .home-5 {
+  stroke: #000;
+  stroke-width: 0.0px;
+}
+
+.home-1, .home-2, .home-3, .home-4, .home-5, .home-6 {
+  stroke-miterlimit: 10;
+}
+
+.home-2 {
+  fill: #f8c536;
+}
+
+.home-3 {
+  fill: #d96a92;
+}
+
+.home-4 {
+  fill: #c07a2a;
+}
+
+.home-5 {
+  fill: #024e56;
+  opacity: 0.49;
+}
+
+.home-6 {
+  fill: none;
+  stroke: #231f20;
+  stroke-width: 2px;
+}
+
+@keyframes homeanimation {
+  0% { opacity: 1.0; }
+  30% { opacity: 0.2; }
+  60% { opacity: 0.1; }
+  100% { opacity: 0.0; }
+}
+
+.hideshowhome {
+  animation: homeanimation 2s ease infinite;
+}
+
+#homearrow {
+/*   stroke-dasharray: 5; */
+}
+
+.bzz02 {
+  animation-delay: 0.2s;
+}
+
+.bzz03 {
+  animation-delay: 0.4s;
+}
+
+.bzz04 {
+  animation-delay: 0.6s;
+}
+
+.bzz05 {
+  animation-delay: 0.8s;
+}
+
+.bzz06 {
+  animation-delay: 1.0s;
+}

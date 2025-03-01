@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>aartics_story</title>
+  <meta name="aartics portfolio" content="aartics portfolio">
+  <meta name="aarti c sharma" content="aartics_portfolio">
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../aartics_projects.css">
+  <style>
+      #landing {
+          height: 1350px;
+          background: url(local_img/001.png);
+          background-repeat: no-repeat;
+          background-position: center 200px;
+          background-color: #22313f;
+          background-size: 195%;
+      }
+  </style>
+</head>
+
+<body>
+<div id="header-wrapper">
+  <div id="header-banner">
+    <div id="logoaa">
+      <a href="http://www.aartics.com"><img id="icon" src="../aartics_icon.png"/></a>
+    </div>
+    <div id="back-button">
+      <a href="http://www.aartics.com">aartics.com</a>
+    </div>
+    <span class="dropdown">
+        <button class="dropbtn">Web Dev: 3D aartics.com</button>
+        <div class="dropdown-content">
+          <a href="https://www.aartics.com/projects/resonateai">UX project: Resonate.ai</a>
+          <a href="https://www.aartics.com/projects/aartics_story">Web Dev: 3D aartics.com</a>
+          <a href="https://www.aartics.com/projects/sfac">UX project: SF Arts Commission</a>
+          <a href="https://www.aartics.com/projects/wolflion">UX project: Wolf and Lion</a>
+          <a href="https://www.aartics.com/projects/karunavr">UX project: Karuna VR</a>
+          <a href="https://www.aartics.com">More projects</a>
+        </div>
+    </span>
+  </div>
+</div>
+
+<div id="landing">
+</div>
+
+<div id="contents">
+<h2>Project Content Index:</h2>
+  <ul>
+    <li><a href="#intro">Project: aartics_portfolio</a></li>
+    <li><a href="#visual">Part 1: Spatial Visualizations</a></li>
+    <li><a href="#recipe">Part 2: Recipe</a></li>
+    <li><a href="#wireframes">Wireframes</a></li>
+  </ul>
+</div>
+
+<div id="project-content">
+
+  <div class="image-title" id="bef">
+    Project: aartics_portfolio
+    <p><br>For my design portfolio, <a href="https://www.aartics.com" target="_blank"> aartics.com</a> I undertook making a 3D representation my project gallery, viewed as if in a VR world. The files and code used for developing are available on <a href="https://github.com/aartics/aartics_portfolio" target="_blank">GitHub</a>. These are screenshots of the <a href="../aartics_concept/">wireframe</a> and the current prototype website aartics.com.</p>
+    <!-- <img ="local_img/readme_screenshot.png" width="60%"/> -->
+  </div>
+
+<div class="section-title" id="visual">
+  <h1>Part 1: Spatial Visualizations</h1>
+  <h4>Imagining new media futures</h4>
+</div>
+
+  <div class="image-title" id="beginning">
+  Visualizing a three dimensional gallery:
+    <p><br>I started imagining a grid of hexagons where each hexagon could contain a project, an image or other data. By using a hexagonal grid, I can allow the viewer to extend explorations in 6 directions, instead of the traditional 4.</p>
+    <img src="local_img/readme_hexagon.jpg" width="60%"/>
+  </div>
+
+  <div class="image-title" id="solv">
+  Visualizing a spherical gallery:
+    <p><br>Conceptually, using a hexagonal grid could also allow ‘folding’ the design pattern into spherical geodesic dome "worlds of information" that viewers could choose to explore. That could be fun.</p>
+    <img src="local_img/readme_geodesic.jpg"/ width="60%">
+  </div>
+
+  <div class="image-title">
+  Visualizing a panoramic gallery:
+    <p><br>This enabled me to imagine viewers experiencing equally sized hexagonal tiles in a panoramic dome, and not restricted to traditional rectangular view-boxes (like this web browser we are reading this article on). Viewing from inside the dome (panorama) seemed to limit a user’s view, so I chose to explore viewing from the outside (inverse panorama).</p>
+    <img src="local_img/readme_panoramicdome.jpg" width="80%"/>
+  </div>
+
+  <div class="image-title" id="comp">
+  Visualizing data in 3D:
+    <p><br>I could then use extruded projections for information of various types and hierarchies - qualitative or quantitative data. These can be represented as heights of the polygons. </p>
+    <img src="local_img/readme_data_heights.jpg" width="60%"/>
+  </div>
+  <div class="image-title">
+  Visualizing bird's eye perspective:
+    <p><br>I proceeded to visualize the panoramic bird’s eye view interface for my website, by working on achieving the right perspective for viewing on a desktop browser.</p>
+    <img src="local_img/readme_perspective.jpg" width="60%"/>
+  </div> 
+
+<div class="section-title" id="recipe">
+  <h1>Part 2: Recipe</h1>
+    <h4>How to make a 3D perspective interaction experience in a desktop browser:<br>Ingredients: SketchUP Make, Adobe PhotoShop + Illustrator, HTML, CSS, JavaScript (jQuery library and jInvertScroll plugin).</h4>
+</div>
+
+  <div class="image-title" id="drawingobjects">
+    1. Drawing the objects in perspective location and shadows:
+    <p><br>I made the 3D object representation in SketchUP Make. For the current design, this is a hexagonal column grid.</p>
+    <img src="local_img/readme_plan_perspective.jpg" width="60%"/>
+    <p><br><br>I exported screenshots of the “bird’s eye view” camera perspective of the model.</p>
+    <img src="local_img/0_dotted_xray.jpg" width="60%"/>
+    <p><br><br>I stitched the screenshots in PhotoShop for a continuous panoramic effect. I used 20 states of full length images to understand the effect. These images served as the wireframes for the site interaction</p>
+    <img src="local_img/readme_photoshop.jpg" width="60%"/>
+    <p><br><br>I used the 20 state images in html with the jInvertScroll library to change the image based on the position of the cursor on the page.</p>
+  </div>
+  <div class="image-title" id="wireframes">
+  Concept wireframes:
+    <p><br><a href="../aartics_concept/">Click here to see the work-in-progress wireframe prototype, with the images</a></p>
+  </div> 
+  <div class="image-title" id="forum">
+    2. Converting the shapes and shadows from the panoramic shots to vector graphics:
+    <p><br>What I describe here is a very tedious way to achieve the vector conversion, and I am currently looking for better ways to export the 3D model directly to SVGs. Meanwhile, here is the description of what I did.</p>
+    <p><br>I laid out 9 states of the 3D panorama in Adobe Illustrator on individual artboards and illustrated the shapes and shadows as polygons for every state. Care was taken to ensure that each artboard contains the same layer name for individual polygons.</p>
+    <p><br>I then exported all the artboards as individual SVGs from Illustrator.</p>
+    <img src="local_img/readme_artboards.png" width="60%"/>
+  </div>
+  <div class="image-title">
+  3. Scripting magic: Morphing svg polygons in browser based on user interaction
+    <p><br>Studying the structure of the SVG shows that each polygon is stored with a “points” attribute which is an array of numbers and each state of the panorama is a different set of numbers.</p>
+    <p><br>With the help of my friend, philosopher and programmer extraordinaire guide <a href="https://github.com/owings1" target="_blank">@owings1</a>, we wrote a script that will store the points value for each polygon as arrays objects in JSON.</p>
+    <p><br>We then used vanilla JavaScript to update the values of the points attribute for each polygon in an initialized SVG based on the position of the cursor on the page. To achieve the horizontal panning effect on the page, we used the jInvertScroll library to retrieve the cursor position value, but this is not needed.</p>
+    <img src="local_img/readme_svg.png" width="80%"/>
+  </div>
+  <div class="image-title">
+  Concept for gallery browser in VR/MR/AR:
+    <p><br>Experience the first edition interactive prototype on <a href="https://www.aartics.com">aartics</a>.</p>
+    <img src="local_img/readme_concept.png" width="80%"/>
+  </div>
+  <div class="image-title">
+  Research by design, and design by research
+    <p><br>Thanks to this design exercise, we now have an animation framework to morph Illustrator graphics to interactive HTML.</p>
+    <p><br>This allows us to imagine and prototype 3D visual interactions in 2D tools and traditional browsers. There are many improvements to be made, and as time goes on, I hope to present more examples and improved versions of this framework.</p>
+  </div>
+  <div class="image-title">
+  References on hexagonal grids
+    <p><br>I continue to study the applications of using hexagonal grids. This is one of the best references I have found</p>
+    <p><br><a href="http://www.redblobgames.com/grids/hexagons/">http://www.redblobgames.com/grids/hexagons/</a></p>
+  </div> 
+</div>
+  <footer>
+    <div class="parentfooter">
+        <div class="signature">
+          <p>designed and developed by <a href="https://aartics.com">&copy; aartics.com </a></p>
+        </div>
+        <div class="logowrapper">
+          <a href="https://www.aartics.com" class="logoc"><img src="../aartics_icon.png"></a>
+          <a href="aartics_resume.pdf" class="logoc"><img src="../../img/resume.png"/></a>
+          <a href="https://www.linkedin.com/in/aartics" class="logoc"><img src="../../img/linkedin.png"/></a>
+          <a href="mailto:aartics@gmail.com" class="logoc"><img src="../../img/mail.png"/></a>
+          <a href="https://github.com/aartics" class="logoc"><img src="../../img/github.png"/></a>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    if(window.innerHeight < window.innerWidth){
+        $("#landing").css({"height":"920px","background-size":"100%", "background-position": "center 50px"})
+    }
+  </script>
+</body>
+</html>
