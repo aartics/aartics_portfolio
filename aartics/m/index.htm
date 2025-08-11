@@ -3,6 +3,24 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script>
+		// Force 100% zoom on page load
+		(function() {
+			// Reset zoom immediately
+			document.documentElement.style.zoom = "1";
+			document.body.style.zoom = "1";
+			
+			// Also try transform scale
+			document.documentElement.style.transform = "scale(1)";
+			document.body.style.transform = "scale(1)";
+			
+			// Force viewport reset
+			var viewport = document.querySelector('meta[name="viewport"]');
+			if (viewport) {
+				viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+			}
+		})();
+	</script>
 	<title>aartics</title>
 	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -14,6 +32,17 @@
       href="favico.png">
     <style>
       @import url('https://fonts.googleapis.com/css?family=ABeeZee');
+      
+      /* Force 100% zoom and prevent any scaling */
+      html, body {
+        zoom: 1 !important;
+        transform: scale(1) !important;
+        transform-origin: top left !important;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
     </style>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
