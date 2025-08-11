@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>aartics</title>
 	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -23,6 +24,36 @@
   ga('create', 'UA-104959516-1', 'auto');
   ga('send', 'pageview');
 
+    </script>
+    <script>
+      // Desktop device detection and redirection
+      (function() {
+        // Check if user agent indicates desktop device
+        function isDesktopDevice() {
+          return !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) &&
+                 (window.innerWidth > 768 || window.innerHeight > 1024);
+        }
+        
+        // Check if we're on the mobile page
+        function isOnMobilePage() {
+          return window.location.pathname.includes('/m/');
+        }
+        
+        // Redirect to desktop version if on desktop device and on mobile page
+        if (isDesktopDevice() && isOnMobilePage()) {
+          // Get the current path and redirect to desktop version
+          var currentPath = window.location.pathname;
+          var desktopPath = currentPath.replace('/aartics/m/', '/aartics/');
+          
+          // If we're at the mobile root page, redirect to desktop
+          if (currentPath === '/aartics/m/' || currentPath === '/aartics/m/index.htm') {
+            window.location.href = '/aartics/index.htm';
+          } else {
+            // For other pages, try to redirect to desktop equivalent
+            window.location.href = desktopPath;
+          }
+        }
+      })();
     </script>
 </head>
 <body>
