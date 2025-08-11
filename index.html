@@ -3,18 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <title>aartics</title>
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="robots" content="noindex" />
 
   <script>
-    // Simple redirect to mobile page
-    window.location.href = '/aartics/m/index.htm';
+    (function () {
+      // Simple device detection
+      function isMobile() {
+        const ua = navigator.userAgent || "";
+        const mobileUA = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini|Mobi/i.test(ua);
+        const narrow = window.innerWidth <= 900;
+        return mobileUA || narrow;
+      }
+
+      // Check if already on target page
+      function isOnTarget() {
+        const path = location.pathname.replace(/\/+$/, "");
+        return path.endsWith("/aartics/index.htm") || path.endsWith("/aartics/m/index.htm");
+      }
+
+      // Redirect if not already on target
+      if (!isOnTarget()) {
+        const target = isMobile() ? "/aartics/m/index.htm" : "/aartics/index.htm";
+        location.replace(target + location.search + location.hash);
+      }
+    })();
   </script>
 </head>
 <body>
-  <p>Redirecting to mobile version...</p>
+  <p>Redirecting...</p>
   <noscript>
     <p>JavaScript is required. Please enable it or visit:</p>
+    <a href="/aartics/index.htm">Desktop Version</a> | 
     <a href="/aartics/m/index.htm">Mobile Version</a>
   </noscript>
 </body>
