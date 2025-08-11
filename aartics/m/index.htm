@@ -25,36 +25,6 @@
   ga('send', 'pageview');
 
     </script>
-    <script>
-      // Desktop device detection and redirection
-      (function() {
-        // Check if user agent indicates desktop device
-        function isDesktopDevice() {
-          return !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) &&
-                 (window.innerWidth > 768 || window.innerHeight > 1024);
-        }
-        
-        // Check if we're on the mobile page
-        function isOnMobilePage() {
-          return window.location.pathname.includes('/m/');
-        }
-        
-        // Redirect to desktop version if on desktop device and on mobile page
-        if (isDesktopDevice() && isOnMobilePage()) {
-          // Get the current path and redirect to desktop version
-          var currentPath = window.location.pathname;
-          var desktopPath = currentPath.replace('/aartics/m/', '/aartics/');
-          
-          // If we're at the mobile root page, redirect to desktop
-          if (currentPath === '/aartics/m/' || currentPath === '/aartics/m/index.htm') {
-            window.location.href = '/aartics/index.htm';
-          } else {
-            // For other pages, try to redirect to desktop equivalent
-            window.location.href = desktopPath;
-          }
-        }
-      })();
-    </script>
 </head>
 <body>
     <header>
@@ -72,7 +42,7 @@
     </div>
     <div class="child3" id="about">
         <h1>hello world, i'm aarti...</h1>
-        <p>I'm a UX Designer + Engineer.<br> I'm bringing together my past experience in architecture and software engineering </br>to build new futures.<br></p>
+        <p>I'm an engineer and designer.<br> I'm bringing together my past experience in architecture and software engineering </br>to build new futures.<br></p>
         <div class="logowrapper">
           <a href="aartics_resume.pdf" class="logoc"><img src="img/resume.png"/></a>
           <a href="https://www.linkedin.com/in/aartics" class="logoc"><img src="img/linkedin.png"/></a>
@@ -368,17 +338,17 @@
   <g id="credits_box" data-attach="#c1" class="attached">
       <polygon id="c1" class="cls-2" points="597.38 5415.46 210.42 5192.05 211 4744.54 597.67 4520.48 984.35 4744.54 984.35 5192.05 597.38 5415.46"/>
       <text x="480" y="270" data-y-rel="-700" class="credits" id="credtitle1">ABOUT ME:</text>
-      <text x="320" y="270" data-y-rel="-650" class="credits">i'm aarti sharma - a designer/engineer</text>
-      <text x="280" y="270" data-y-rel="-610" class="credits">living in san francisco. i like 3D technology.</text>
+      <text x="320" y="270" data-y-rel="-650" class="credits">i'm aarti sharma - an engineer/designer</text>
+      <text x="280" y="270" data-y-rel="-610" class="credits">living in san francisco. i enjoy technology.</text>
       <text x="320" y="270" data-y-rel="-560" class="credits" id="credcontact">contact me: <a href="mailto:aartics@gmail.com">aartics@gmail.com</a></text>
       <text x="380" y="270" data-y-rel="-500" class="credits">-----------------------------</text>
       <text x="380" y="270" data-y-rel="-440" class="credits" id="credtitle2">ABOUT THIS WEBSITE:</text>
       <text x="280" y="270" data-y-rel="-390" class="credits">i designed and developed this 3D website!</text>
       <text x="270" y="270" data-y-rel="-340" class="credits" id="credlinks"><a href="projects/aartics_story">read the story &nbsp;</a> || <a href="https://github.com/aartics/aartics_portfolio" target="_blank">&nbsp;get the files on github</a></text>
       <text x="280" y="270" data-y-rel="-310" class="credits"></text>
-      <text x="340" y="270" data-y-rel="-290" class="credits">special shout-out to <a href="https://github.com/owings1" target="_blank">@owings1</a></text>
+      <text x="340" y="270" data-y-rel="-290" class="credits"></text>
       <text x="380" y="270" data-y-rel="-210" class="credits">-----------------------------</text>
-      <text x="400" y="270" data-y-rel="-160" class="credits">&copy; copyright aartics 2017</text>
+      <text x="400" y="270" data-y-rel="-160" class="credits">&copy; copyright aartics 2025</text>
   </g>                 
         </svg>
       </div>
