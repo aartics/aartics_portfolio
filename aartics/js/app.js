@@ -601,7 +601,7 @@ $(document).ready(function() {
         window.location.href = "https://www.linkedin.com/in/aartics/"
     })
     $('#_48').click(function() {
-        window.location.href = "aartics_resume.pdf"
+        window.location.href = "aarti_sharma_resume_cognition.html"
     })
 })
 
