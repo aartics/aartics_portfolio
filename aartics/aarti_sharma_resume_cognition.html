@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aarti C. Sharma — Resume</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap');
+
+  :root {
+    --ink: #141414;
+    --mid: #444;
+    --soft: #777;
+    --rule: #d0d0d0;
+    --accent: #1a1aff;
+    --page: #fafaf8;
+    --pad-h: 0.60in;
+    --pad-v: 0.50in;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.48;
+    color: var(--ink);
+    background: #ddddd8;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    background: var(--page);
+    margin: 28px auto;
+    padding: var(--pad-v) var(--pad-h);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── HEADER p1 ── */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    flex-shrink: 0;
+  }
+  .header h1 {
+    font-size: 28pt;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 1;
+  }
+  .header .tagline {
+    font-size: 10pt;
+    color: var(--mid);
+    margin-top: 4px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .contact {
+    text-align: right;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8pt;
+    color: var(--mid);
+    line-height: 1.8;
+  }
+  .contact a { color: var(--accent); text-decoration: none; }
+
+  /* ── MINI HEADER p2 ── */
+  .mini-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    flex-shrink: 0;
+  }
+  .mini-header .name { font-size: 14pt; font-weight: 600; letter-spacing: -0.2px; }
+  .mini-header .pg { font-family: 'IBM Plex Mono', monospace; font-size: 7.8pt; color: var(--soft); }
+
+  /* ── TWO-COL BODY ── */
+  .body {
+    display: grid;
+    grid-template-columns: 1.7in 1fr;
+    gap: 0 24px;
+    flex: 1;
+    min-height: 0;
+  }
+
+  /* ── SECTION LABEL ── */
+  .section { margin-bottom: 16px; }
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 3px;
+    margin-bottom: 9px;
+  }
+
+  .skill-group { margin-bottom: 9px; }
+  .skill-group .label { font-weight: 600; font-size: 9pt; color: var(--ink); margin-bottom: 2px; }
+  .skill-group .items { font-size: 9pt; color: var(--mid); line-height: 1.5; }
+
+  .traits { list-style: none; }
+  .traits li {
+    font-size: 9.2pt;
+    color: var(--mid);
+    padding: 3px 0;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    line-height: 1.38;
+  }
+  .traits li::before { content: '→'; color: var(--accent); font-size: 7.5pt; flex-shrink: 0; }
+
+  .profile-text { font-size: 10pt; color: var(--mid); line-height: 1.54; }
+
+  .role { margin-bottom: 14px; }
+  .role-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+  .role-title { font-weight: 600; font-size: 11pt; }
+  .role-co { font-weight: 400; font-size: 10.5pt; color: var(--mid); }
+  .role-date { font-family: 'IBM Plex Mono', monospace; font-size: 7.8pt; color: var(--soft); white-space: nowrap; }
+  .role-sub { font-size: 9pt; color: var(--soft); font-style: italic; margin-bottom: 6px; }
+
+  .sub-label { font-size: 8.5pt; font-weight: 600; color: var(--ink); margin: 8px 0 4px; letter-spacing: 0.1px; }
+
+  .bullets { list-style: none; }
+  .bullets li {
+    padding: 2px 0 2px 13px;
+    position: relative;
+    color: var(--mid);
+    font-size: 9.8pt;
+    line-height: 1.44;
+  }
+  .bullets li::before { content: '—'; position: absolute; left: 0; color: var(--rule); font-size: 9pt; }
+  .bullets li strong { color: var(--ink); font-weight: 600; }
+
+  /* Page 2 roles */
+  .compact-role { margin-bottom: 13px; padding-bottom: 13px; border-bottom: 1px solid var(--rule); }
+  .compact-role:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+  .compact-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+  .compact-title { font-weight: 600; font-size: 10.5pt; }
+  .compact-co { font-weight: 400; font-size: 10pt; color: var(--mid); }
+  .compact-date { font-family: 'IBM Plex Mono', monospace; font-size: 7.8pt; color: var(--soft); white-space: nowrap; }
+  .compact-body { font-size: 9.6pt; color: var(--mid); line-height: 1.46; }
+  .compact-body strong { color: var(--ink); font-weight: 600; }
+
+  .compact-bullets { list-style: none; margin-top: 5px; }
+  .compact-bullets li {
+    padding: 1.8px 0 1.8px 13px;
+    position: relative;
+    color: var(--mid);
+    font-size: 9.5pt;
+    line-height: 1.42;
+  }
+  .compact-bullets li::before { content: '—'; position: absolute; left: 0; color: var(--rule); font-size: 9pt; }
+  .compact-bullets li strong { color: var(--ink); font-weight: 600; }
+
+  .edu-block { margin-bottom: 10px; }
+  .edu-block .label { font-weight: 600; font-size: 9pt; color: var(--ink); margin-bottom: 2px; }
+  .edu-block .items { font-size: 9pt; color: var(--mid); line-height: 1.5; }
+
+  .closing {
+    border-top: 1.5px solid var(--ink);
+    padding-top: 11px;
+    margin-top: auto;
+  }
+  .closing-text { font-size: 9.8pt; color: var(--mid); line-height: 1.57; font-style: italic; }
+  .closing-text strong { color: var(--ink); font-weight: 600; font-style: normal; }
+
+  @media print {
+    body { background: white; }
+    .page { margin: 0; box-shadow: none; page-break-after: always; }
+    .page:last-child { page-break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════
+     PAGE 1
+     ════════════════════════════════ -->
+<div class="page">
+
+  <div class="header">
+    <div>
+      <h1>Aarti C. Sharma</h1>
+      <div class="tagline">AI Enablement Engineer &nbsp;·&nbsp; Software Engineering &nbsp;·&nbsp; Systems Translation</div>
+    </div>
+    <div class="contact">
+      <a href="https://aartics.com">aartics.com</a><br>
+      <a href="mailto:aartics@gmail.com">aartics@gmail.com</a><br>
+      <a href="https://linkedin.com/in/aartics">linkedin.com/in/aartics</a>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <div class="sidebar">
+      <div class="section">
+        <div class="section-label">Stack</div>
+        <div class="skill-group">
+          <div class="label">Frontend</div>
+          <div class="items">React, React Native, TypeScript, D3.js</div>
+        </div>
+        <div class="skill-group">
+          <div class="label">Backend</div>
+          <div class="items">Node.js, NestJS, GraphQL, SQL</div>
+        </div>
+        <div class="skill-group">
+          <div class="label">Infra &amp; Tooling</div>
+          <div class="items">Auth0, Docker, Terraform, Datadog, Sentry, SumoLogic, Kafka, Redis</div>
+        </div>
+        <div class="skill-group">
+          <div class="label">AI Tooling</div>
+          <div class="items">Claude, Cursor, MCP integrations, LLM workflow design</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">How I Work</div>
+        <ul class="traits">
+          <li>Teach through doing — pair, don't just present</li>
+          <li>Document to scale — one-off → reusable playbook</li>
+          <li>Meet people where they are</li>
+          <li>Fast ramp on unfamiliar systems</li>
+          <li>Low ego, high ownership</li>
+          <li>Optimize for team success, not credit</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="section">
+        <div class="section-label">Profile</div>
+        <div class="profile-text">
+          Senior Software Engineer with a decade of production experience and a consistent pattern of enabling others —
+          through pairing, documentation, workshops, and AI-assisted workflow adoption.
+          Ex-urban designer turned systems thinker: I've always translated between complex internals and the humans who need to use them.
+          Most energized working directly with engineers, helping them reach <em>aha</em> moments, and turning those into something that scales to the next 100 teams.
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">Experience</div>
+
+        <div class="role">
+          <div class="role-header">
+            <div>
+              <span class="role-title">Senior Software Engineer</span>
+              <span class="role-co"> &nbsp;·&nbsp; Hinge Health</span>
+            </div>
+            <div class="role-date">Aug 2021 – Present</div>
+          </div>
+          <div class="role-sub">Promoted SE II → Senior. Full-stack: React / React Native / NestJS / backend microservices.</div>
+
+          <div class="sub-label">Engineering</div>
+          <ul class="bullets">
+            <li>Key contributor on team shipping <strong>authentication flows</strong> (MFA, refresh tokens, social login) across web and mobile; codified Auth0 configuration deployments via Terraform</li>
+            <li>Architected and shipped <strong>Server-Driven UI</strong> system, enabling product teams to iterate without native deploys</li>
+            <li>Built real-time <strong>Workflow Queue</strong> in CareHub using GraphQL + SSE + Jotai + pagination; enhanced observability through Datadog/SumoLogic monitors, dashboards, and traceability tooling</li>
+            <li>Contributed across backend microservices (NestJS, Kafka, Ruby) and configuration deployments (Terraform)</li>
+          </ul>
+
+          <div class="sub-label">AI Enablement &amp; Knowledge Transfer</div>
+          <ul class="bullets">
+            <li><strong>Introduced and guided team adoption of AI-assisted workflows</strong> (Claude, Cursor) — identified high-ROI use cases, ran pairing sessions, built shared understanding of where AI accelerates vs. misleads</li>
+            <li>Paired cross-functionally across engineering, product, and design to unblock work and raise baseline technical fluency</li>
+            <li>Authored internal documentation for Auth0 configuration, SDUI patterns, and debugging practices — turning one-off solutions into reusable team knowledge</li>
+            <li>Ran architecture deep-dives and onboarding programs for incoming engineers; built ramp materials used beyond individual hires</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════
+     PAGE 2
+     ════════════════════════════════ -->
+<div class="page">
+
+  <div class="mini-header">
+    <div class="name">Aarti C. Sharma</div>
+    <div class="pg">page 2 of 2 &nbsp;·&nbsp; aartics@gmail.com</div>
+  </div>
+
+  <div class="body">
+
+    <div class="sidebar">
+      <div class="section">
+        <div class="section-label">Education</div>
+        <div class="edu-block">
+          <div class="label">Architecture &amp; Urban Design</div>
+          <div class="items">Sir J.J. College of Architecture</div>
+          <div class="items" style="margin-top:2px;color:var(--soft);font-size:8.5pt;">Global firms · US, EU, India<br>2006 – 2012</div>
+        </div>
+        <div class="edu-block" style="margin-top:9px;">
+          <div class="label">Visiting Lecturer</div>
+          <div class="items">Foundational design &amp; systems thinking for undergraduates</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">The Thread</div>
+        <div style="font-size:9.2pt;color:var(--mid);line-height:1.56;">
+          Every role I've held — designer, support engineer, UX engineer, frontend, senior SWE — has had the same underlying pattern:
+          <br><br>
+          Understand a complex system deeply. Make it legible. Help others operate it confidently.
+          <br><br>
+          The titles changed. The work didn't.
+        </div>
+      </div>
+    </div>
+
+    <div class="main" style="display:flex;flex-direction:column;">
+
+      <div class="section" style="flex:1;">
+        <div class="section-label">Earlier Experience</div>
+
+        <div class="compact-role">
+          <div class="compact-header">
+            <div>
+              <span class="compact-title">Frontend Engineer</span>
+              <span class="compact-co"> &nbsp;·&nbsp; Riffyn &amp; Chase (JPMC)</span>
+            </div>
+            <div class="compact-date">2019 – 2021</div>
+          </div>
+          <div class="compact-body">
+            Built data-heavy interfaces for scientific research workflows at Riffyn and financial tooling at Chase using <strong>React, TypeScript, and D3</strong>.
+            In both contexts, acted as bridge between domain experts and engineering — translating complex system internals into usable, legible UI.
+            Helped teams reason about workflows and mental models, not just features.
+          </div>
+        </div>
+
+        <div class="compact-role">
+          <div class="compact-header">
+            <div>
+              <span class="compact-title">UX Engineer &amp; Designer</span>
+              <span class="compact-co"> &nbsp;·&nbsp; Karuna VR / Resonate.ai</span>
+            </div>
+            <div class="compact-date">2017 – 2019</div>
+          </div>
+          <div class="compact-body">
+            Designed interfaces and interaction systems for emerging VR and narrative AI technology.
+            What I learned here maps directly to AI enablement: <strong>how people adopt unfamiliar technology</strong>, how to reduce friction and cognitive overload, and how to design for <em>aha</em> moments — not just functionality.
+          </div>
+        </div>
+
+        <div class="compact-role">
+          <div class="compact-header">
+            <div>
+              <span class="compact-title">QA → Support Engineer → Solutions Engineer</span>
+              <span class="compact-co"> &nbsp;·&nbsp; Palamida (Flexera)</span>
+            </div>
+            <div class="compact-date">2014 – 2017</div>
+          </div>
+          <div class="compact-body">
+            Started in QA; became one of the company's first dedicated Support Engineers as the role evolved to meet enterprise needs.
+            Worked directly with customers including <strong>Adobe and Microsoft</strong> on installation, integration, and long-term maintenance of complex code-scanning pipelines.
+          </div>
+          <ul class="compact-bullets">
+            <li>Authored product documentation and troubleshooting guides adopted company-wide; led customer onboarding from initial setup → confident, sustained usage</li>
+            <li>Introduced <strong>Git and Docker</strong> within the support org; built containerized environments for faster issue replication and team-wide learning</li>
+            <li>Ran knowledge-sharing sessions that shifted the team from reactive ticket support → proactive, systems-level enablement</li>
+            <li>This is where the enablement pattern was established — and where I first understood that scaling a person's capability is more valuable than solving their immediate problem</li>
+          </ul>
+        </div>
+
+        <div class="compact-role">
+          <div class="compact-header">
+            <div>
+              <span class="compact-title">Architect &amp; Urban Designer</span>
+              <span class="compact-co"> &nbsp;·&nbsp; Global Firms (US, EU, India)</span>
+            </div>
+            <div class="compact-date">2006 – 2012</div>
+          </div>
+          <div class="compact-body">
+            Worked on large-scale, constraint-heavy systems — urban projects, malls, theaters — requiring translation between stakeholders with radically different mental models.
+            Core skill developed: <strong>breaking complex, abstract systems into structured, teachable components</strong>.
+            Taught foundational design to undergraduates at Sir J.J. College of Architecture.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="closing">
+        <div class="closing-text">
+          AI tools are the most powerful — and most misunderstood — shift in how software gets built.
+          Helping teams <strong>actually use them well</strong> is a systems problem, a teaching problem, and an engineering problem.
+          That's the work I've been doing. Just not under this title yet.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
