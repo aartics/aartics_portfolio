@@ -169,7 +169,12 @@ header {
 
 .child3 p{
   color: #000000;
-  margin: 40px 0px 0 60px;
+  margin: 12px 0px 0 60px;
+}
+
+.intro-tagline {
+  font-family: "ABeeZee";
+  font-size: 26px;
 }
 
 #test1 {
