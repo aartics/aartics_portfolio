@@ -373,7 +373,102 @@
           </svg>
       </div>
     </div>
+  <canvas id="snakeCanvas" width="1200" height="1000"
+    style="position:absolute;top:0;left:0;z-index:3;pointer-events:none;"></canvas>
   <script src="js/data.js"></script>
-  <script src="js/app.js"></script>    
+  <script src="js/app.js"></script>
+  <script>
+  (function(){
+    var c=document.getElementById('snakeCanvas');
+    if(!c||!c.getContext)return;
+    var ctx=c.getContext('2d');
+    var CELL=40,COLS=30,ROWS=25,MS=145;
+    var sn,dir,food,grow,loop;
+
+    function rand(n){return Math.floor(Math.random()*n);}
+
+    function init(){
+      var sx=5+rand(COLS-10),sy=5+rand(ROWS-10);
+      sn=[{x:sx,y:sy},{x:sx-1,y:sy},{x:sx-2,y:sy}];
+      dir={x:1,y:0};grow=0;spawn();
+    }
+
+    function spawn(){
+      var x,y,ok;
+      do{x=1+rand(COLS-2);y=1+rand(ROWS-2);
+        ok=!sn.some(function(s){return s.x===x&&s.y===y;});
+      }while(!ok);
+      food={x:x,y:y};
+    }
+
+    function ai(){
+      var h=sn[0];
+      var moves=[{x:1,y:0},{x:-1,y:0},{x:0,y:1},{x:0,y:-1}]
+        .filter(function(d){return d.x!==(-dir.x)||d.y!==(-dir.y);})
+        .map(function(d){
+          var nx=h.x+d.x,ny=h.y+d.y,sc=0;
+          sc+=Math.sign(food.x-h.x)===d.x?4:0;
+          sc+=Math.sign(food.y-h.y)===d.y?4:0;
+          if(nx<1||nx>COLS-2||ny<1||ny>ROWS-2)sc-=9;
+          if(sn.some(function(s){return s.x===nx&&s.y===ny;}))sc-=30;
+          sc+=(Math.random()-0.5)*2.5;
+          return{d:d,s:sc};
+        })
+        .sort(function(a,b){return b.s-a.s;});
+      return moves.length?moves[0].d:dir;
+    }
+
+    function tick(){
+      dir=ai();
+      var h=sn[0],nx=h.x+dir.x,ny=h.y+dir.y;
+      if(nx<0||nx>=COLS||ny<0||ny>=ROWS||
+         sn.some(function(s){return s.x===nx&&s.y===ny;})){
+        clearInterval(loop);
+        var f=0,fi=setInterval(function(){
+          f%2?draw(1):ctx.clearRect(0,0,c.width,c.height);
+          if(++f>5){clearInterval(fi);
+            setTimeout(function(){init();loop=setInterval(tick,MS);},1000);}
+        },130);
+        return;
+      }
+      sn.unshift({x:nx,y:ny});
+      if(nx===food.x&&ny===food.y){grow+=2+rand(3);spawn();}
+      if(Math.random()<0.04)grow++;
+      grow>0?grow--:sn.pop();
+      draw(0);
+    }
+
+    function hex(cx,cy,r){
+      ctx.beginPath();
+      for(var i=0;i<6;i++){
+        var angle=Math.PI/3*i-Math.PI/6; // pointy-top
+        var x=cx+r*Math.cos(angle),y=cy+r*Math.sin(angle);
+        i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+      }
+      ctx.closePath();
+    }
+
+    function draw(dead){
+      ctx.clearRect(0,0,c.width,c.height);
+      ctx.save();
+      ctx.shadowBlur=18;ctx.shadowColor='#FFC107';
+      ctx.fillStyle='#FFC107';
+      ctx.beginPath();
+      ctx.arc(food.x*CELL+CELL/2,food.y*CELL+CELL/2,CELL/2-5,0,Math.PI*2);
+      ctx.fill();
+      ctx.restore();
+      for(var i=0;i<sn.length;i++){
+        var s=sn[i],a=dead?0.2:(0.75-i/sn.length*0.55);
+        ctx.fillStyle='rgba(18,26,32,'+a+')';
+        ctx.strokeStyle='rgba(65,100,110,'+(a*0.8)+')';
+        ctx.lineWidth=1.5;
+        hex(s.x*CELL+CELL/2,s.y*CELL+CELL/2,CELL/2-3);
+        ctx.fill();ctx.stroke();
+      }
+    }
+
+    init();draw(0);loop=setInterval(tick,MS);
+  })();
+  </script>
 </body>
 </html>
